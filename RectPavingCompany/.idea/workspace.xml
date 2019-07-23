@@ -2,22 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db111860-9fe4-45f7-83bf-8b9498849da5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/.idea/libraries/Maven__com_github_stefanbirkner_system_rules_1_19_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/U1M1L2Katas.iml" afterDir="false" />
+      <change afterPath="D:/katas/starter-code/U1M1L2Katas/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="D:/katas/starter-code/U1M1L2Katas/.idea/libraries/Maven__com_github_stefanbirkner_system_rules_1_19_0.xml" afterDir="false" />
+      <change afterPath="D:/katas/starter-code/U1M1L2Katas/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="D:/katas/starter-code/U1M1L2Katas/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="D:/katas/starter-code/U1M1L2Katas/.idea/misc.xml" afterDir="false" />
+      <change afterPath="D:/katas/starter-code/U1M1L2Katas/.idea/modules.xml" afterDir="false" />
+      <change afterPath="D:/katas/starter-code/U1M1L2Katas/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="D:/katas/starter-code/U1M1L2Katas/U1M1L2Katas.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/RectPavingCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/RectPavingCompany.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/src/main/java/com/company/AddFive.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/src/main/java/com/company/AddFive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/src/main/java/com/company/AddFiveAndDouble.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/src/main/java/com/company/AddFiveAndDouble.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/src/main/java/com/company/AddThirteen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/src/main/java/com/company/AddThirteen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/src/main/java/com/company/AverageThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/src/main/java/com/company/AverageThree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/src/main/java/com/company/DoubleAndAddFive.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/src/main/java/com/company/DoubleAndAddFive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/src/main/java/com/company/MultiplyThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/src/main/java/com/company/MultiplyThree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/src/main/java/com/company/SubtractTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/src/main/java/com/company/SubtractTwo.java" afterDir="false" />
+      <change beforePath="D:/katas/starter-code/U1M1L2Katas/src/main/java/com/company/AddFive.java" beforeDir="false" afterPath="D:/katas/starter-code/U1M1L2Katas/src/main/java/com/company/AddFive.java" afterDir="false" />
+      <change beforePath="D:/katas/starter-code/U1M1L2Katas/src/main/java/com/company/AddFiveAndDouble.java" beforeDir="false" afterPath="D:/katas/starter-code/U1M1L2Katas/src/main/java/com/company/AddFiveAndDouble.java" afterDir="false" />
+      <change beforePath="D:/katas/starter-code/U1M1L2Katas/src/main/java/com/company/AddThirteen.java" beforeDir="false" afterPath="D:/katas/starter-code/U1M1L2Katas/src/main/java/com/company/AddThirteen.java" afterDir="false" />
+      <change beforePath="D:/katas/starter-code/U1M1L2Katas/src/main/java/com/company/AverageThree.java" beforeDir="false" afterPath="D:/katas/starter-code/U1M1L2Katas/src/main/java/com/company/AverageThree.java" afterDir="false" />
+      <change beforePath="D:/katas/starter-code/U1M1L2Katas/src/main/java/com/company/DoubleAndAddFive.java" beforeDir="false" afterPath="D:/katas/starter-code/U1M1L2Katas/src/main/java/com/company/DoubleAndAddFive.java" afterDir="false" />
+      <change beforePath="D:/katas/starter-code/U1M1L2Katas/src/main/java/com/company/MultiplyThree.java" beforeDir="false" afterPath="D:/katas/starter-code/U1M1L2Katas/src/main/java/com/company/MultiplyThree.java" afterDir="false" />
+      <change beforePath="D:/katas/starter-code/U1M1L2Katas/src/main/java/com/company/SubtractTwo.java" beforeDir="false" afterPath="D:/katas/starter-code/U1M1L2Katas/src/main/java/com/company/SubtractTwo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,7 +45,7 @@
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="D:/../../../../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -69,9 +69,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="441" />
+    <option name="x" value="440" />
     <option name="y" value="275" />
-    <option name="width" value="979" />
+    <option name="width" value="980" />
     <option name="height" value="1090" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -122,6 +122,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>

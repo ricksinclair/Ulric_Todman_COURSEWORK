@@ -25,13 +25,15 @@ public class RectPavingCompany {
 
         System.out.printf("The area in square feet is: " + area +"\n");
 
-        System.out.println("Please enter the cost of your framing: ");
+//        System.out.println("Please enter the cost of your framing: ");
 
-        double framingCostPerFt = Double.parseDouble(scanner.nextLine());
+        double framingCostPerFt = 8.25;
+//        double framingCostPerFt = Double.parseDouble(scanner.nextLine());
 
-        System.out.println("Please enter the cost of your cement: ");
+//        System.out.println("Please enter the cost of your cement: ");
 
-        double cementCostPerSqFt = Double.parseDouble(scanner.nextLine());
+        double cementCostPerSqFt = 12.50;
+//        double cementCostPerSqFt = Double.parseDouble(scanner.nextLine());
 
 
         double framingCost = framingCostPerFt * perimeter;
