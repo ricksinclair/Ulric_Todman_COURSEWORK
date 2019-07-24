@@ -19,5 +19,7 @@ public class MultiplyThree {
         int total = number1*number2*number3;
         //print total
         System.out.printf("%d",total);
+
+
     }
 }
