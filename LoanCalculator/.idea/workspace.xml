@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="31df035d-08df-4ff4-9d19-b7d6a6e58d3d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../../02-lesson/activities/01-rectangular-paving-company/starter-code/L3demo/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../02-lesson/activities/01-rectangular-paving-company/starter-code/L3demo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/.idea/libraries/Maven__com_github_stefanbirkner_system_rules_1_19_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/U1M1L2Katas.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../02-lesson/activities/01-rectangular-paving-company/starter-code/RectPavingCompany/src/main/java/com/company/RectPavingCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../02-lesson/activities/01-rectangular-paving-company/starter-code/RectPavingCompany/src/main/java/com/company/RectPavingCompany.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/src/main/java/com/company/AddFive.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/src/main/java/com/company/AddFive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/src/main/java/com/company/AddFiveAndDouble.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/src/main/java/com/company/AddFiveAndDouble.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/src/main/java/com/company/AddThirteen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/src/main/java/com/company/AddThirteen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/src/main/java/com/company/AverageThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/src/main/java/com/company/AverageThree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/src/main/java/com/company/DoubleAndAddFive.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/src/main/java/com/company/DoubleAndAddFive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/src/main/java/com/company/MultiplyThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/src/main/java/com/company/MultiplyThree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/src/main/java/com/company/SubtractTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/src/main/java/com/company/SubtractTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../01-Hi-Lo/starter-code/HiLo/src/main/java/com/company/HiLo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../01-Hi-Lo/starter-code/HiLo/src/main/java/com/company/HiLo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../03-Fizz-Buzz/starter-code/FizzBuzz/src/main/java/com/company/FizzBuzz.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../03-Fizz-Buzz/starter-code/FizzBuzz/src/main/java/com/company/FizzBuzz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/LoanCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/LoanCalculator.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../../../.." />
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/LoanCalculator.iml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_github_stefanbirkner_system_rules_1_19_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1OTIAJkVOGmcva4LrEBvcGxio9q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="LoanCalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.LoanCalculator" />
+      <module name="LoanCalculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.LoanCalculator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="31df035d-08df-4ff4-9d19-b7d6a6e58d3d" name="Default Changelist" comment="" />
+      <created>1563995014341</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563995014341</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
