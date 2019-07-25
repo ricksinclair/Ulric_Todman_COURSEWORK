@@ -22,9 +22,12 @@ public class IsJavaKeyword {
                 "throws transient try void" +
                 "volatile while  true  false" +
                 "null";
-            // found this .contains method at https://www.geeksforgeeks.org/java-string-contains-method-example/
-            //check if word is in our keywords reference string
-            //print its a keyword if it is. print its a keyword if it isn't.
+
+
+
+            /* found this .contains method at https://www.geeksforgeeks.org/java-string-contains-method-example/
+            check if word is in our keywords reference string
+            print its a keyword if it is. print its a keyword if it isn't. */
             if(keywordsList.contains(keyword))
                 System.out.println(keyword+ " is a java keyword.");
             else
