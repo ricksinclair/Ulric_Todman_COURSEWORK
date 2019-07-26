@@ -12,7 +12,7 @@ public class CountByTwo {
         System.out.println("Welcome to the counter. Please enter an integer.");
         int userNumber = Integer.parseInt(scanner.nextLine());
 
-        //Print only integers which divide evenly by zero(even numbers)
+        //Print only integers which divide evenly by two(even numbers)
         //up to the user's input number.
         for (int x = 0; x<=userNumber; x++){
             if( x % 2 == 0 ){
