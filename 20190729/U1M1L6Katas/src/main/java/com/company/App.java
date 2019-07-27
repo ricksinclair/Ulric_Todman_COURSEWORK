@@ -75,7 +75,7 @@ public class App {
 
         }
         return secondLargest;
-                //return after the loop is finished return the value of the second largest number.
+                // after the loop is finished return the value of the second largest number.
 
     }
 
