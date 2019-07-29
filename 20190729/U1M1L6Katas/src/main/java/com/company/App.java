@@ -60,7 +60,7 @@ public class App {
         int secondLargest = Integer.MIN_VALUE; //to set an "absolute zero" less than 0 so that it that won't bump heads.
                                                 //with a negative number and break the logic.
                                                 //It is highly unlikely an element we're testing against
-                                                //have a value that low.
+                                                //has a value that low.
 
         for (int i = 0; i < inputArray.length; i++) {//for all elements in array
             if (inputArray[i] > largest) {//if the current number is larger than the current value assigned to largest
@@ -80,27 +80,40 @@ public class App {
     }
 
     public static String[] swapFirstAndLast(String[] inputArray){ //takes a String[] as input + returns String[]
+
         String firstElem;//declaring String to store the first element's value.
+
         String lastElem; // declaring String to store the last element's value.
+
         String[] newArray = inputArray; //we don't want to mutate the original, just return an array that's swapped.
-         firstElem = inputArray[0];//initializing value as first element
+
+        firstElem = inputArray[0];//initializing value as first element
+
         lastElem = inputArray[inputArray.length-1]; // initializing value as last element.
+
         newArray[0]=lastElem;//perform the desired
+
         newArray[inputArray.length-1]=firstElem;//swap on both elements in cloned String[] newArray.
-        return newArray;
-        //return the new String[].
+
+        return newArray;//return the new String[].
+
 
     }
 
     public static int[] reverse(int[] inputArray){ // method takes and returns int[]
+
         int endOfArray = inputArray.length-1; //stores last index of the inputArray.
         int[] newArray = new  int[inputArray.length]; //create an array the same size as the inputArray.
+
         for(int i=0; i<inputArray.length&& endOfArray>=0; i++){ //we are going to decrement the end of the array var
-            //so i wanted to make sure that it stops when there are no more elements.
+                                                                //so i wanted to make sure that it stops when there
+                                                                // are no more elements.
+
             newArray[i]=inputArray[endOfArray]; //now we are going to assign the last to the first
+
             endOfArray--; //then the second last to the second and so on....
         }
-        return newArray;//Then we are going to return the array.
+        return newArray;//Then we are going to return the new array.
     }
 
     public static String concatenateString(String[] inputArray){ //takes in String[] and returns String
@@ -138,28 +151,34 @@ public class App {
         }
 
 
-        public  static int[] lessThanFive(int[] inputArray){//takes and returns int[]
+    public  static int[] lessThanFive(int[] inputArray){//takes and returns int[]
+
         int newArrSize=0;//we need to store and calculate the size of the output array.
+
         for(int elem : inputArray){//for each element in inputArray.
-            if(elem<5) //the element is less than five.
+            if(elem<5) //if the element is less than five.
                 newArrSize++;//add one to the size of outputArray
-        }
+            }
+
+
         int[] outputArray = new int[newArrSize]; //declare output Array with the new array's size.
+        int outputArrayIndex=0;//we need to add values to each element in output array.
 
-            int outputArrayIndex=0;//we need to add values to each element in output array.
-            for(int elem : inputArray){ //we are going to repeat the same processes we did before
+
+
+        for(int elem : inputArray){ //we are going to repeat the same processes we did before
                                         //but now we have an array of the right size to assign values to.
-                     if(elem <5 ){
-                         outputArray[outputArrayIndex] = elem;
-                         outputArrayIndex++;
-                     }
-             }
+            if(elem <5 ){
+                outputArray[outputArrayIndex] = elem;
+                outputArrayIndex++;
+            }
+        }
 
 
-       if (outputArray.length == 0){ //if the size of the output array is 0;
-           return  null; //return an null value.
-       }    else
-                return outputArray;//otherwise return the output array.
+        if (outputArray.length == 0){ //if the size of the output array is 0;
+            return  null; //return an null value.
+        }else
+            return outputArray;//otherwise return the output array.
 
 
         }
