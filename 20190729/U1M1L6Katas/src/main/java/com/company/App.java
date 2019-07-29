@@ -146,9 +146,7 @@ public class App {
         }
         int[] outputArray = new int[newArrSize]; //declare output Array with the new array's size.
 
-        for (int i=0; i<inputArray.length; i++){//for the length of the input array.
             int outputArrayIndex=0;//we need to add values to each element in output array.
-                                    //so we start at the second one.
             for(int elem : inputArray){ //we are going to repeat the same processes we did before
                                         //but now we have an array of the right size to assign values to.
                      if(elem <5 ){
@@ -157,7 +155,6 @@ public class App {
                      }
              }
 
-        }
 
        if (outputArray.length == 0){ //if the size of the output array is 0;
            return  null; //return an null value.

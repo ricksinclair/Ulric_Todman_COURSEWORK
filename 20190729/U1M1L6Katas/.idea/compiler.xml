@@ -6,8 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="U1-M1-L6-Katas" />
         <module name="U1M1L6Katas" />
+        <module name="U1-M1-L6-Katas" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />
