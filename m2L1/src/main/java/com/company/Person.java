@@ -1,9 +1,9 @@
 package com.company;
 
 public class Person {
-    String name;
+    private String name;
 
-    Person(String name){
+    public  Person(String name){
         this.name = name;
     }
 
@@ -11,6 +11,10 @@ public class Person {
         this.name = newName;
     }
 
+
+    public String getName(){
+       return this.name;
+    }
 
 
     public void sayHello(){
