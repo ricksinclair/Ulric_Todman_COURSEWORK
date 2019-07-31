@@ -58,6 +58,7 @@ public class MonthConverterIf {
             System.out.println("December");
 
         else //error msg if none of the above conditions have been met.
-            System.out.println("You have entered an invalid number. You must enter a number between 1 and 12. Goodbye.");
+            System.out.printf("You have entered an invalid number. You must enter a number between 1 and 12. Goodbye.");
     }
 }
+

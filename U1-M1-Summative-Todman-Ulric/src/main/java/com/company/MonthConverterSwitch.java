@@ -34,7 +34,6 @@ public class MonthConverterSwitch {
             case (4):
                 System.out.println("April");
                 break;
-
             case (5):
                 System.out.println("May");
                 break;
@@ -60,7 +59,8 @@ public class MonthConverterSwitch {
                 System.out.println("December");
                 break;
             default:
-                System.out.println("You have entered an invalid number. You must enter a number between 1 and 12. Goodbye.");
+                System.out.println("You have entered an invalid number. You must enter"+
+                                    " a number between 1 and 12. Goodbye.");
                 break;
 
         }
