@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="UlricTodmanU1M2L5PBD" />
+        <module name="ulrictodmanu1m2l5pbd" />
       </profile>
     </annotationProcessing>
   </component>
