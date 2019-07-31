@@ -6,7 +6,7 @@ public class Application {
 
     public static void main(String[] args) {
 
-        UserIO userInput = new Input();
+        UserIO userInput = new BetterInput();
 
         int userInt = userInput.readInt("Enter an integer");
 
