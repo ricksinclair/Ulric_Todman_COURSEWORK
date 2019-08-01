@@ -2,7 +2,6 @@ package com.company;
 
 import com.company.interfaces.UserIO;
 
-import java.awt.image.AreaAveragingScaleFilter;
 import java.util.Scanner;
 
 public class BetterInput implements UserIO {

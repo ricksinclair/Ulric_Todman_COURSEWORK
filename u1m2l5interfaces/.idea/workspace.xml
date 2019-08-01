@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59f26be5-73b8-4f8c-aafc-0f379420cde1" name="Default Changelist" comment="" />
+    <list default="true" id="59f26be5-73b8-4f8c-aafc-0f379420cde1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../20190802/U1M2L6Katas.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U1M2L6Katas/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U1M2L6Katas/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../i1m2l7katasinheritance/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../i1m2l7katasinheritance/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../i1m2l7katasinheritance/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../i1m2l7katasinheritance/src/main/java/com/company/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../i1m2l7katasinheritance/src/main/java/com/company/Architect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../i1m2l7katasinheritance/src/main/java/com/company/Developer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../i1m2l7katasinheritance/src/main/java/com/company/TeamLead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/Auditable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/SecureStorable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/SensitiveDataFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/Storable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../20190801/UserIO/src/main/java/com/company/BetterInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/../20190801/UserIO/src/main/java/com/company/BetterInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,11 +45,22 @@
       </set>
     </option>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1OmTv6bRxB2huLh4U22Yr2l20V6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -62,7 +92,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
