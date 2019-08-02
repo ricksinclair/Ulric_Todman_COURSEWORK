@@ -1,0 +1,7 @@
+I think the interface approach is useful when you aren't directly working with people who will
+instantiate the methods. the ability to provide default methods to legacy users is great. For more complex inputs and outputs
+(like custom objects) this can allow for a great degree of detail when trying to allow access to a complex system safely.
+
+I think the abstract definition can be useful in prototyping objects that are only meant to be extended and never
+instantiated. I can see this being used in maybe a person object that extends to every type of role,
+in a business, but the person will be incomplete in functionality if the object was instantiated.   

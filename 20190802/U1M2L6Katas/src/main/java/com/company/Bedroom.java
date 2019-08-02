@@ -8,7 +8,9 @@ public class Bedroom {
     private String bedType;
     private boolean walkInCloset;
 
+    public Bedroom(){
 
+    }
     public Bedroom(double length, double width, double height, String bedType, boolean walkInCloset ){
 
         this.length = length;

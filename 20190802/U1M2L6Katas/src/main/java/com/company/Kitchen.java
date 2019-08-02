@@ -13,7 +13,9 @@ public class Kitchen {
     private String stoveModel;
     private Boolean hasIsland;
 
+    public Kitchen(){
 
+    }
     public Kitchen(double length, double width, double height, String fridgeMake, String fridgeModel, String stoveMake, String stoveModel, Boolean hasIsland) {
         this.length = length;
         this.width = width;

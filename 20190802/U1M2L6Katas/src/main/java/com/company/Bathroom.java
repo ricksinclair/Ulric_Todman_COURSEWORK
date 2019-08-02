@@ -8,6 +8,10 @@ public class Bathroom {
     private double width;
     private double height;
 
+
+    public Bathroom(){
+
+    }
     public Bathroom(double length, double width, double height, boolean shower, boolean tub, boolean bidet){
         this.shower = shower;
         this.tub = tub;

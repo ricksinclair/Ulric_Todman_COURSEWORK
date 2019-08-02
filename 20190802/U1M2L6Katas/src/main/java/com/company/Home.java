@@ -10,8 +10,10 @@ public class Home {
 
 
 
+    public Home(){
 
-    public void Home(Bedroom[] bedRooms, Bathroom[] bathRooms, double acreage){
+    }
+    public Home(Bedroom[] bedRooms, Bathroom[] bathRooms, double acreage){
         
         setBedrooms(bedRooms);
         setBathrooms(bathRooms);
