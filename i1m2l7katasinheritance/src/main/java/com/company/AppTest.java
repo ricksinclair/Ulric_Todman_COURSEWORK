@@ -12,6 +12,9 @@ public class AppTest {
 //        tl.estimateStoryPoints();
 //        architect.estimateStoryPoints();
 
+        TeamLead bill = architect;
+
+
 
 
 
