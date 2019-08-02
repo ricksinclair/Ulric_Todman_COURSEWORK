@@ -1,9 +1,9 @@
 package com.company.abstractapproach;
 
-public class Circle extends Shape {
+public class Square extends Shape {
     @Override
     public void area() {
-        
+
     }
 
     @Override
