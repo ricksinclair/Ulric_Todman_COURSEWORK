@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99fcc7c2-4a7c-4274-8acf-d3070ed545e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../U1M2L8PBD/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1M2L8PBD/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1M2L8PBD/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1M2L8PBD/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1M2L8PBD/src/main/java/com/company/BabyNim.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../i1m2l7katasinheritance/src/main/java/com/company/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../i1m2l7katasinheritance/src/main/java/com/company/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U1M2L8PBD/src/main/java/com/company/Nim.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U1M2L8PBD/src/main/java/com/company/Nim.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
