@@ -85,7 +85,6 @@ public class Nim {
 
         last = userName;
         setBlanks();
-        getFinished();
         turns++;
     }
 
@@ -101,12 +100,16 @@ public class Nim {
                 System.out.print("Choose how many to remove from pile A:");
                 setAnswer(userName, piles[0]);
                 piles[0] -= userNumber;
+                getFinished();
+
 
                 break;
             case "B":
                 System.out.print("Choose how many to remove from pile B:");
                 setAnswer(userName, piles[1]);
                 piles[1] -= userNumber;
+                getFinished();
+
                 break;
 
 
@@ -114,6 +117,8 @@ public class Nim {
                 System.out.print("Choose how many to remove from pile C:");
                 setAnswer(userName, piles[2]);
                 piles[2] -= userNumber;
+                getFinished();
+
                 break;
             default:
                 System.out.println("That isn't a valid answer, bro. (or sis).");
@@ -132,7 +137,14 @@ public class Nim {
         userName2 = scanner.nextLine();
 
         while (!finished) {
-            if (turns % 2 == 0) {
+            if ((piles[0] + piles[1] + piles[2]) == 1) {
+                String winner = last;
+                String loser = last == userName1 ? userName2 : userName1;
+                System.out.println(winner + " has won because " + loser +
+                        " can only choose the last one from the last pile.");
+                return;
+
+            } else if (turns % 2 == 0) {
                 printStatus();
                 pickPile(userName1);
 
