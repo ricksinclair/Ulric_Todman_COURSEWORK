@@ -23,16 +23,10 @@ public class Nim {
 
     }
 
-    public static void subtractBlanks() {
-        aBlanks--;
-        bBlanks--;
-        cBlanks--;
-    }
 
     public static boolean getFinished() {
         finished = piles[0] <= 0 && piles[1] <= 0 && piles[2] <= 0;
         return finished;
-
 
     }
 
@@ -63,7 +57,10 @@ public class Nim {
             System.out.println(" " + starsOrBlanks(piles[0], aBlanks)
                     + " " + starsOrBlanks(piles[1], bBlanks)
                     + " " + starsOrBlanks(piles[2], cBlanks) + " ");
-            subtractBlanks();
+
+            aBlanks--;
+            bBlanks--;
+            cBlanks--;
         }
 
 
@@ -119,7 +116,7 @@ public class Nim {
                 piles[2] -= userNumber;
                 break;
             default:
-                System.out.println("That isn't a valid answer, bro. (or sis.");
+                System.out.println("That isn't a valid answer, bro. (or sis).");
         }
 
         setBlanks();
