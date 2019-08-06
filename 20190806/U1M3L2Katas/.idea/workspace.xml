@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d7f6442-cedb-48d9-8f87-ab7590116e99" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../LargestCities/.idea/$CACHE_FILE$" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LargestCities/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LargestCities/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LargestCities/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LargestCities/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LargestCities/.idea/dictionaries/ricks_000.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LargestCities/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LargestCities/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LargestCities/LargestCities.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LargestCities/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LargestCities/src/main/java/com/company/City.java" beforeDir="false" />
-    </list>
+    <list default="true" id="6d7f6442-cedb-48d9-8f87-ab7590116e99" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +58,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in U1M3L2Katas">
+  <component name="RunManager" selected="JUnit.All in U1M3L2Katas (1)">
     <configuration name="CarLists" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.collections.CarLists" />
       <module name="U1M3L2Katas" />
@@ -97,15 +85,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapFun" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.collections.MapFun" />
+    <configuration name="All in U1M3L2Katas (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="U1M3L2Katas" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.collections.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -135,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in U1M3L2Katas (1)" />
         <item itemvalue="JUnit.All in U1M3L2Katas" />
         <item itemvalue="JUnit.AppTest" />
         <item itemvalue="Application.CarLists" />
         <item itemvalue="Application.IterateAndPrint" />
-        <item itemvalue="Application.MapFun" />
       </list>
     </recent_temporary>
   </component>

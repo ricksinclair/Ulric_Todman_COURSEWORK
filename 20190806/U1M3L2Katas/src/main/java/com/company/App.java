@@ -25,7 +25,7 @@ public class App {
 
 
         for(String key: map.keySet()){
-            System.out.printf("%s: %s", key, map.get(key));
+            System.out.printf("%s: %s\n", key, map.get(key));
         }
 
 //        map.forEach((key, value)->{
