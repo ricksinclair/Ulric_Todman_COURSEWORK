@@ -2,31 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d7f6442-cedb-48d9-8f87-ab7590116e99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/20190806.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1M3L1Katas/src/main/java/com/company/Classmate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1M3L1Katas/src/main/java/com/company/ClassmatesList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1M3L1Katas/src/main/java/com/company/LinkedListApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1M3L1Katas/src/main/java/com/company/SetIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../LargestCities/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../LargestCities/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../LargestCities/.idea/dictionaries/ricks_000.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../LargestCities/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../LargestCities/src/main/java/com/company/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190731/CalculatorRefactored/starter-code/Calculator/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190731/CalculatorRefactored/starter-code/Calculator/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190731/CalculatorRefactored/starter-code/Calculator/Calculator.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190731/CalculatorRefactored/starter-code/Calculator/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190731/CalculatorRefactored/starter-code/Calculator/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190731/CalculatorRefactored/starter-code/Calculator/src/test/java/com/company/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190731/CalculatorRefactored/starter-code/Calculator/src/test/java/com/company/CalculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190805/U1M2L8PBD/src/main/java/com/company/Nim.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190805/U1M2L8PBD/src/main/java/com/company/Nim.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U1M3L1Katas/src/main/java/com/company/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U1M3L1Katas/src/main/java/com/company/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U1M3L1Katas/src/test/java/com/company/ClassmatesListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U1M3L1Katas/src/test/java/com/company/ClassmatesListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U1M3L1Katas/src/test/java/com/company/LinkedListAppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U1M3L1Katas/src/test/java/com/company/LinkedListAppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U1M3L1Katas/src/test/java/com/company/SetIteratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U1M3L1Katas/src/test/java/com/company/SetIteratorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LargestCities/.idea/$CACHE_FILE$" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LargestCities/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LargestCities/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LargestCities/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LargestCities/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LargestCities/.idea/dictionaries/ricks_000.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LargestCities/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LargestCities/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LargestCities/LargestCities.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LargestCities/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LargestCities/src/main/java/com/company/City.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
