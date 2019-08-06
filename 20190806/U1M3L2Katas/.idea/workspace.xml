@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d7f6442-cedb-48d9-8f87-ab7590116e99" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../LargestCities/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LargestCities/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LargestCities/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LargestCities/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LargestCities/LargestCities.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LargestCities/src/main/java/com/company/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LargestCities/src/main/java/com/company/City.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/App.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +56,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in U1M3L2Katas (1)">
+  <component name="RunManager" selected="JUnit.All in U1M3L2Katas (2)">
     <configuration name="CarLists" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.collections.CarLists" />
       <module name="U1M3L2Katas" />
@@ -73,20 +70,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IterateAndPrint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.collections.IterateAndPrint" />
+    <configuration name="All in U1M3L2Katas (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="U1M3L2Katas" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.collections.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in U1M3L2Katas (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in U1M3L2Katas (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="U1M3L2Katas" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
@@ -119,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in U1M3L2Katas (2)" />
         <item itemvalue="JUnit.All in U1M3L2Katas (1)" />
         <item itemvalue="JUnit.All in U1M3L2Katas" />
         <item itemvalue="JUnit.AppTest" />
         <item itemvalue="Application.CarLists" />
-        <item itemvalue="Application.IterateAndPrint" />
       </list>
     </recent_temporary>
   </component>

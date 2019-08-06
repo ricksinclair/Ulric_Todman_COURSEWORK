@@ -63,7 +63,7 @@ public class App {
             }
         }
 
-        Map<String, List> returnMap = new HashMap<>();
+        Map<String, List<Car>> returnMap = new HashMap<>();
 
         returnMap.put("Toyota", toyotaList);
         returnMap.put("Ford", fordList);
