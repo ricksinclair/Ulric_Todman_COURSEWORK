@@ -61,9 +61,9 @@ public class City {
         System.out.println(" |       City      |    Population     |");
         System.out.println(" |-----------------|-------------------|");
 
-        citiesMap.forEach((state, city)->{
-            System.out.println(" | "+ city.getName()+"\t\t\t"+city.getPopulation()+"      ");
-        });
+            for(String key: citiesMap.keySet()){
+                System.out.println(" | " + citiesMap.get(key).getName() + "\t\t\t" + citiesMap.get(key).getPopulation() + "      ");
+        }
 
                 }
 
@@ -73,10 +73,10 @@ public class City {
         System.out.println(" |       City      |    Population     |");
         System.out.println(" |-----------------|-------------------|");
 
-        citiesMap.forEach((state, city)->{
-            if(city.population>=userPop) {
-                System.out.println(" | " + city.getName() + "\t\t\t" + city.getPopulation() + "      ");
-            }});
+      for(String key:citiesMap.keySet()){
+            if(citiesMap.get(key).population>=userPop) {
+                System.out.println(" | " + citiesMap.get(key).getName() + "\t\t\t" + citiesMap.get(key).getPopulation() + "      ");
+            }}
 
     }
 

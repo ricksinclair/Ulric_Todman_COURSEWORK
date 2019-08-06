@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d7f6442-cedb-48d9-8f87-ab7590116e99" name="Default Changelist" comment="" />
+    <list default="true" id="6d7f6442-cedb-48d9-8f87-ab7590116e99" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../LargestCities/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LargestCities/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LargestCities/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LargestCities/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LargestCities/LargestCities.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LargestCities/src/main/java/com/company/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LargestCities/src/main/java/com/company/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,11 +34,6 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="840" />
-    <option name="height" value="1027" />
   </component>
   <component name="ProjectId" id="1P28u4pzeq0VgM2JKC3BjpgArPY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -144,7 +145,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
