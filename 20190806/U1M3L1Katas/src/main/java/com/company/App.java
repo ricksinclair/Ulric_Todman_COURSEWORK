@@ -27,7 +27,7 @@ public class App {
         return sum;
     }
 
-    public static ArrayList<String> swapFirstAndLast(ArrayList<String> strings) {
+    public static List<String> swapFirstAndLast(ArrayList<String> strings) {
 
         String temp = strings.get(0);
         strings.set(0, strings.get( strings.size() - 1 ));
@@ -46,7 +46,7 @@ public class App {
         return reversed;
     }
 
-    public static ArrayList<Integer> lessThanFive(ArrayList<Integer> numbers) {
+    public static List<Integer> lessThanFive(ArrayList<Integer> numbers) {
 
         int numLessThanFive = 0;
 
@@ -60,7 +60,7 @@ public class App {
             return null;
         }
 
-        ArrayList<Integer> lessThan = new ArrayList<>(numLessThanFive);
+        List<Integer> lessThan = new ArrayList<>(numLessThanFive);
 
         for(int num : numbers) {
             if ( num < 5 ) {

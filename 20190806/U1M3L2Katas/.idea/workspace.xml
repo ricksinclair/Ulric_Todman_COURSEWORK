@@ -2,19 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d7f6442-cedb-48d9-8f87-ab7590116e99" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/20190806.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U1M3L1Katas/src/main/java/com/company/Classmate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U1M3L1Katas/src/main/java/com/company/ClassmatesList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U1M3L1Katas/src/main/java/com/company/LinkedListApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U1M3L1Katas/src/main/java/com/company/SetIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../LargestCities/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../LargestCities/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../LargestCities/.idea/dictionaries/ricks_000.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../LargestCities/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../LargestCities/src/main/java/com/company/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190731/CalculatorRefactored/starter-code/Calculator/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190731/CalculatorRefactored/starter-code/Calculator/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190731/CalculatorRefactored/starter-code/Calculator/Calculator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190731/CalculatorRefactored/starter-code/Calculator/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190731/CalculatorRefactored/starter-code/Calculator/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190731/CalculatorRefactored/starter-code/Calculator/src/test/java/com/company/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190731/CalculatorRefactored/starter-code/Calculator/src/test/java/com/company/CalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190805/U1M2L8PBD/src/main/java/com/company/Nim.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190805/U1M2L8PBD/src/main/java/com/company/Nim.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U1M3L1Katas/src/main/java/com/company/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U1M3L1Katas/src/main/java/com/company/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U1M3L1Katas/src/test/java/com/company/ClassmatesListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U1M3L1Katas/src/test/java/com/company/ClassmatesListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U1M3L1Katas/src/test/java/com/company/LinkedListAppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U1M3L1Katas/src/test/java/com/company/LinkedListAppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U1M3L1Katas/src/test/java/com/company/SetIteratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U1M3L1Katas/src/test/java/com/company/SetIteratorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/U1M3L2Katas.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/CarLists.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/IterateAndPrint.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/collections/Car.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/collections/CarLists.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/collections/IterateAndPrint.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/collections/MapFun.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/AppTest.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +38,6 @@
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -36,23 +46,13 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/company/collections/MapFun.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/IterateAndPrint.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/collections/IterateAndPrint.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/Car.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/CarLists.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/collections/Car.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/collections/CarLists.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/App.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/testfiles/keysAndValues/output1.txt" />
-        <option value="$PROJECT_DIR$/src/test/java/com/company/AppTest.java" />
-      </list>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -60,80 +60,9 @@
     <option name="width" value="840" />
     <option name="height" value="1027" />
   </component>
+  <component name="ProjectId" id="1P28u4pzeq0VgM2JKC3BjpgArPY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="U1M3L2Katas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="U1M3L2Katas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="U1M3L2Katas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="U1M3L2Katas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="U1M3L2Katas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="U1M3L2Katas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="U1M3L2Katas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="U1M3L2Katas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="U1M3L2Katas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="U1M3L2Katas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="U1M3L2Katas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="U1M3L2Katas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="U1M3L2Katas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="U1M3L2Katas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="U1M3L2Katas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="U1M3L2Katas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="U1M3L2Katas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="U1M3L2Katas" type="462c0819:PsiDirectoryNode" />
-              <item name="testfiles" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -155,7 +84,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AppTest">
+  <component name="RunManager" selected="JUnit.All in U1M3L2Katas">
     <configuration name="CarLists" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.collections.CarLists" />
       <module name="U1M3L2Katas" />
@@ -195,6 +124,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in U1M3L2Katas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="U1M3L2Katas" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="U1M3L2Katas" />
       <extension name="coverage">
@@ -212,6 +149,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in U1M3L2Katas" />
         <item itemvalue="JUnit.AppTest" />
         <item itemvalue="Application.CarLists" />
         <item itemvalue="Application.IterateAndPrint" />
@@ -232,144 +170,16 @@
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="AppTest - 2019.06.17 at 08h 48m 19s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest - 2019.06.17 at 08h 51m 10s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest - 2019.06.17 at 08h 51m 48s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest - 2019.06.17 at 08h 52m 54s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest - 2019.06.17 at 09h 01m 24s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest - 2019.06.17 at 09h 09m 52s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest - 2019.06.17 at 09h 12m 29s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest - 2019.06.17 at 09h 12m 45s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
-    </history-entry>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1916972" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32941177" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-    </layout>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/CarLists.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="42" lean-forward="true" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/collections/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" selection-start-column="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/IterateAndPrint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/collections/IterateAndPrint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="8" lean-forward="true" selection-start-line="34" selection-start-column="8" selection-end-line="37" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/collections/CarLists.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="42" column="37" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="42" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/collections/MapFun.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testfiles/keysAndValues/output1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/company/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2990">
-          <caret line="304" column="56" selection-start-line="304" selection-start-column="56" selection-end-line="304" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="masterDetails">
     <states>

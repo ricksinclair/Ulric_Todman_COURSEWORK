@@ -75,11 +75,17 @@ public class Nim {
         try {
             userNumber = Integer.parseInt(scanner.nextLine());
         } catch (NumberFormatException | NullPointerException nfe) {
-            System.out.println("Stop trying to cheat bro (or sis).");
+            System.out.println("Numbers, we're entering NUMBERS. Stop trying to cheat bro (or sis).");
             pickPile(userName);
         }
-        if (pile - userNumber < 0 || userNumber < 0) {
-            System.out.println("You are trying to cheat. Stop it bro (or sis).");
+        if (pile - userNumber < 0 ) {
+            System.out.println("You can count right? You are trying to cheat. Stop it bro (or sis).");
+            pickPile(userName);
+        } else if (pile == 0){
+            System.out.println("Nice try, "+userName+". That pile is empty.....as in ZERO ITEMS. Choose again:");
+            pickPile(userName);
+        } else if(userNumber < 0){
+            System.out.println("Why so negative, " + userName+"?");
             pickPile(userName);
         }
 
