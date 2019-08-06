@@ -1,0 +1,98 @@
+[
+  {
+    "brand": "LG",
+    "model": "OLED55B8PUA",
+    "price": 1600,
+    "screenSize": 55
+  },
+  {
+    "brand": "LG",
+    "model": "OLED65C8PUA",
+    "price": 2700,
+    "screenSize": 65
+  },
+  {
+    "brand": "Toshiba",
+    "model": "43LF621U19",
+    "price": 200,
+    "screenSize": 43
+  },
+  {
+    "brand": "Samsung",
+    "model": "UN55NU6900BXZA",
+    "price": 400,
+    "screenSize": 55
+  },
+  {
+    "brand": "Sharp",
+    "model": "LC-55LBU591U",
+    "price": 300,
+    "screenSize": 55
+  },
+  {
+    "brand": "LG",
+    "model": "70UK6190PUB",
+    "price": 800,
+    "screenSize": 70
+  },
+  {
+    "brand": "Vizio",
+    "model": "D32F-F1",
+    "price": 170,
+    "screenSize": 32
+  },
+  {
+    "brand": "Samsung",
+    "model": "UN40NU7100FXZA",
+    "price": 380,
+    "screenSize": 40
+  },
+  {
+    "brand": "TCL",
+    "model": "50S425",
+    "price": 300,
+    "screenSize": 50
+  },
+  {
+    "brand": "Sony",
+    "model": "XBR-65X800G",
+    "price": 1200,
+    "screenSize": 65
+  },
+  {
+    "brand": "Samsung",
+    "model": "QN82Q6FNAFXZA",
+    "price": 2700,
+    "screenSize": 82
+  },
+  {
+    "brand": "Sony",
+    "model": "XBR43X800E",
+    "price": 550,
+    "screenSize": 43
+  },
+  {
+    "brand": "Sony",
+    "model": "XBR75X800G",
+    "price": 2000,
+    "screenSize": 75
+  },
+  {
+    "brand": "LG",
+    "model": "OLED65C9PUA",
+    "price": 3500,
+    "screenSize": 65
+  },
+  {
+    "brand": "Samsung",
+    "model": "QN75Q80RAFXZA",
+    "price": 3500,
+    "screenSize": 75
+  },
+  {
+    "brand": "LG",
+    "model": "75SK8070PUA",
+    "price": 1716,
+    "screenSize": 75
+  }
+]

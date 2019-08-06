@@ -1,0 +1,86 @@
+<ArrayList>
+    <item>
+        <brand>Apple</brand>
+        <model>iPhone XS Max</model>
+        <processor>A12</processor>
+        <storage>64</storage>
+        <price>1100</price>
+    </item>
+    <item>
+        <brand>Samsung</brand>
+        <model>S10+</model>
+        <processor>Snapdragon 855</processor>
+        <storage>128</storage>
+        <price>780</price>
+    </item>
+    <item>
+        <brand>OnePlus</brand>
+        <model>6T</model>
+        <processor>Snapdragon 845</processor>
+        <storage>128</storage>
+        <price>545</price>
+    </item>
+    <item>
+        <brand>Google</brand>
+        <model>Pixel 3</model>
+        <processor>Snapdragon 845</processor>
+        <storage>64</storage>
+        <price>485</price>
+    </item>
+    <item>
+        <brand>Huawei</brand>
+        <model>P30 Pro</model>
+        <processor>Kirin 980</processor>
+        <storage>128</storage>
+        <price>600</price>
+    </item>
+    <item>
+        <brand>Huawei</brand>
+        <model>Mate 20 Pro</model>
+        <processor>Kirin 980</processor>
+        <storage>256</storage>
+        <price>680</price>
+    </item>
+    <item>
+        <brand>Samsung</brand>
+        <model>Note 9</model>
+        <processor>Snapdragon 845</processor>
+        <storage>128</storage>
+        <price>650</price>
+    </item>
+    <item>
+        <brand>Honor</brand>
+        <model>View 20</model>
+        <processor>Kirin 980</processor>
+        <storage>128</storage>
+        <price>680</price>
+    </item>
+    <item>
+        <brand>Apple</brand>
+        <model>iPhone XR</model>
+        <processor>A12</processor>
+        <storage>64</storage>
+        <price>650</price>
+    </item>
+    <item>
+        <brand>Samsung</brand>
+        <model>S10e</model>
+        <processor>Snapdragon 855</processor>
+        <storage>128</storage>
+        <price>750</price>
+    </item>
+    <item>
+        <brand>LG</brand>
+        <model>G7 ThinQ</model>
+        <processor>Snapdragon 845</processor>
+        <storage>64</storage>
+        <price>600</price>
+    </item>
+    <item>
+        <brand>Samsung</brand>
+        <model>Fold</model>
+        <processor>Snapdragon 855</processor>
+        <storage>512</storage>
+        <price>1980</price>
+    </item>
+</ArrayList>

@@ -2,8 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d7f6442-cedb-48d9-8f87-ab7590116e99" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../csv/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/motorcycles.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/motorcycles.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/motorcycles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/new_moto_file.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/new_moto_file1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/newclassmatelist.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/src/main/java/com/company/Motorcycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/src/main/java/com/company/csv/AppManualReadArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/src/main/java/com/company/csv/AppManualReadObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/src/main/java/com/company/csv/AppOpenCSVReadArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/src/main/java/com/company/csv/AppOpenCSVReadObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/src/main/java/com/company/json/AppJacksonReadObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/src/main/java/com/company/json/AppJacksonWriteObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/src/main/java/com/company/xml/AppJacksonReadObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/src/main/java/com/company/xml/AppJacksonWriteObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exceptions/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exceptions/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exceptions/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exceptions/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exceptions/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exceptions/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exceptions/src/main/java/com/company/exceptions/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exceptions/src/main/java/com/company/exceptions/App2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exceptions/src/main/java/com/company/exceptions/App3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exceptions/src/main/java/com/company/exceptions/App4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../u1m3l2Maps/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../u1m3l2Maps/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="842bdd59-8403-4fa1-baf9-73c0fba124cb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/motorcycles.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/motorcycles.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/motorcycles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/new_moto_file.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/new_moto_file1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newclassmatelist.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/Motorcycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/csv/AppManualReadArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/csv/AppManualReadObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/csv/AppOpenCSVReadArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/csv/AppOpenCSVReadObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/json/AppJacksonReadObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/json/AppJacksonWriteObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/xml/AppJacksonReadObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/xml/AppJacksonWriteObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exceptions/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exceptions/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exceptions/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exceptions/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exceptions/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exceptions/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exceptions/src/main/java/com/company/exceptions/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exceptions/src/main/java/com/company/exceptions/App2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exceptions/src/main/java/com/company/exceptions/App3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exceptions/src/main/java/com/company/exceptions/App4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../20190806/U1M3L2Katas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../20190806/U1M3L2Katas/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../u1m3l2Maps/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../u1m3l2Maps/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1P3WFcdxDMzhAJwzClHaOu5I1Wx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549300677247" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/company" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.company" />
+      <recent name="com.company.csv" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Bootcamp\Ulric_Todman_COURSEWORK\csv" />
+      <recent name="D:\Bootcamp\Ulric_Todman_COURSEWORK\csv\src\main" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.AppJacksonWriteObjects (1)">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.App" />
+      <module name="csv" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppJacksonReadObjects (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.xml.AppJacksonReadObjects" />
+      <module name="csv" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.xml.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppJacksonWriteObjects (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.xml.AppJacksonWriteObjects" />
+      <module name="csv" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.xml.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppJacksonWriteObjects" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.json.AppJacksonWriteObjects" />
+      <module name="csv" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.json.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppOpenCSVReadObjects" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.csv.AppOpenCSVReadObjects" />
+      <module name="csv" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.csv.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.AppJacksonWriteObjects (1)" />
+      <item itemvalue="Application.AppJacksonReadObjects (1)" />
+      <item itemvalue="Application.AppOpenCSVReadObjects" />
+      <item itemvalue="Application.AppJacksonWriteObjects" />
+      <item itemvalue="Application.App" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AppJacksonWriteObjects (1)" />
+        <item itemvalue="Application.App" />
+        <item itemvalue="Application.AppOpenCSVReadObjects" />
+        <item itemvalue="Application.AppJacksonReadObjects (1)" />
+        <item itemvalue="Application.AppJacksonWriteObjects" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="842bdd59-8403-4fa1-baf9-73c0fba124cb" name="Default Changelist" comment="" />
+      <created>1549033935239</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1549033935239</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="D:/../../.." />
+    </ignored-roots>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

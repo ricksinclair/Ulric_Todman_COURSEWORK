@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a9f1fd69-c5e8-4012-85b3-15dfb23deb27" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../csv/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csv/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csv/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csv/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csv/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csv/motorcycles.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csv/motorcycles.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csv/motorcycles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csv/new_moto_file.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csv/new_moto_file1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csv/newclassmatelist.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csv/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csv/src/main/java/com/company/Motorcycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csv/src/main/java/com/company/csv/AppManualReadArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csv/src/main/java/com/company/csv/AppManualReadObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csv/src/main/java/com/company/csv/AppOpenCSVReadArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csv/src/main/java/com/company/csv/AppOpenCSVReadObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csv/src/main/java/com/company/json/AppJacksonReadObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csv/src/main/java/com/company/json/AppJacksonWriteObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csv/src/main/java/com/company/xml/AppJacksonReadObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csv/src/main/java/com/company/xml/AppJacksonWriteObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/exceptions/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/exceptions/App2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/exceptions/App3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/exceptions/App4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../20190806/U1M3L2Katas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../20190806/U1M3L2Katas/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../u1m3l2Maps/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../u1m3l2Maps/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1P3O1gZ9uv5034XgkM4SyPGa440" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548982967941" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.App4">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.exceptions.App" />
+      <module name="exceptions" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.exceptions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.exceptions.App2" />
+      <module name="exceptions" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.exceptions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.exceptions.App3" />
+      <module name="exceptions" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.exceptions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.exceptions.App4" />
+      <module name="exceptions" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.exceptions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.App" />
+      <item itemvalue="Application.App2" />
+      <item itemvalue="Application.App3" />
+      <item itemvalue="Application.App4" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App4" />
+        <item itemvalue="Application.App3" />
+        <item itemvalue="Application.App2" />
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a9f1fd69-c5e8-4012-85b3-15dfb23deb27" name="Default Changelist" comment="" />
+      <created>1548979715521</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1548979715521</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="D:/../../.." />
+    </ignored-roots>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
