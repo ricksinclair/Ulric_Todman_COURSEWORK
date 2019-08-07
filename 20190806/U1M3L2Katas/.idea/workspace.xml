@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d7f6442-cedb-48d9-8f87-ab7590116e99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../20190807/U1M3L4Katas/src/main/java/com/company/Television.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../20190807/U1M3L4Katas/src/main/java/com/company/TelevisionReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Todman-Ulric/ConverterInterface/src/main/java/com/company/interfaces/Converter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
