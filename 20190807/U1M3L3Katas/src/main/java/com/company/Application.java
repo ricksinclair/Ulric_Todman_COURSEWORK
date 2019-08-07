@@ -16,25 +16,20 @@ public class Application {
 
 
             String chosenPet = Pets.retrievePet(petIndex);
-
             Pets.writePetToFile(chosenPet);
-
             System.out.println("New saved animals file:");
             Pets.readPetsFromFile();
-        }catch (NumberFormatException e){
+        } catch (NumberFormatException e) {
             System.out.println("Please enter a valid number.");
-        }catch(FileNotFoundException e){
-            System.out.println("The following file does not seem to exist:"+e.getMessage());
-        }catch (FileSystemException e){
+        } catch (FileNotFoundException e) {
+            System.out.println("The following file does not seem to exist:" + e.getMessage());
+        } catch (FileSystemException e) {
             System.out.println("Something went wrong while writing your file.");
-        }catch (ArrayIndexOutOfBoundsException e){
+        } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Please choose an available pet.");
-        }
-        catch (IOException e){
+        } catch (IOException e) {
             System.out.println("This is an error: " + e);
-        }
-
-        finally{
+        } finally {
             System.out.println("Have a nice day!");
         }
 
