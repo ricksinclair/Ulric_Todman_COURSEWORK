@@ -9,7 +9,7 @@ public class Farmer extends Character {
         this.stamina = 75;
         this.speed = 10;
         this.attackPower = 1;
-         
+
 
     }
 
