@@ -3,11 +3,11 @@ package com.company;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class FindingAValueInAnArraylist {
+import static com.company.FindingAValueInAnArraylist.genRandom;
 
-    public static int genRandom() {
-        return (int) Math.ceil(Math.random() * 50);
-    }
+
+public class ArraylistThereOrNot {
+
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -22,10 +22,12 @@ public class FindingAValueInAnArraylist {
         int userAnswer = Integer.parseInt(scanner.nextLine());
 
         list.stream().filter(item -> item == userAnswer).forEach(item -> {
-            System.out.println(userAnswer + " is in the ArrayList.");
+            System.out.println("\n" + userAnswer + " is in the ArrayList.");
         });
 
-
-        System.out.println("");
+        if (!list.contains(userAnswer)) {
+            System.out.println("\n" + userAnswer + " is not in the ArrayList.");
+        }
     }
 }
+
