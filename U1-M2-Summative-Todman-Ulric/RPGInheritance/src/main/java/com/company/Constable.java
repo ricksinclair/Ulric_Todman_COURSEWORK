@@ -20,6 +20,11 @@ public class Constable extends Character {
 
     }
 
+    public String getJurisdiction() {
+        return jurisdiction;
+    }
 
-
+    public void setJurisdiction(String jurisdiction) {
+        this.jurisdiction = jurisdiction;
+    }
 }
