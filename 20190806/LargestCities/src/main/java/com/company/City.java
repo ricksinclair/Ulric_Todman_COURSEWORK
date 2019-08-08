@@ -23,7 +23,7 @@ public class City {
         City  losAngeles = new City("Los Angeles", 4563218);
         City  chicago = new City("Chicago", 2716520);
         City  denver = new City("Denver", 704621);
-        City  desMoines = new City("Des Moines", 4563218);
+        City  desMoines = new City("Des Moines", 217517);
         City  atlanta = new City("Atlanta", 486213);
 
         citiesMap = new HashMap<String, City>();
