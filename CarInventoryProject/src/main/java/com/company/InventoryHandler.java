@@ -376,13 +376,44 @@ public class InventoryHandler {
                 filterMenu();
                 break;
             case 5:
-                readFile();
-                System.out.println("Successfully read file");
+                System.out.println("Please confirm you want to overwrite memory with loaded file (Yes or No):");
+                stringChoice = scanner.nextLine().toLowerCase();
+                switch (stringChoice){
+                    case "yes":
+                        readFile();
+                        System.out.println("Successfully read file.");
+                        break;
+                    case"no":
+                        System.out.println("Read operation cancelled.");
+
+                        break;
+                    default:
+                        System.out.println("Invalid option. Returning to main menu");
+                        break;
+
+
+                }
                 mainMenu();
                 break;
             case 6:
-                writeFile();
-                System.out.println("Successfully wrote file.");
+                System.out.println("Please confirm you want to overwrite your file with current changes");
+                stringChoice = scanner.nextLine();
+                switch (stringChoice){
+                    case "yes":
+                        writeFile();
+                        System.out.println("Successfully wrote file.");
+                        break;
+                    case"no":
+                        System.out.println("Write operation cancelled.");
+
+                        break;
+                    default:
+                        System.out.println("Invalid option. Returning to main menu");
+                        break;
+
+
+                }
+
                 mainMenu();
                 break;
             case 7:

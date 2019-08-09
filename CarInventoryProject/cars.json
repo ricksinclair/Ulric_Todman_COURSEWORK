@@ -19,5 +19,40 @@
     "year": 2001,
     "color": "Ferrari Red",
     "mileage": 7238
+  },
+  {
+    "make": "Toyota",
+    "model": "4runner",
+    "year": 2010,
+    "color": "black",
+    "mileage": 29381
+  },
+  {
+    "make": "Lexus",
+    "model": "is300",
+    "year": 2007,
+    "color": "Blue",
+    "mileage": 29381
+  },
+  {
+    "make": "Opel",
+    "model": "Antara",
+    "year": 2009,
+    "color": "white",
+    "mileage": 29120
+  },
+  {
+    "make": "Chrysler",
+    "model": "300",
+    "year": 2004,
+    "color": "Cream",
+    "mileage": 89209
+  },
+  {
+    "make": "Volvo",
+    "model": "XC70",
+    "year": 2013,
+    "color": "silver",
+    "mileage": 68023
   }
 ]
