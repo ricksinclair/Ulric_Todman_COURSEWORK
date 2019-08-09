@@ -2,15 +2,15 @@ package com.company;
 
 public class IceCreamPointOfSale {
 
+    private final int conesPerGallon = 32;//I looked  it up there are 96 scoops in a 3 gallon tub.
+    private final int pintsPerGallon = 8;
+    private final int conesPer3GallonTub = 96;
+    private final int pintsPer3GallonTub = 24;
     private String flavor;
     private double pricePerPint;
     private double pricePerCone;
     private double cost;
     private int gallonsInStock;
-    private final int  conesPerGallon = 32;//I looked  it up there are 96 scoops in a 3 gallon tub.
-    private final int pintsPerGallon =8;
-    private final  int conesPer3GallonTub =96;
-    private final int pintsPer3GallonTub = 24;
 
     public IceCreamPointOfSale(String flavor, double pricePerPint, double pricePerCone, double cost, int gallonsInStock) {
         this.flavor = flavor;
@@ -20,11 +20,11 @@ public class IceCreamPointOfSale {
         this.gallonsInStock = gallonsInStock;
     }
 
-    public void sellItem(){
+    public void sellItem() {
         //subtract from gallonsInStock
     }
 
-    public void replenishStock(){
+    public void replenishStock() {
 
     }
 

@@ -17,13 +17,13 @@ public class IceCreamFactory {
         this.numPendingOrders = numPendingOrders;
     }
 
-    public void sellVat(){
+    public void sellVat() {
 
-}
+    }
 
-public void addOrder(){
+    public void addOrder() {
 
-}
+    }
 
     public double getCostPerVat() {
         return costPerVat;
