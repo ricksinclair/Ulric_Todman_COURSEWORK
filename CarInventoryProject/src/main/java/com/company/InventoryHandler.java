@@ -1,5 +1,16 @@
 package com.company;
 
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -13,6 +24,44 @@ public class InventoryHandler {
     private static List<Car> filteredCars = new ArrayList<Car>();
     private static List<String> currentFilters = new ArrayList<String>(5);
 
+
+    public static void readFile(){
+
+        try{
+            ObjectMapper mapper = new ObjectMapper();
+            carList = mapper.readValue(new File("cars.json"), new TypeReference<List<Car>>(){});
+            clearFilters();
+        } catch (JsonParseException e) {
+            e.printStackTrace();
+        } catch (JsonMappingException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void writeFile(){
+        ObjectMapper mapper = new ObjectMapper();
+        PrintWriter writer  = null;
+        try{
+            String jsonCarList = mapper.writeValueAsString(carList);
+
+            writer = new PrintWriter(new FileWriter("cars.json"));
+
+            writer.println(jsonCarList);
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }finally {
+            if (writer != null) {
+                writer.flush();
+                writer.close();
+            }
+
+
+        }
+    }
 
     public static void displayCar(Car car) {
 
@@ -195,6 +244,7 @@ public class InventoryHandler {
                     listCars(filteredCars);
                 } else {
                     System.out.println("Last car successfully removed!");
+                    clearFilters();
                     mainMenu();
                 }
                 break;
@@ -282,13 +332,13 @@ public class InventoryHandler {
                 "================================================\n\n";
 
 
-        String menuItems = "1 - List all vehicles                                               _________\n" +
+        String menuItems = "1 - List all vehicles                                            _________\n" +
                 "2 - Add a vehicle                                         _.--\"\"'-----,   `\"--.._\n" +
                 "3 - Delete a vehicle                                   .-''   _/_      ; .'\"----,`-,\n" +
                 "4 - Search for a vehicle                             .'      :___:     ; :      ;;`.`.\n" +
-                "5 - Exit Application                                .      _.- _.-    .' :      ::  `..\n" +
-                "                                                 __;..----------------' :: ___  ::   ;;\n" +
-                "                                            .--\"\". '           ___.....`:=(___)-' :--'`.\n" +
+                "5 - Read from file                                  .      _.- _.-    .' :      ::  `..\n" +
+                "6 - Write to file                                __;..----------------' :: ___  ::   ;;\n" +
+                "5 - Exit Application                        .--\"\". '           ___.....`:=(___)-' :--'`.\n" +
                 "                                          .'   .'         .--''__       :       ==:    ;\n" +
                 "                                      .--/    /        .'.''     ``-,   :         :   '`-.\n" +
                 "                                   .\"', :    /       .'-`\\\\       .--.\\ :         :  ,   _\\\n" +
@@ -325,6 +375,16 @@ public class InventoryHandler {
                 filterMenu();
                 break;
             case 5:
+                readFile();
+                System.out.println("Successfully read file");
+                mainMenu();
+                break;
+            case 6:
+                writeFile();
+                System.out.println("Successfully wrote file.");
+                mainMenu();
+                break;
+            case 7:
                 System.out.println("Goodbye!");
                 break;
             default:

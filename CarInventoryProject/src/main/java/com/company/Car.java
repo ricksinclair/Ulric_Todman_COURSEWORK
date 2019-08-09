@@ -8,6 +8,10 @@ private int year;
 private String color;
 private int mileage;
 
+
+    public Car(){
+
+    }
     public Car(String make, String model, int year, String color, int mileage) {
         this.make = make;
         this.model = model;
