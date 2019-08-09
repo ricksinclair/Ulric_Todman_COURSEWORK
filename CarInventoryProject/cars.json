@@ -1,1 +1,23 @@
-[{"make":"Acura","model":"MDX","year":2017,"color":"Red","mileage":29389}]
+[
+  {
+    "make": "Acura",
+    "model": "MDX",
+    "year": 2017,
+    "color": "Red",
+    "mileage": 29389
+  },
+  {
+    "make": "Toyota",
+    "model": "Carolla",
+    "year": 2000,
+    "color": "burgundy",
+    "mileage": 140349
+  },
+  {
+    "make": "Ferrari",
+    "model": "Enzo",
+    "year": 2001,
+    "color": "Ferrari Red",
+    "mileage": 7238
+  }
+]

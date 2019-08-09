@@ -87,6 +87,7 @@ public class InventoryHandler {
         } else {
             list.forEach(InventoryHandler::displayCar);//Intellij told me this is a method reference and I could shorten lambdas with it
             stringChoice = "";              //It worked so I'll keep it and look it up!
+            System.out.println("Current Filters: " + currentFilters);
             System.out.println("Press the enter/return key to proceed.");
             stringChoice = scanner.nextLine();
             stringChoice = "";
@@ -120,12 +121,12 @@ public class InventoryHandler {
 
     public static List<Car> filterByColor(String color, List<Car> list) {
         return list.stream().filter(car -> car.getColor().
-                toLowerCase().equals(color.toLowerCase())).collect(Collectors.toList());
+                toLowerCase().contains(color.toLowerCase())).collect(Collectors.toList());
     }
 
 
     public static List<Car> filterByMileage(int mileage, List<Car> list) {
-        return list.stream().filter(car -> car.getMileage() < mileage).collect(Collectors.toList());
+        return list.stream().filter(car ->  car.getMileage() <=  mileage).collect(Collectors.toList());
     }
 
     public static void filterMenu() {
@@ -185,20 +186,20 @@ public class InventoryHandler {
                     filterMenu();
                 }
                 currentFilters.add("year - " + userChoice);
-                filterByYear(userChoice, filteredCars);
+               filteredCars =  filterByYear(userChoice, filteredCars);
                 listCars(filteredCars);
                 filterMenu();
                 break;
             case 5:
-                System.out.print("Please enter the mileage: ");
+                System.out.print("Please enter the max mileage: ");
                 try {
                     userChoice = Integer.parseInt(scanner.nextLine());
                 } catch (NumberFormatException e) {
                     System.out.println("Valid number not entered. Going back to filter menu.");
                     filterMenu();
                 }
-                currentFilters.add("Mileage - " + userChoice);
-                filterByMileage(userChoice, filteredCars);
+                currentFilters.add("Max mileage - " + userChoice);
+                filteredCars = filterByMileage(userChoice, filteredCars);
                 listCars(filteredCars);
                 filterMenu();
                 break;
