@@ -66,7 +66,7 @@ public class App {
 
         if (carList.size() == 0) {
             System.out.println("==========ERROR====================================================================");
-            System.out.println("There are no cars to delete. Please add cars if you want to perform this operation.");
+            System.out.println("There are no cars to delete. Please add cars if you wish to perform this operation.");
             System.out.println("===================================================================================");
             userMenu();
         }
