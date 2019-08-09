@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6039a80f-b4af-44ff-b140-dacc9750adaf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../U1-M2-Summative-Todman-Ulric/IceCreamClassDesign/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1-M2-Summative-Todman-Ulric/IceCreamClassDesign/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1-M2-Summative-Todman-Ulric/IceCreamClassDesign/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1-M2-Summative-Todman-Ulric/IceCreamClassDesign/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1-M2-Summative-Todman-Ulric/IceCreamClassDesign/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1-M2-Summative-Todman-Ulric/IceCreamClassDesign/IceCreamClassDesign.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1-M2-Summative-Todman-Ulric/IceCreamClassDesign/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1-M2-Summative-Todman-Ulric/IceCreamClassDesign/src/main/java/com/company/IceCreamFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1-M2-Summative-Todman-Ulric/IceCreamClassDesign/src/main/java/com/company/IceCreamPointOfSale.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1-M2-Summative-Todman-Ulric/RPGInheritance/src/main/java/com/company/Warrior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/InventoryHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U1-M2-Summative-Todman-Ulric/IceCreamClassDesign/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../U1-M2-Summative-Todman-Ulric/IceCreamClassDesign/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +88,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
