@@ -25,22 +25,18 @@ public class InventoryHandler {
     private static List<String> currentFilters = new ArrayList<String>(5);
 
 
-    public static void readFile(){
+    private static void readFile(){
 
         try{
             ObjectMapper mapper = new ObjectMapper();
             carList = mapper.readValue(new File("cars.json"), new TypeReference<List<Car>>(){});
             clearFilters();
-        } catch (JsonParseException e) {
-            e.printStackTrace();
-        } catch (JsonMappingException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    public static void writeFile(){
+    private static void writeFile(){
         ObjectMapper mapper = new ObjectMapper();
         PrintWriter writer  = null;
         try{
@@ -49,11 +45,9 @@ public class InventoryHandler {
             writer = new PrintWriter(new FileWriter("cars.json"));
 
             writer.println(jsonCarList);
-        } catch (JsonProcessingException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             if (writer != null) {
                 writer.flush();
                 writer.close();
@@ -63,7 +57,7 @@ public class InventoryHandler {
         }
     }
 
-    public static void displayCar(Car car) {
+    private static void displayCar(Car car) {
 
         System.out.println("||===========================");
         System.out.println("|| Make: " + car.getMake());
@@ -77,7 +71,7 @@ public class InventoryHandler {
 
     }
 
-    public static void listCars(List<Car> list) {
+    private static void listCars(List<Car> list) {
         Scanner scanner = new Scanner(System.in);
         if (list.size() == 0) {
             System.out.println("||===ERROR========================================||");
@@ -98,38 +92,38 @@ public class InventoryHandler {
     }
 
 
-    public static void clearFilters() {
+    private static void clearFilters() {
         filteredCars.clear();
         filteredCars.addAll(carList);
         currentFilters.clear();
     }
 
-    public static List<Car> filterByMake(String make, List<Car> list) {
+    private static List<Car> filterByMake(String make, List<Car> list) {
         return list.stream().filter(car -> car.getMake()
                 .toLowerCase().equals(make.toLowerCase())).collect(Collectors.toList());
     }
 
-    public static List<Car> filterByModel(String model, List<Car> list) {
+    private static List<Car> filterByModel(String model, List<Car> list) {
         return list.stream().filter(car -> car.getModel()
                 .toLowerCase().equals(model.toLowerCase())).collect(Collectors.toList());
     }
 
-    public static List<Car> filterByYear(int year, List<Car> list) {
+    private static List<Car> filterByYear(int year, List<Car> list) {
         return list.stream().filter(car -> car.getYear() == year).collect(Collectors.toList());
     }
 
 
-    public static List<Car> filterByColor(String color, List<Car> list) {
+    private static List<Car> filterByColor(String color, List<Car> list) {
         return list.stream().filter(car -> car.getColor().
                 toLowerCase().contains(color.toLowerCase())).collect(Collectors.toList());
     }
 
 
-    public static List<Car> filterByMileage(int mileage, List<Car> list) {
+    private static List<Car> filterByMileage(int mileage, List<Car> list) {
         return list.stream().filter(car ->  car.getMileage() <=  mileage).collect(Collectors.toList());
     }
 
-    public static void filterMenu() {
+    private static void filterMenu() {
         Scanner scanner = new Scanner(System.in);
         String menu = "Please choose from the below options:\n" +
                 "1 - Filter by make\n" +
@@ -216,7 +210,7 @@ public class InventoryHandler {
     }
 
 
-    public static void deleteCar() {
+    private static void deleteCar() {
         int numberChoice = 0;
         if (carList.size() == 0) {
             System.out.println("||===========ERROR=====================================================================||");
@@ -265,7 +259,7 @@ public class InventoryHandler {
     }
 
 
-    public static void addCar() {
+    private static void addCar() {
         int inputtedMileage = 0;
         int inputtedYear = 0;
         System.out.println("\n\n\n\n\n\n\n\n");
@@ -323,7 +317,7 @@ public class InventoryHandler {
     }
 
 
-    public static void mainMenu() {
+    static void mainMenu() {
         int numberChoice = 0;
         Scanner scanner = new Scanner(System.in);
 
