@@ -7,6 +7,6 @@ public class App {
     public static void main(String[] args) {
         InventoryHandler ih = new InventoryHandler();
 
-        ih.mainMenu();
+        InventoryHandler.mainMenu();
     }
 }

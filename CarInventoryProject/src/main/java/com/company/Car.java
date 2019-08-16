@@ -12,7 +12,7 @@ private int mileage;
     public Car(){
 
     }
-    public Car(String make, String model, int year, String color, int mileage) {
+    Car(String make, String model, int year, String color, int mileage) {
         this.make = make;
         this.model = model;
         this.year = year;
@@ -20,7 +20,7 @@ private int mileage;
         this.mileage = mileage;
     }
 
-    public String getMake() {
+    String getMake() {
         return make;
     }
 
@@ -28,7 +28,7 @@ private int mileage;
         this.make = make;
     }
 
-    public String getModel() {
+    String getModel() {
         return model;
     }
 
@@ -36,7 +36,7 @@ private int mileage;
         this.model = model;
     }
 
-    public int getYear() {
+    int getYear() {
         return year;
     }
 
@@ -44,7 +44,7 @@ private int mileage;
         this.year = year;
     }
 
-    public String getColor() {
+    String getColor() {
         return color;
     }
 
@@ -52,7 +52,7 @@ private int mileage;
         this.color = color;
     }
 
-    public int getMileage() {
+    int getMileage() {
         return mileage;
     }
 
