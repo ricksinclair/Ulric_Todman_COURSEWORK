@@ -20,7 +20,7 @@ public class InventoryHandler {
 
     private static String stringChoice;
     private static List<Car> carList = new ArrayList<Car>();
-    private static Car currentVehicle;
+    private static Car currentVehicle;//going to use this to add contextual actions.
     private static List<Car> filteredCars = new ArrayList<Car>();
     private static List<String> currentFilters = new ArrayList<String>(5);
 
@@ -226,8 +226,7 @@ public class InventoryHandler {
         }
 
         Scanner scanner = new Scanner(System.in);
-        carList.stream().forEach(car ->
-                displayCar(car));
+        carList.forEach(InventoryHandler::displayCar);
         System.out.println("Please select the car that you would like to delete. (enter its associated index number):");
         numberChoice = Integer.parseInt(scanner.nextLine());
         System.out.println("Are you sure you want to delete the below car?(Yes or no)");

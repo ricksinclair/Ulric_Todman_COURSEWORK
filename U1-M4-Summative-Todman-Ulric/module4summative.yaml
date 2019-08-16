@@ -1,0 +1,80 @@
+openapi: 3.0.0
+info:
+  version: 0.0.1
+  title: U1-M4-Summative-Todman-Ulric
+  description: API endpoints for Module 4 Summative Assement
+servers:
+  - url: http://localhost:8080
+    description: local development server
+    
+paths:
+  /quote:
+    get:
+      summary: provides random quote
+      responses:
+        '200':
+          description: requested quote
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Quote'
+                
+  /word:
+    get:
+      summary: provides random word and definition.
+      responses:
+        '200':
+          description: requested word
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Definition'
+  /magic:
+    post:
+      summary: provides super accurate answers to life's most meaningful questions.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Question'
+              
+      responses:
+        '200':
+          description: requested answer
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Answer'
+        
+        
+              
+              
+components:
+  schemas:
+    Quote:
+      type: object
+      properties:
+        author:
+          type: string
+        quote:
+          type: string
+    Definition:
+      type: object
+      properties:
+        word:
+          type: string
+        definition:
+          type: string
+    Question:
+      type: object
+      properties:
+        question:
+          type: string
+    Answer:
+      type: object
+      properties:
+        question:
+          type: string
+        answer:
+          type: string
