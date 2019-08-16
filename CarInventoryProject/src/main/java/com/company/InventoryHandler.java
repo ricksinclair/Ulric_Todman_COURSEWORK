@@ -170,6 +170,7 @@ public class InventoryHandler {
                 filteredCars = filterByColor(userQuery, filteredCars);
                 listCars(filteredCars);
                 filterMenu();
+                
                 break;
             case 4:
                 System.out.print("Please enter the year: ");
