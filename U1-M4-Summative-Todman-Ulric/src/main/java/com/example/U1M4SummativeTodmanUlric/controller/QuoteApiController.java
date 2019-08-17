@@ -40,7 +40,7 @@ public class QuoteApiController {
                 "Stephen Hawking"));
         quotesList.add(new Quote("If we cannot now end our differences, at least we can help make the world safe for diversity. For, in the final analysis, our most basic common  link is that we  all inhabit this small planet. We all breathe the same air. We all cherish our children's future. And we are all mortal.",
                 "John Fitzgerald Kennedy"));
-        return quotesList.get(random.nextInt(quotesList.size() - 1));
+        return quotesList.get(random.nextInt(quotesList.size() ));
     }
 
 }
