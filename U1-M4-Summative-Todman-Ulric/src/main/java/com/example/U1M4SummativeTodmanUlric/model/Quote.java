@@ -1,7 +1,5 @@
 package com.example.U1M4SummativeTodmanUlric.model;
 
-import javax.validation.constraints.NotNull;
-
 public class Quote {
     private String quote;
     private String Author;
