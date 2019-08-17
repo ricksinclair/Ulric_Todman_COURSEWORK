@@ -4,6 +4,9 @@ public class Quote {
     private String quote;
     private String Author;
 
+    public Quote(){
+
+    }
     public Quote(String quote, String author) {
         this.quote = quote;
         Author = author;

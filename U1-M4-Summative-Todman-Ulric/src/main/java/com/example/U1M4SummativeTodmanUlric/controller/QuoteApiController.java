@@ -16,7 +16,7 @@ public class QuoteApiController {
 
 
     @RequestMapping(value = "/quote", method = RequestMethod.GET)
-    @ResponseStatus(value = HttpStatus.OK)
+    @ResponseStatus(code = HttpStatus.OK)
     public Quote getQuote() {
         Random random = new Random();
         List<Quote> quotesList = new ArrayList<Quote>();

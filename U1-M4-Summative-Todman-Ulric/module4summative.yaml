@@ -71,6 +71,8 @@ components:
       properties:
         question:
           type: string
+      required:
+        - question
     Answer:
       type: object
       properties:
