@@ -2,7 +2,7 @@ openapi: 3.0.0
 info:
   version: 0.0.1
   title: U1-M4-Summative-Todman-Ulric
-  description: API endpoints for Module 4 Summative Assement
+  description: API endpoints for Module 4 Summative Assesment
 servers:
   - url: http://localhost:8080
     description: local development server
