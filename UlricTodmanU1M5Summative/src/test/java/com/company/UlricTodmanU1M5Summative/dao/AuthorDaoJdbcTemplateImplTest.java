@@ -104,6 +104,6 @@ public class AuthorDaoJdbcTemplateImplTest {
         Author author2 = authorDao.getAuthor(author.getAuthorId());
         assertEquals(author, author2);
     }
-    
+
 
 }

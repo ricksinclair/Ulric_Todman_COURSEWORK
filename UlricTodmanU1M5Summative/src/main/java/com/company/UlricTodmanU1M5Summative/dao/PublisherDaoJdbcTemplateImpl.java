@@ -24,9 +24,15 @@ public class PublisherDaoJdbcTemplateImpl implements PublisherDao {
             "UPDATE publisher SET name = ?, street = ?, city = ?, state = ?, postal_code = ?, phone = ?, email = ? where publisher_id = ?";
     private static final String DELETE_PUBLISHER_SQL =
             "DELETE FROM publisher WHERE publisher_id = ?";
+    private JdbcTemplate jdbcTemplate;
 
-    //Object Mapper Helper Method
-    private Publisher mapRowToPublisher(ResultSet rs, int rowNum) throws SQLException{
+    @Autowired
+    public PublisherDaoJdbcTemplateImpl(JdbcTemplate newJdbcTemplate) {
+        this.jdbcTemplate = newJdbcTemplate;
+    }
+
+    //Object mapper helper method
+    private Publisher mapRowToPublisher(ResultSet rs, int rowNum) throws SQLException {
         Publisher publisher = new Publisher();
         publisher.setPublisherId(rs.getInt("publisher_id"));
         publisher.setName(rs.getString("name"));
@@ -38,13 +44,6 @@ public class PublisherDaoJdbcTemplateImpl implements PublisherDao {
         publisher.setEmail(rs.getString("email"));
         return publisher;
     }
-    private JdbcTemplate jdbcTemplate;
-
-    @Autowired
-    public PublisherDaoJdbcTemplateImpl(JdbcTemplate newjdbcTemplate){
-        this.jdbcTemplate = newjdbcTemplate;
-    }
-
 
     @Override
     @Transactional
@@ -59,16 +58,16 @@ public class PublisherDaoJdbcTemplateImpl implements PublisherDao {
                 publisher.getPhone(),
                 publisher.getEmail());
 
-        int id = jdbcTemplate.queryForObject("select last_insert_id()", Integer.class);
+        int id = jdbcTemplate.queryForObject("SELECT last_insert_id()", Integer.class);
         publisher.setPublisherId(id);
         return publisher;
     }
 
     @Override
     public Publisher getPublisher(int publisherId) {
-        try{
+        try {
             return jdbcTemplate.queryForObject(SELECT_PUBLISHER_SQL, this::mapRowToPublisher, publisherId);
-        }catch (EmptyResultDataAccessException e){
+        } catch (EmptyResultDataAccessException e) {
             return null;
         }
     }
