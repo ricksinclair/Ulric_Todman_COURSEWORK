@@ -29,7 +29,7 @@ public class CoffeeInventoryDaoJdbcTemplateImpl implements CoffeeInventoryDao{
             "DELETE from coffee where coffee_id = ?";
 
     private static final String UPDATE_COFFEE_SQL =
-            "UPDATE coffee SET                                                                               name = ?, count = ?, unit_price = ?, description = ?, type = ?, roaster_id = ? WHERE coffee_id = ?";
+            "UPDATE coffee SET  name = ?, count = ?, unit_price = ?, description = ?, type = ?, roaster_id = ? WHERE coffee_id = ?";
 
     private static final String SELECT_COFFEE_BY_ROASTER_SQL =
             "SELECT * FROM  coffee WHERE roaster_id = ?";
