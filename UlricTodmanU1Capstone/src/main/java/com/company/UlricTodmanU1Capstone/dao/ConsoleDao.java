@@ -12,7 +12,7 @@ public interface ConsoleDao {
 
     List<Console> getAllConsoles();
 
-    List<Console> getConsolesByManufacturer();
+    List<Console> getConsolesByManufacturer( String manufacturer);
 
     void updateConsole(Console console);
 

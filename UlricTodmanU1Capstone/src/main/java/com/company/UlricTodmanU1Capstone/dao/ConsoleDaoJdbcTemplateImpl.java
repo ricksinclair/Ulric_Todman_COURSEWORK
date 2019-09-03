@@ -21,7 +21,7 @@ public class ConsoleDaoJdbcTemplateImpl implements ConsoleDao{
     }
 
     @Override
-    public List<Console> getConsolesByManufacturer() {
+    public List<Console> getConsolesByManufacturer(String manufacturer) {
         return null;
     }
 
