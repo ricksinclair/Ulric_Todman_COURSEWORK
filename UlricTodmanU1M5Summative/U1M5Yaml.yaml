@@ -1,0 +1,331 @@
+openapi: 3.0.0
+info:
+  title: U1M5Summative
+  description: Book Store API using MySQL
+  version: 0.0.1
+servers: 
+  - url: http://localhost:8080
+    description: my local testing server
+paths:
+  /publisher:
+    post:
+      summary: add publisher
+      description: add a new Publisher object.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Publisher'
+      responses:
+        '201':
+          description: A publisher object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Publisher'
+        '400':
+            description: Invalid request syntax
+          
+        '422':
+            description: Incomplete city object information
+  
+    get:
+      summary: Retrieve list of all publishers
+      responses:
+        '200':
+          description: provided list of all publishers
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                   $ref: '#/components/schemas/Publisher'                    
+                  
+                  
+                  
+                  
+          
+            
+  /publisher/{publisherId}:
+    delete:
+      summary: Deletes the entry for the publisher with the given id
+      parameters: 
+        - name: publisherId
+          in: path
+          required: true
+          description: publisherId of the publisher you'd like to delete
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Publisher sucessfully deleted.
+        '400':
+          description: "Invalid request syntax"
+    get:
+      summary: get one city by name
+      parameters: 
+        - name: publisherId
+          in: path
+          required: true
+          description: publisherId of the publisher you'd like to view
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: the pubilsher object you request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Publisher'
+        '400':
+          description: "Invalid request syntax"
+    
+  /book:
+    post:
+      summary: add book
+      description: add a new Book object
+      requestBody:
+        required: true
+        content:
+          application/json:
+              schema:
+                $ref: '#/components/schemas/Book'
+      responses:
+          '201':
+            description: A book object
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/Book'
+          '400':
+              description: Invalid request syntax
+          '422':
+              description: Incomplete book object information
+    get:
+        summary: Retrieve list of all books
+        responses:
+          '200':
+            description: provided list of all books
+            content:
+             application/json:
+                schema:
+                  type: array
+                  items:
+                   $ref: '#/components/schemas/Book'   
+                  
+                  
+                  
+          
+            
+  /book/{bookId}:
+      delete:
+        summary: Deletes the entry for the book with the given id
+        parameters: 
+          - name: bookId
+            in: path
+            required: true
+            description: bookId of the book you'd like to delete
+            schema:
+              type: integer
+        responses:
+          '200':
+            description: Book sucessfully deleted.
+          '400':
+            description: "Invalid request syntax"
+      get:
+        summary: get one book by name
+      
+        parameters: 
+          - name: bookId
+            in: path
+            required: true
+            description: bookId of the book you'd like to view
+            schema:
+              type: integer
+        responses:
+          '200':
+            description: the book object you request.
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/Book'
+          '400':
+            description: "Invalid request syntax"
+  /Book/byAuthor/{authorId}:
+    get:
+      summary: Get a list of books by a given author
+      parameters:
+        - name: authorId
+          in: path
+          required: true
+          description: authorId of the author whose books you wish to view
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: the list of books you requested
+            y
+      
+  /Author:
+    post:
+      summary: add author
+      description: add a new author object
+      requestBody:
+        required: true
+        content:
+          application/json:
+              schema:
+                $ref: '#/components/schemas/Author'
+      responses:
+          '201':
+            description: An author object
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/Author'
+          '400':
+              description: Invalid request syntax
+          '422':
+              description: Incomplete author object information
+    get:
+        summary: Retrieve list of all authors
+        responses:
+          '200':
+            description: provided list of all authors 
+            content:
+             application/json:
+                schema:
+                  type: array
+                  items:
+                   $ref: '#/components/schemas/Author'   
+                  
+                  
+                  
+                  
+          
+            
+  /Author/{authorId}:
+      delete:
+        summary: Deletes the entry for the author with the given id
+        parameters: 
+          - name: authorId
+            in: path
+            required: true
+            description: authorId of the author I'd like to delete
+            schema:
+              type: integer
+        responses:
+          '200':
+            description: Author sucessfully deleted.
+          '400':
+            description: "Invalid request syntax"
+      get:
+        summary: get one book by name
+      
+        parameters: 
+          - name: authorId
+            in: path
+            required: true
+            description: authorId of the book you'd like to view
+            schema:
+              type: integer
+        responses:
+          '200':
+            description: the author object you request.
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/Author'
+          '400':
+            description: "Invalid request syntax"
+    
+  
+      
+      
+        
+components:
+  schemas:
+    Publisher:
+      properties:
+        publisherId:
+          type: integer
+        name:
+          type: string
+        street:
+          type: string
+        city:
+          type: string
+        state: 
+          type: string
+        postalCode:
+          type: string
+        phone:
+          type: string
+        email:
+          type: string
+          
+      required: 
+        - name
+        - street
+        - city
+        - state
+        - postalCode
+        - phone
+        - email
+    Book:
+      properties:
+        bookId: 
+          type: integer
+        isbn:
+          type: string
+        publishDate:
+          type: string
+        authorId: 
+          type: integer
+        title:
+          type: string
+        publisherId:
+          type: integer
+        price:
+          type: number
+      required: 
+        - publisherId
+        - isbn
+        - authorId
+        - price
+        - publishDate
+        - title
+    Author:
+      properties:
+        authorId:
+          type: integer
+        firstName:
+          type: string
+        lastName: 
+          type: string
+        street:
+          type: string
+        city:
+          type: string
+        state:
+          type: string
+        postalCode: 
+          type: string
+        phone:
+          type: string
+        email:
+          type: string
+          
+      required: 
+        - firstName
+        - lastName
+        - street
+        - city
+        - state
+        - postalCode
+        - phone
+        - email
+        
+        
+    
