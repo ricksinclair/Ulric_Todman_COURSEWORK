@@ -3,13 +3,15 @@ package com.company.UlricTodmanU1M5Summative.model;
 import java.util.Objects;
 
 public class Publisher {
+
+
     private int publisherId;
     private String name;
     private String street;
     private String city;
     private String state;
-    private String postalCode;
     private String phone;
+    private String postalCode;
     private String email;
 
     public int getPublisherId() {

@@ -34,7 +34,7 @@ public class AuthorDaoJdbcTemplateImplTest {
     }
 
     @Test
-    public void addGetDeleteAuthor(){
+    public void addGetDeleteAuthor() {
         Author author = new Author();
         author.setFirstName("John");
         author.setLastName("Doe");
@@ -55,7 +55,7 @@ public class AuthorDaoJdbcTemplateImplTest {
     }
 
     @Test
-    public void getAllAuthors(){
+    public void getAllAuthors() {
         Author author = new Author();
         author.setFirstName("John");
         author.setLastName("Doe");
@@ -84,7 +84,7 @@ public class AuthorDaoJdbcTemplateImplTest {
     }
 
     @Test
-    public void updateAuthor(){
+    public void updateAuthor() {
         Author author = new Author();
         author.setFirstName("John");
         author.setLastName("Doe");

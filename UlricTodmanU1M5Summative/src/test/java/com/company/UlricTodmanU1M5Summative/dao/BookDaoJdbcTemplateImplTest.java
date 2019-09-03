@@ -24,12 +24,12 @@ public class BookDaoJdbcTemplateImplTest {
     @Autowired
     protected PublisherDao publisherDao;
     @Autowired
-    protected  AuthorDao authorDao;
+    protected AuthorDao authorDao;
     @Autowired
     protected BookDao bookDao;
 
     @Before
-    public void setUp() throws Exception{
+    public void setUp() throws Exception {
         //clean out the test db
         List<Book> bookList = bookDao.getAllBooks();
         bookList.stream().forEach(book -> bookDao.deleteBook(book.getBookId()));
@@ -49,7 +49,7 @@ public class BookDaoJdbcTemplateImplTest {
 
 
     @Test
-    public void addGetDeleteBook(){
+    public void addGetDeleteBook() {
         //add publishers and authors as prerequisite table entries/foreign keys.
         Publisher publisher = new Publisher();
         publisher.setName("Random House");
@@ -88,7 +88,7 @@ public class BookDaoJdbcTemplateImplTest {
     }
 
     @Test
-    public void getAllBooks(){
+    public void getAllBooks() {
         //add publishers and authors as prerequisite table entries/foreign keys.
         Publisher publisher = new Publisher();
         publisher.setName("Random House");
@@ -131,7 +131,7 @@ public class BookDaoJdbcTemplateImplTest {
     }
 
     @Test
-    public void getBooksByAuthor(){
+    public void getBooksByAuthor() {
         //add publishers and authors as prerequisite table entries/foreign keys.
         Publisher publisher = new Publisher();
         publisher.setName("Random House");
@@ -195,8 +195,9 @@ public class BookDaoJdbcTemplateImplTest {
         assertEquals(fullBookList.size(), 3);
 
     }
+
     @Test
-    public void updateBook(){
+    public void updateBook() {
         //add publishers and authors as prerequisite table entries/foreign keys.
         Publisher publisher = new Publisher();
         publisher.setName("Random House");
@@ -207,6 +208,7 @@ public class BookDaoJdbcTemplateImplTest {
         publisher.setEmail("randomEmail@randomhouse.com");
         publisher.setPhone("212-867-5309");
         publisher = publisherDao.addPublisher(publisher);
+
         Author author = new Author();
         author.setFirstName("John");
         author.setLastName("Doe");
@@ -217,6 +219,7 @@ public class BookDaoJdbcTemplateImplTest {
         author.setPhone("212-555-2332");
         author.setEmail("john.doe@gmail.com");
         author = authorDao.addAuthor(author);
+
         Book book1 = new Book();
         book1.setIsbn("82973918273");
         book1.setAuthorId(author.getAuthorId());
@@ -225,7 +228,6 @@ public class BookDaoJdbcTemplateImplTest {
         book1.setPublishDate(Date.valueOf("2019-08-26"));
         book1.setTitle("Java: A love story");
         book1 = bookDao.addBook(book1);
-
         book1.setTitle("A WORK IN PROGRESS: MY LIFE CODING JAVA");
         bookDao.updateBook(book1);
         Book book2 = bookDao.getBook(book1.getBookId());
