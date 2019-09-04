@@ -8,14 +8,13 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
-public class SalesTaxRateDaoJdbcTemplateImplTest {
-
+public class ProcessingFeeDaoJdbcTemplateImplTest {
     @Autowired
-    SalesTaxRateDao salesTaxRateDao;
+    ProcessingFeeDao processingFeeDao;
 
     @Test
-    public void getTaxRate(){
-        
+       public void  getProcessingFee(){
+
     }
 
 }
