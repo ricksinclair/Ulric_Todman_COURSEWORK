@@ -10,5 +10,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 public class SalesTaxRateDaoJdbcTemplateImplTest {
 
     @Autowired
-    SalesTaxRateDao salesTaxRateDao
+    SalesTaxRateDao salesTaxRateDao;
+
+
 }
