@@ -6,22 +6,9 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class SalesTaxRateDaoJdbcTemplateImpl implements SalesTaxRateDao{
     @Override
-    public SalesTaxRate addTaxRate(SalesTaxRate salesTaxRate) {
-        return null;
-    }
-
-    @Override
     public SalesTaxRate getTaxRate(String state) {
         return null;
     }
 
-    @Override
-    public void updateTaxRate(SalesTaxRate salesTaxRate) {
-
     }
 
-    @Override
-    public void deleteTaxRate(String state) {
-
-    }
-}
