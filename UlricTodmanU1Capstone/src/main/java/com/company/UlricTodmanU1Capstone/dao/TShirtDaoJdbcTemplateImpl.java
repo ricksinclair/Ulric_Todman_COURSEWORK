@@ -1,9 +1,11 @@
 package com.company.UlricTodmanU1Capstone.dao;
 
 import com.company.UlricTodmanU1Capstone.model.TShirt;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public class TShirtDaoJdbcTemplateImpl implements TShirtDao{
 
     @Override

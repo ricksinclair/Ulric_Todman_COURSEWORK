@@ -33,7 +33,7 @@ public class TShirtDaoJdbcTemplateImplTest {
         TShirt tShirt = new TShirt();
         tShirt.setSize("XL");
         tShirt.setColor("Black");
-        tShirt.setDescription("Black Bella Canvas shirt featuring COD theme");
+        tShirt.setDescription("Black Bella Canvas shirt featuring COD graphic");
         tShirt.setPrice(new BigDecimal("24.95"));
         tShirt.setQuantity(20);
         tShirt = tShirtDao.addTShirt(tShirt);
@@ -49,7 +49,7 @@ public class TShirtDaoJdbcTemplateImplTest {
         TShirt tShirt = new TShirt();
         tShirt.setSize("XL");
         tShirt.setColor("Black");
-        tShirt.setDescription("Black Bella Canvas shirt featuring COD theme");
+        tShirt.setDescription("Black Bella Canvas shirt featuring COD graphic");
         tShirt.setPrice(new BigDecimal("24.95"));
         tShirt.setQuantity(20);
         tShirt = tShirtDao.addTShirt(tShirt);
@@ -58,5 +58,53 @@ public class TShirtDaoJdbcTemplateImplTest {
         TShirt tShirt2 = tShirtDao.getTShirt(tShirt.getTShirtId());
         assertEquals(tShirt, tShirt2);
 
+    }
+
+    @Test
+    public void listShirts(){
+        TShirt tShirt = new TShirt();
+        tShirt.setSize("XL");
+        tShirt.setColor("Black");
+        tShirt.setDescription("Black Bella Canvas shirt featuring COD graphic");
+        tShirt.setPrice(new BigDecimal("24.95"));
+        tShirt.setQuantity(20);
+        tShirt = tShirtDao.addTShirt(tShirt);
+
+        tShirt.setSize("L");
+        tShirt.setColor("Black");
+        tShirt.setDescription("Black Bella Canvas shirt featuring COD graphic");
+        tShirt.setPrice(new BigDecimal("24.95"));
+        tShirt.setQuantity(20);
+        tShirt = tShirtDao.addTShirt(tShirt);
+
+        tShirt.setSize("L");
+        tShirt.setColor("Red");
+        tShirt.setDescription("Black Bella Canvas shirt featuring COD graphic");
+        tShirt.setPrice(new BigDecimal("24.95"));
+        tShirt.setQuantity(20);
+        tShirt = tShirtDao.addTShirt(tShirt);
+
+        tShirt.setSize("L");
+        tShirt.setColor("White");
+        tShirt.setDescription("Black Bella Canvas shirt featuring COD graphic");
+        tShirt.setPrice(new BigDecimal("24.95"));
+        tShirt.setQuantity(20);
+        tShirt = tShirtDao.addTShirt(tShirt);
+
+        tShirt.setSize("XL");
+        tShirt.setColor("Gray");
+        tShirt.setDescription("Black Bella Canvas shirt featuring COD graphic");
+        tShirt.setPrice(new BigDecimal("24.95"));
+        tShirt.setQuantity(20);
+        tShirt = tShirtDao.addTShirt(tShirt);
+
+        List<TShirt> tShirtList = tShirtDao.getAllTShirts();
+        assertEquals(tShirtList.size(), 5);
+
+        List<TShirt>  blackShirts = tShirtDao.getTShirtsByColor("Black");
+        assertEquals(blackShirts.size(), 2);
+
+        List<TShirt> largeShirts = tShirtDao.getTShirtsBySize("L");
+        assertEquals(largeShirts.size(), 3);
     }
 }

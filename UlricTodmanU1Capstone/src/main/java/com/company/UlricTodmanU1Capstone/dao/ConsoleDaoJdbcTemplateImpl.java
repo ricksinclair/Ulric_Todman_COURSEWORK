@@ -1,9 +1,11 @@
 package com.company.UlricTodmanU1Capstone.dao;
 
 import com.company.UlricTodmanU1Capstone.model.Console;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public class ConsoleDaoJdbcTemplateImpl implements ConsoleDao{
     @Override
     public Console addConsole(Console console) {
