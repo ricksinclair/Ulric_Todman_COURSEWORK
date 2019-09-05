@@ -59,10 +59,12 @@ public class InvoiceDaoJdbcTemplateImplTest {
         Invoice invoice = new Invoice();
         invoice.setName("John Doe");
         invoice.setStreet("1155 Broadway");
+        invoice.setCity("New York");
         invoice.setState("NY");
         invoice.setZipCode("10013");
         invoice.setItemType("Consoles");
         invoice.setItemId(console.getConsoleId());
+        invoice.setUnitPrice(new BigDecimal("299.99"));
         invoice.setQuantity(1);
         invoice.setSubTotal(new BigDecimal("299.99"));
         invoice.setTax(new BigDecimal(".06"));
@@ -96,11 +98,13 @@ public class InvoiceDaoJdbcTemplateImplTest {
         Invoice invoice = new Invoice();
         invoice.setName("John Doe");
         invoice.setStreet("1155 Broadway");
+        invoice.setCity("New York");
         invoice.setState("NY");
         invoice.setZipCode("10013");
         invoice.setItemType("Consoles");
         invoice.setItemId(console.getConsoleId());
         invoice.setQuantity(1);
+        invoice.setUnitPrice(new BigDecimal("299.99"));
         invoice.setSubTotal(new BigDecimal("299.99"));
         invoice.setTax(new BigDecimal(".06"));
         invoice.setProcessingFee( new BigDecimal("14.99"));

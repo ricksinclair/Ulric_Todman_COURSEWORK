@@ -21,11 +21,11 @@ public class SalesTaxRateDaoJdbcTemplateImplTest {
     @Test
     public void getTaxRate(){
       SalesTaxRate ny =  salesTaxRateDao.getTaxRate("NY");
-      assertEquals(ny.getRate(), new BigDecimal(" .06"));
+      assertEquals(ny.getRate(), new BigDecimal(".06"));
       SalesTaxRate ca =  salesTaxRateDao.getTaxRate("CA");
-      assertEquals(ca.getRate(), new BigDecimal(" .06"));
+      assertEquals(ca.getRate(),new BigDecimal(".06"));
       SalesTaxRate ga =  salesTaxRateDao.getTaxRate("GA");
-      assertEquals(ga.getRate(), new BigDecimal(" .07"));
+      assertEquals(ga.getRate(),new BigDecimal(".07"));
     }
 
 }
