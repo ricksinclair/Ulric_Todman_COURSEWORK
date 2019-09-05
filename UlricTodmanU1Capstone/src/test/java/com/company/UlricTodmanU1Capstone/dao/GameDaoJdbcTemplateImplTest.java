@@ -83,7 +83,7 @@ public class GameDaoJdbcTemplateImplTest {
 
         List<Game> matureTitles = gameDao.getGamesByRating("M");
 
-        assertEquals(matureTitles.size(), 2);
+        assertEquals( 2, matureTitles.size());
 
     }
 
