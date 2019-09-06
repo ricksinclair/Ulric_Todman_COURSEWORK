@@ -1,12 +1,14 @@
 package com.company.UlricTodmanU1Capstone.model;
 
+import com.company.UlricTodmanU1Capstone.model.interfaces.Product;
+
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.math.BigDecimal;
 import java.util.Objects;
 
-public class TShirt {
+public class TShirt implements Product {
     private int tShirtId;
     @NotEmpty(message = "Size must not be null and must have a length greater than zero")
     @Size(max = 20, message = "Size must be 20 characters or less")

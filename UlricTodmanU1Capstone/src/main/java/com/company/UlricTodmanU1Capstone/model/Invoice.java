@@ -5,7 +5,7 @@ import javax.validation.constraints.Size;
 import java.math.BigDecimal;
 import java.util.Objects;
 
-public class Invoice extends CustomerOrder {
+public class    Invoice extends CustomerOrder {
     private int invoiceId;
 //    @NotEmpty(message = "Name must not be null and must have a length greater than zero")
 //    @Size(max = 80, message = "Name must be 80 characters or less")

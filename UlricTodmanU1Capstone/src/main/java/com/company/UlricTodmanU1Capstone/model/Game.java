@@ -1,11 +1,13 @@
 package com.company.UlricTodmanU1Capstone.model;
 
+import com.company.UlricTodmanU1Capstone.model.interfaces.Product;
+
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 import java.math.BigDecimal;
 import java.util.Objects;
 
-public class Game {
+public class Game implements Product {
     private int gameId;
     @NotEmpty(message = "Title must not be null and must have a length greater than zero")
     @Size(max = 50, message = "title must be 50 characters or less")

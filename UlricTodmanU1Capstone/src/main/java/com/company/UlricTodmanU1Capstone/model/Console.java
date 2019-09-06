@@ -1,12 +1,14 @@
 package com.company.UlricTodmanU1Capstone.model;
 
+import com.company.UlricTodmanU1Capstone.model.interfaces.Product;
+
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.math.BigDecimal;
 import java.util.Objects;
 
-public class Console {
+public class Console implements Product {
 
     private int consoleId;
     @NotEmpty(message = "Model must not be null and must have a length greater than zero")

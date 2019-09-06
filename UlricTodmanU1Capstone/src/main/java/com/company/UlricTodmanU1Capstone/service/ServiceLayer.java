@@ -15,7 +15,8 @@ public class ServiceLayer {
     private ProcessingFeeDao processingFeeDao;
     private SalesTaxRateDao salesTaxRateDao;
     private TShirtDao tShirtDao;
-    private String[] stateAbbrevArr = {"AK",
+    private String[] stateAbbrevArr = {
+            "AK",
             "AL",
             "AZ",
             "AR",
@@ -81,12 +82,7 @@ public class ServiceLayer {
     }
 
     private boolean validateState(String state) {
-        if (stateSet.contains(state)) {
-            return true;
-        } else {
-            throw new IllegalArgumentException("STATE MUST BE IN TWO-CHARACTER ABBREVIATED FORMAT");
 
-        }
     }
 
     //The next two methods could have been squished together for 1/2 the dB calls, but I wanted to separate concerns.
@@ -122,7 +118,7 @@ public class ServiceLayer {
                     }
 
                 default:
-                    throw new IllegalArgumentException("Valid options for product type are \"Consoles\",\"T-Shirts\", and \"Games\" (excluding quotes). Please provide valid value and try again.");
+                    throw new IllegalArgumentException("Valid product types are \"Consoles\",\"T-Shirts\", and \"Games\" (excluding quotes). Please provide valid value and try again.");
 
 
             }
@@ -141,18 +137,21 @@ public class ServiceLayer {
                 currentQuantity = console.getQuantity();
                 newQuantity = currentQuantity - quantity;
                 console.setQuantity(newQuantity);
+                consoleDao.updateConsole(console);
                 break;
             case "T-Shirts":
                 TShirt tShirt = tShirtDao.getTShirt(productId);
                 currentQuantity = tShirt.getQuantity();
                 newQuantity = currentQuantity - quantity;
                 tShirt.setQuantity(newQuantity);
+                tShirtDao.updateTShirt(tShirt);
                 break;
             case "Games":
                 Game game = gameDao.getGame(productId);
                 currentQuantity = game.getQuantity();
                 newQuantity = currentQuantity - quantity;
                 game.setQuantity(newQuantity);
+                gameDao.updateGame(game);
                 break;
             //maybe the default for the next few are not needed due to the order things are called, but I wanted to be sure the exception would be thrown in a wacky scenario where they made
             //it past the methods above.
@@ -194,21 +193,10 @@ private boolean validateRating(Game game){
             throw new IllegalArgumentException(" MUST PROVIDE VALID ESRB RATING. \"RP\", \"E\", \"E10+\", \"T\", \"M\", \"AO\" (without quotes) are all valid options.");
         }
 }
-    public BigDecimal getUnitPrice(Console console)    {
-        BigDecimal unitPrice;
-        return consoleDao.getConsole(console.getConsoleId()).getPrice();
-    }
 
-    public BigDecimal getUnitPrice(TShirt tshirt)    {
-        BigDecimal unitPrice;
-        return tShirtDao.getTShirt(tshirt.getTShirtId()).getPrice();
-    }
 
-    public BigDecimal getUnitPrice(Game game)    {
-        BigDecimal unitPrice;
-        return gameDao.getGame(game.getGameId()).getPrice();
-    }
-
+        //Get product method
+//        make each product implement the product interface.
 
     public Invoice processInvoiceReq(CustomerOrder customerOrder) {
         int quantity = customerOrder.getQuantity();
@@ -216,11 +204,33 @@ private boolean validateRating(Game game){
         int itemId = customerOrder.getItemId();
         String state = customerOrder.getState();
         Invoice invoice = new Invoice();
+        BigDecimal unitPrice;
+        BigDecimal taxRate;
+        BigDecimal subTotal;
 
 
+//        switch(itemType){
+//                unitPrice =  consoleDao.getConsole(console.getConsoleId()).getPrice();
+//
+//
+//
+//
+//                Tshirt tShirt =  tShirtDao.getTShirt(tshirt.getTShirtId()).getPrice();
+//
+//
+//
+//                Game game =  gameDao.getGame(game.getGameId()).getPrice();
 
-        if (validateState(state)) {
+//    }
+
             if (validateOrderQuantity(quantity, itemType, itemId)) {
+                subTotal = unitPrice.multiply(quantity);
+                if (stateSet.contains(state)) {
+                    invoice.setTax( salesTaxRateDao.getTaxRate(state).getRate().multiply(subTotal));
+                } else {
+                    throw new IllegalArgumentException("STATE MUST BE IN TWO-CHARACTER ABBREVIATED FORMAT");
+
+                }
                 updateDatabaseQuantities(quantity, itemType, itemId);
                 invoice.setName(customerOrder.getName());
                 invoice.setStreet(customerOrder.getStreet());
@@ -229,13 +239,12 @@ private boolean validateRating(Game game){
                 invoice.setZipCode(customerOrder.getZipCode());
                 invoice.setProcessingFee(setProcessingFee(itemType, quantity));
                 invoice.setQuantity(customerOrder.getQuantity());
-                switch(itemType){
-                    case "Consoles":
-                        Console console = new Console();
-                }
+
+
+
 
             }
-        }
+
 
 
         return invoiceDao.addInvoice(invoice);
