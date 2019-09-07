@@ -5,13 +5,12 @@ import com.company.UlricTodmanU1Capstone.model.Game;
 import java.math.BigDecimal;
 import java.util.Objects;
 
-public class GameViewModel {
+public class GameViewModel extends ViewModel{
 
     private String title;
     private String esrbRating;
     private String description;
     private String studio;
-
 
     public String getTitle() {
         return title;
@@ -49,15 +48,17 @@ public class GameViewModel {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
         GameViewModel that = (GameViewModel) o;
-        return title.equals(that.title) &&
-                esrbRating.equals(that.esrbRating) &&
-                description.equals(that.description) &&
-                studio.equals(that.studio);
+        return getTitle().equals(that.getTitle()) &&
+                getEsrbRating().equals(that.getEsrbRating()) &&
+                getDescription().equals(that.getDescription()) &&
+                getStudio().equals(that.getStudio());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(title, esrbRating, description, studio);
+        return Objects.hash(super.hashCode(), getTitle(), getEsrbRating(), getDescription(), getStudio());
     }
 }
+

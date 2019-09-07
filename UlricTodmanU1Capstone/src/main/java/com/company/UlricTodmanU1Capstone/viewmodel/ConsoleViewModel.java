@@ -5,7 +5,7 @@ import com.company.UlricTodmanU1Capstone.model.Invoice;
 import java.math.BigDecimal;
 import java.util.Objects;
 
-public class ConsoleViewModel extends Invoice {
+public class ConsoleViewModel extends ViewModel {
     private String model;
     private String manufacturer;
     private String memoryAmount;

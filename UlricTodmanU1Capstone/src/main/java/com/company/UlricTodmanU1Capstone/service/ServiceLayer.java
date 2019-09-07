@@ -2,6 +2,11 @@ package com.company.UlricTodmanU1Capstone.service;
 
 import com.company.UlricTodmanU1Capstone.dao.*;
 import com.company.UlricTodmanU1Capstone.model.*;
+import com.company.UlricTodmanU1Capstone.model.interfaces.Product;
+import com.company.UlricTodmanU1Capstone.viewmodel.ConsoleViewModel;
+import com.company.UlricTodmanU1Capstone.viewmodel.GameViewModel;
+import com.company.UlricTodmanU1Capstone.viewmodel.TShirtViewModel;
+import com.company.UlricTodmanU1Capstone.viewmodel.ViewModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -81,9 +86,7 @@ public class ServiceLayer {
         this.tShirtDao = tShirtDao;
     }
 
-    private boolean validateState(String state) {
 
-    }
 
     //The next two methods could have been squished together for 1/2 the dB calls, but I wanted to separate concerns.
     private boolean validateOrderQuantity(int quantity, String productType, int productId) {
@@ -198,35 +201,37 @@ private boolean validateRating(Game game){
         //Get product method
 //        make each product implement the product interface.
 
+    @Transactional
     public Invoice processInvoiceReq(CustomerOrder customerOrder) {
         int quantity = customerOrder.getQuantity();
-        String itemType = customerOrder.getItemType();
         int itemId = customerOrder.getItemId();
+        String itemType = customerOrder.getItemType();
         String state = customerOrder.getState();
         Invoice invoice = new Invoice();
-        BigDecimal unitPrice;
-        BigDecimal taxRate;
-        BigDecimal subTotal;
+        Product product ;
 
 
-//        switch(itemType){
-//                unitPrice =  consoleDao.getConsole(console.getConsoleId()).getPrice();
-//
-//
-//
-//
-//                Tshirt tShirt =  tShirtDao.getTShirt(tshirt.getTShirtId()).getPrice();
-//
-//
-//
-//                Game game =  gameDao.getGame(game.getGameId()).getPrice();
-
-//    }
 
             if (validateOrderQuantity(quantity, itemType, itemId)) {
-                subTotal = unitPrice.multiply(quantity);
+                switch(itemType){
+                    case "Consoles":
+                        product =  consoleDao.getConsole(itemId);
+                        break;
+
+                    case"T-Shirts":
+                        product = tShirtDao.getTShirt(itemId);
+                        break;
+                    case "Games":
+                        product =  gameDao.getGame(itemId);
+                        break;
+                    default:
+                        throw new IllegalStateException("Unexpected value: " + itemType);
+                }
+
+                invoice.setUnitPrice(product.getPrice());
+                invoice.setSubTotal( invoice.getUnitPrice().multiply(new BigDecimal(quantity)));
                 if (stateSet.contains(state)) {
-                    invoice.setTax( salesTaxRateDao.getTaxRate(state).getRate().multiply(subTotal));
+                    invoice.setTax( salesTaxRateDao.getTaxRate(state).getRate().multiply(invoice.getSubTotal()));
                 } else {
                     throw new IllegalArgumentException("STATE MUST BE IN TWO-CHARACTER ABBREVIATED FORMAT");
 
@@ -239,6 +244,11 @@ private boolean validateRating(Game game){
                 invoice.setZipCode(customerOrder.getZipCode());
                 invoice.setProcessingFee(setProcessingFee(itemType, quantity));
                 invoice.setQuantity(customerOrder.getQuantity());
+                invoice.setTotal(invoice.getSubTotal().add(invoice.getProcessingFee().add(invoice.getTax())));
+
+                invoice = invoiceDao.addInvoice(invoice);
+
+
 
 
 
@@ -247,9 +257,47 @@ private boolean validateRating(Game game){
 
 
 
-        return invoiceDao.addInvoice(invoice);
+        invoice =  invoiceDao.addInvoice(invoice);
+
+            return invoice;
     }
 
+
+
+
+    public ViewModel buildViewModel(Invoice invoice){
+        switch (invoice.getItemType()){
+            case "T-Shirts":
+                TShirtViewModel tShirtViewModel = new TShirtViewModel();
+                TShirt tShirt = tShirtDao.getTShirt(invoice.getItemId());
+                tShirtViewModel.setInvoice(invoice);
+                tShirtViewModel.setColor(tShirt.getColor());
+                tShirtViewModel.setDescription(tShirt.getDescription());
+                tShirtViewModel.setSize(tShirt.getSize());
+                return tShirtViewModel;
+            case "Consoles":
+                ConsoleViewModel consoleViewModel = new ConsoleViewModel();
+                Console console = consoleDao.getConsole(invoice.getItemId());
+                consoleViewModel.setManufacturer(console.getManufacturer());
+                consoleViewModel.setMemoryAmount(console.getMemoryAmount());
+                consoleViewModel.setProcessor(console.getProcessor());
+                consoleViewModel.setModel(console.getModel());
+                return consoleViewModel;
+
+            case "Games":
+                GameViewModel gameViewModel = new GameViewModel();
+                Game game = gameDao.getGame(invoice.getItemId());
+                gameViewModel.setDescription(game.getDescription());
+                gameViewModel.setEsrbRating(game.getEsrbRating());
+                gameViewModel.setStudio(game.getStudio());
+                gameViewModel.setTitle(game.getTitle());
+                return gameViewModel;
+
+            default:
+                throw new IllegalStateException("Unexpected value: " + invoice.getItemType());
+
+        }
+    }
     //CRUD REQUEST METHODS FOR TSHIRT, CONSOLE, GAME
 
 
