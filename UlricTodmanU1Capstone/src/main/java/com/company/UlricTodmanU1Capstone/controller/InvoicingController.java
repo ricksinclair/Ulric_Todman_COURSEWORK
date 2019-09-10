@@ -17,13 +17,13 @@ public class InvoicingController {
     ServiceLayer serviceLayer;
 
 
-    @RequestMapping(path = "/invoice", method = RequestMethod.POST)
+    @RequestMapping(path = "/Invoice", method = RequestMethod.POST)
     @ResponseStatus(value = HttpStatus.CREATED)
     public Invoice processSale(@RequestBody @Valid CustomerOrder customerOrder) {
         return serviceLayer.processInvoiceReq(customerOrder);
     }
 
-    @RequestMapping(path = "/invoice/{invoiceId}", method = RequestMethod.GET)
+    @RequestMapping(path = "/Invoice/{invoiceId}", method = RequestMethod.GET)
     @ResponseStatus(value = HttpStatus.OK)
     public Invoice getInvoice(@PathVariable int invoiceId) {
         return serviceLayer.getInvoice(invoiceId);

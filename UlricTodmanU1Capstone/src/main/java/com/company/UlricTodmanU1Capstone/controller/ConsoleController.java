@@ -18,31 +18,31 @@ public class ConsoleController {
     @Autowired
     ServiceLayer serviceLayer;
 
-    @RequestMapping(path = "/console/manufacturer/{manufacturer}", method = RequestMethod.GET)
+    @RequestMapping(path = "/Console/Manufacturer/{manufacturer}", method = RequestMethod.GET)
     @ResponseStatus(value = HttpStatus.OK)
     public List<Console> getConsolesByManufacturer(@PathVariable String manufacturer) {
         return serviceLayer.getConsolesByManufacturer(manufacturer);
     }
 
-    @RequestMapping(path = "/console", method = RequestMethod.GET)
+    @RequestMapping(path = "/Console", method = RequestMethod.GET)
     @ResponseStatus(value = HttpStatus.OK)
     public List<Console> getAllConsoles() {
         return serviceLayer.getAllConsoles();
     }
 
-    @RequestMapping(path = "/console", method = RequestMethod.POST)
+    @RequestMapping(path = "/Console", method = RequestMethod.POST)
     @ResponseStatus(value = HttpStatus.CREATED)
     public Console addConsole(@RequestBody @Valid Console console) {
         return serviceLayer.addConsole(console);
     }
 
-    @RequestMapping(path = "/console", method = RequestMethod.PUT)
+    @RequestMapping(path = "/Console", method = RequestMethod.PUT)
     @ResponseStatus(value = HttpStatus.ACCEPTED)
     public void updateConsole(@RequestBody @Valid Console console) {
         serviceLayer.updateConsole(console);
     }
 
-    @RequestMapping(path = "/console/{consoleId}", method = RequestMethod.GET)
+    @RequestMapping(path = "/Console/{consoleId}", method = RequestMethod.GET)
     @ResponseStatus(value = HttpStatus.OK)
     public Console getConsoleById(@PathVariable int consoleId) {
         Console console = serviceLayer.getConsole(consoleId);
@@ -52,7 +52,7 @@ public class ConsoleController {
         return console;
     }
 
-    @RequestMapping(path = "/console/{consoleId}", method = RequestMethod.DELETE)
+    @RequestMapping(path = "/Console/{consoleId}", method = RequestMethod.DELETE)
     @ResponseStatus(value = HttpStatus.NO_CONTENT)
     public void deleteConsole(@PathVariable int consoleId) {
         Console console = serviceLayer.getConsole(consoleId);

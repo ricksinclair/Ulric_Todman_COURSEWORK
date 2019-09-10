@@ -23,13 +23,13 @@ public class TShirtController {
         return serviceLayer.getAllTShirts();
     }
 
-    @RequestMapping(path = "/TShirt/{color}", method = RequestMethod.GET)
+    @RequestMapping(path = "/TShirt/Color/{color}", method = RequestMethod.GET)
     @ResponseStatus(value = HttpStatus.OK)
     public List<TShirt> getShirtsByColor(@PathVariable String color) {
         return serviceLayer.getTShirtsByColor(color);
     }
 
-    @RequestMapping(path = "/TShirt/{size}", method = RequestMethod.GET)
+    @RequestMapping(path = "/TShirt/Size/{size}", method = RequestMethod.GET)
     @ResponseStatus(value = HttpStatus.OK)
     public List<TShirt> getShirtsBySize(@PathVariable String size) {
         return serviceLayer.getTShirtsBySize(size);

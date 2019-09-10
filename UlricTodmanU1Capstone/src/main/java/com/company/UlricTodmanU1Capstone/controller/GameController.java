@@ -25,19 +25,19 @@ public class GameController {
         return serviceLayer.getAllGames();
     }
 
-    @RequestMapping(path = "/Game/{studio}", method = RequestMethod.GET)
+    @RequestMapping(path = "/Game/Studio/{studio}", method = RequestMethod.GET)
     @ResponseStatus(value = HttpStatus.OK)
     public List<Game> getGameByStudio(@PathVariable String studio) {
         return serviceLayer.getGamesByStudio(studio);
     }
 
-    @RequestMapping(path = "/Game/{rating}", method = RequestMethod.GET)
+    @RequestMapping(path = "/Game/Rating/{rating}", method = RequestMethod.GET)
     @ResponseStatus(value = HttpStatus.OK)
     public List<Game> getGameByRating(@PathVariable String rating) {
         return serviceLayer.getGamesByRating(rating);
     }
 
-    @RequestMapping(path = "/Game/{title}", method = RequestMethod.GET)
+    @RequestMapping(path = "/Game/Title/{title}", method = RequestMethod.GET)
     @ResponseStatus(value = HttpStatus.OK)
     public List<Game> getGameByTitle(@PathVariable String title) {
         return serviceLayer.getGamesByTitle(title);

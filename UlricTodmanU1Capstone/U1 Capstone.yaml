@@ -1,0 +1,676 @@
+openapi: 3.0.0
+info:
+  title: UlricTodmanU1Capstone
+  description: Capstone project based on a video game store.
+  version: 0.0.1
+servers: 
+  - url: http://localhost:8080
+    description: my local testing server
+paths:
+  /Game:
+    post:
+      summary: add game
+      description: Add a new game object by including all fields except game id.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Game'
+      responses:
+        '201':
+          description: Returns added game object with gameId included.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Game'
+        '400':
+            description: Invalid request syntax
+          
+        '422':
+            description: Incomplete game object information
+  
+
+    put:
+      summary: update game
+      description: provide list of all games as an array of game objects
+      requestBody:
+          required: true 
+          content:
+              application/json:
+                schema:
+                     $ref: '#/components/schemas/Game'                    
+      responses:
+        '201':
+          description: game successfully updated
+              
+                  
+  /Game/Studio/{studio}:
+    get:
+      summary: Get a list of games by a given studio
+      parameters:
+        - name: studio
+          in: path
+          required: true
+          description: studio of the games which you wish to view
+          schema:
+            type: string
+      responses:
+        '200':
+          description: the list of Games you requested by studio
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                     $ref: '#/components/schemas/Game'    
+  /Game/Title/{title}:
+    get:
+      summary: Get a list of games by a given title
+      parameters:
+        - name: title
+          in: path
+          required: true
+          description: title of the games which you wish to view
+          schema:
+            type: string
+      responses:
+        '200':
+          description: the list of Games you requested by title
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                     $ref: '#/components/schemas/Game'    
+                   
+                        
+        
+          
+            
+  /Game/{gameId}:
+    delete:
+      summary: Deletes the entry for the game given id
+      parameters: 
+        - name: gameId
+          in: path
+          required: true
+          description: gameId of the game you'd like to delete
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Game sucessfully deleted
+        '400':
+          description: Invalid request syntax
+    get:
+      summary: Get game by gameId
+      parameters: 
+        - name: gameId
+          in: path
+          required: true
+          description: gameId of the game you'd like to view
+          schema:
+            type: string
+      responses:
+        '200':
+          description: the pubilsher object you request.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Game'
+        '400':
+          description: "Invalid request syntax"
+    
+  /TShirt:
+    post:
+      summary: add TShirt
+      description: add a new Tshirt object
+      requestBody:
+        required: true
+        content:
+          application/json:
+              schema:
+                $ref: '#/components/schemas/TShirt'
+      responses:
+          '201':
+            description: A T Shirt object
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/TShirt'
+          '400':
+              description: Invalid request syntax
+          '422':
+              description: Incomplete TShirt object information
+    put:
+      summary: update TShirt
+      description: provide list of all games as an array of game objects
+      requestBody:
+          required: true 
+          content:
+              application/json:
+                schema:
+                     $ref: '#/components/schemas/TShirt'                    
+      responses:
+        '201':
+          description: game successfully updated
+              
+    get:
+        summary: Retrieve list of all TShirts
+        responses:
+          '200':
+            description: provided list of all TShirts
+            content:
+             application/json:
+                schema:
+                  type: array
+                  items:
+                   $ref: '#/components/schemas/TShirt'  
+                  
+                  
+                  
+          
+            
+  /TShirt/{tShirtId}:
+      delete:
+        summary: Deletes the entry for the T-Shirt with the given id
+        parameters: 
+          - name: tShirtId
+            in: path  
+            required: true
+            description: tShirtId of the T-Shirt  you'd like to delete
+            schema:
+              type: integer
+        responses:
+          '200':
+            description: T-Shirt sucessfully deleted.
+          '400':
+            description: "Invalid request syntax"
+      get:
+        summary: get one T-Shirt  by tShirtId
+      
+        parameters: 
+          - name: tShirtId
+            in: path
+            required: true
+            description: tShirtId of the T-Shirt you'd like to view
+            schema:
+              type: integer
+        responses:
+          '200':
+            description: the book object you request.
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/TShirt'
+          '400':
+            description: "Invalid request syntax"
+
+  /TShirt/Size/{size}:
+    get:
+      summary: Get a list of TShirts with a given size
+      parameters:
+        - name: size
+          in: path
+          required: true
+          description: size of the TShirts which you wish to view
+          schema:
+            type: string
+      responses:
+        '200':
+          description: the list of TShirts you requested by size
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                     $ref: '#/components/schemas/TShirt'    
+                   
+      
+  /TShirt/Color/{color}:
+    get:
+      summary: Get a list of TShirts with a given color
+      parameters:
+      - name: color
+        in: path
+        required: true
+        description: get a list of tshirts by color
+        schema:
+          type: string
+      responses:
+          '200':
+            description: An author object
+            content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                    $ref: '#/components/schemas/TShirt'    
+                   
+          '400':
+              description: Invalid request syntax
+          '422':
+              description: Incomplete author object information
+
+                  
+          
+            
+    
+  /Console:
+    post:
+      summary: add Console
+      description: add a new Console object
+      requestBody:
+        required: true
+        content:
+          application/json:
+              schema:
+                $ref: '#/components/schemas/Console'
+      responses:
+          '201':
+            description: A Console object
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/Console'
+          '400':
+              description: Invalid request syntax
+          '422':
+              description: Incomplete Console object information
+    put:
+      summary: update Console
+      description: provide list of all consoles as an array of console objects
+      requestBody:
+          required: true 
+          content:
+              application/json:
+                schema:
+                     $ref: '#/components/schemas/Console'                    
+      responses:
+        '201':
+          description: console successfully updated
+              
+    get:
+        summary: Retrieve list of all Consoles
+        responses:
+          '200':
+            description: provided list of all Consoles
+            content:
+             application/json:
+                schema:
+                  type: array
+                  items:
+                   $ref: '#/components/schemas/Console'  
+                  
+                  
+                  
+          
+            
+  /Console/{consoleId}:
+      delete:
+        summary: Deletes the entry for the T-Shirt with the given id
+        parameters: 
+          - name: consoleId
+            in: path  
+            required: true
+            description: consoleId of the Consoles  you'd like to delete
+            schema:
+              type: integer
+        responses:
+          '200':
+            description: Console sucessfully deleted.
+          '400':
+            description: "Invalid request syntax"
+      get:
+        summary: get one T-Shirt  by tShirtId
+      
+        parameters: 
+          - name: consoleId
+            in: path
+            required: true
+            description: consoleId of the console you'd like to view
+            schema:
+              type: integer
+        responses:
+          '200':
+            description: the console object you request.
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/Console'
+          '400':
+            description: "Invalid request syntax"
+
+    
+  /Console/Manufacturer/{manufacturer}:
+    get:
+      summary: Get a list of consoles by a given manufacturer
+      parameters:
+      - name: manufacturer
+        in: path
+        required: true
+        description: get a list of consoles by manufacturer
+        schema:
+          type: string
+      responses:
+          '200':
+            description: A list of console objects
+            content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                    $ref: '#/components/schemas/Console'    
+                   
+          '400':
+              description: Invalid request syntax
+          '422':
+              description: Incomplete console object information
+      
+  /Invoice:
+    post:
+      summary: Get invoice using customerOrder object.
+      description: add a new Console object
+      requestBody:
+        required: true
+        content:
+          application/json:
+              schema:
+                $ref: '#/components/schemas/CustomerOrder'
+      responses:
+          '201':
+            description: A Console object
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/Invoice'
+          '400':
+              description: Invalid request syntax
+          '422':
+              description: Incomplete Invoice object information    
+        
+        
+  /Invoice/{invoiceId}:
+    get:
+        summary: get one Invoice  by invoiceId
+      
+        parameters: 
+          - name: invoiceId
+            in: path
+            required: true
+            description: invoiceId of the invoice you'd like to view
+            schema:
+              type: integer
+        responses:
+          '200':
+            description: the invoice object you request.
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/Invoice'
+          '400':
+            description: "Invalid request syntax"      
+components:
+  schemas:
+    TShirt:
+      properties:
+        tShirtId:
+          type: integer
+        size:
+          type: string
+          maxLength: 20
+        color:
+          type: string
+          maxLength: 20
+        description:
+          type: string
+          maxLength: 255
+        price: 
+          type: number
+
+      required: 
+        - size
+        - color
+        - description
+        - price
+
+    Console:
+      properties:
+        consoleId: 
+          type: integer
+        model:
+          type: string
+        manufacturer:
+          type: string
+        memoryAmount: 
+          type: string
+        processor:
+          type: string
+        price:
+          type: number
+        quantity:
+          type: integer
+      required: 
+        - model
+        - manufacturer
+        - memoryAmount
+        - processor
+        - price
+        - quantity
+    Game:
+      properties:
+        gameId:
+          type: integer
+        title:
+          type: string
+        esrbRating: 
+          type: string
+          enum: ["RP", "E", "E10+", "T", "M", "AO"]
+        description:
+          type: string
+        price:
+          type: number
+        studio:
+          type: string
+        quantity:
+          type: integer
+      
+          
+      required: 
+        - title
+        - esrbRating
+        - description
+        - price
+        - studio
+        - quantity
+        
+    Invoice:
+      properties:
+        invoiceId:
+          type: integer
+        name:
+          type: string
+          maxLength: 80
+        street: 
+          type: string
+          maxLength: 30
+        city:
+          type: string
+          maxLength: 30
+        state:
+          type: string
+          maxLength: 2
+        zipCode:
+          type: string
+          maxLength: 5
+        itemType: 
+          type: string
+          maxLength: 20
+        unitPrice:
+          type: number
+        quantity:
+          type: integer
+        subTotal:
+          type: number
+        tax:
+          type: number
+        processingFee:
+          type: number
+        total:
+          type: number
+          
+      required: 
+        - invoiceId
+        - name
+        - street
+        - city
+        - state
+        - zipCode
+        - itemType
+        - unitPrice
+        - quantity
+        - subTotal
+        - tax
+        - total
+        
+    CustomerOrder:
+      properties:
+        name:
+          type: string
+          maxLength: 80
+        street:
+          type: string
+          maxLength: 30
+        city: 
+          type: string
+          maxLength: 30
+        state:
+          type: string
+          maxLength: 2
+        zip:
+          type: string
+          maxLength: 5
+        itemType:
+          type: string
+          enum: ["Consoles", "T-Shirts", "Games"]
+        itemId: 
+          type: integer
+        quantity:
+          type: integer
+  
+      required: 
+        - name
+        - street
+        - city
+        - state
+        - zipCode
+        - itemType
+        - itemid
+        - quantity
+        
+    TShirtViewModel:
+      properties:
+        name:
+          type: string
+          maxLength: 80
+        street:
+          type: string
+          maxLength: 30
+        city: 
+          type: string
+          maxLength: 30
+        state:
+          type: string
+          maxLength: 2
+        zip:
+          type: string
+          maxLength: 5
+        itemType:
+          type: string
+        itemId: 
+          type: integer
+        quantity:
+          type: integer
+  
+      required: 
+        - name
+        - street
+        - city
+        - state
+        - zipCode
+        - itemType
+        - itemid
+        - quantity
+        
+        
+    GameViewModel:
+      properties:
+        name:
+          type: string
+          maxLength: 80
+        street:
+          type: string
+          maxLength: 30
+        city: 
+          type: string
+          maxLength: 30
+        state:
+          type: string
+          maxLength: 2
+        zip:
+          type: string
+          maxLength: 5
+        itemType:
+          type: string
+        itemId: 
+          type: integer
+        quantity:
+          type: integer
+  
+      required: 
+        - name
+        - street
+        - city
+        - state
+        - zipCode
+        - itemType
+        - itemid
+        - quantity
+
+    ConsoleViewModel:
+      properties:
+        name:
+          type: string
+          maxLength: 80
+        street:
+          type: string
+          maxLength: 30
+        city: 
+          type: string
+          maxLength: 30
+        state:
+          type: string
+          maxLength: 2
+        zip:
+          type: string
+          maxLength: 5
+        itemType:
+          type: string
+        itemId: 
+          type: integer
+        quantity:
+          type: integer
+  
+      required: 
+        - name
+        - street
+        - city
+        - state
+        - zipCode
+        - itemType
+        - itemid
+        - quantity
+                    
