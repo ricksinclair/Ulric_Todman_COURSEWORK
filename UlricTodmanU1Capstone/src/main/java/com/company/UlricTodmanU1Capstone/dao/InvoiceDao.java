@@ -7,7 +7,10 @@ import java.util.List;
 public interface InvoiceDao {
 
     Invoice addInvoice(Invoice invoice);
+
     Invoice getInvoice(int invoiceId);
+
     void deleteInvoice(int invoiceId);
+
     List<Invoice> getAllInvoices();
 }

@@ -2,12 +2,11 @@ package com.company.UlricTodmanU1Capstone.model;
 
 import com.company.UlricTodmanU1Capstone.viewmodel.CustomerOrder;
 
-import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.util.Objects;
 
-public class    Invoice extends CustomerOrder {
+public class Invoice extends CustomerOrder {
     private int invoiceId;
     @NotNull(message = "must include unit price")
     private BigDecimal unitPrice;

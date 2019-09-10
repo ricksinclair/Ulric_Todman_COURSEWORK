@@ -4,7 +4,10 @@ import java.math.BigDecimal;
 
 public interface Product {
     BigDecimal getPrice();
-    int getQuantity();
+
     void setPrice(BigDecimal price);
+
+    int getQuantity();
+
     void setQuantity(int quantity);
 }

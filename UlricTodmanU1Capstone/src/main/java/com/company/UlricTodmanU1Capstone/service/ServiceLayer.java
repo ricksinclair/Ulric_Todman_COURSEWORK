@@ -1,17 +1,22 @@
 package com.company.UlricTodmanU1Capstone.service;
 
 import com.company.UlricTodmanU1Capstone.dao.*;
-import com.company.UlricTodmanU1Capstone.model.*;
+import com.company.UlricTodmanU1Capstone.model.Console;
+import com.company.UlricTodmanU1Capstone.model.Game;
+import com.company.UlricTodmanU1Capstone.model.Invoice;
+import com.company.UlricTodmanU1Capstone.model.TShirt;
 import com.company.UlricTodmanU1Capstone.model.interfaces.Product;
 import com.company.UlricTodmanU1Capstone.viewmodel.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
 import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 @Component
 public class ServiceLayer {
@@ -88,7 +93,6 @@ public class ServiceLayer {
     }
 
 
-
     //The next two methods could have been squished together for 1/2 the dB calls, but I wanted to separate concerns.
     private boolean validateOrderQuantity(int quantity, String productType, int productId) {
 
@@ -109,7 +113,7 @@ public class ServiceLayer {
                     TShirt tShirt = tShirtDao.getTShirt(productId);
                     if (tShirt.getQuantity() <= 0 || tShirt.getQuantity() - quantity <= 0) {
                         throw new IllegalArgumentException("Not enough of this t-shirt in stock to satisfy order");
-                     } else {
+                    } else {
                         return true;
                     }
                 case "Games":
@@ -190,79 +194,78 @@ public class ServiceLayer {
         return processingFee;
     }
 
-private boolean validateRating(Game game){
-        if(ratingsSet.contains(game.getEsrbRating())){
+    private boolean validateRating(Game game) {
+        if (ratingsSet.contains(game.getEsrbRating())) {
             return true;
-        }else{
+        } else {
             throw new IllegalArgumentException(" MUST PROVIDE VALID ESRB RATING. \"RP\", \"E\", \"E10+\", \"T\", \"M\", \"AO\" (without quotes) are all valid options.");
         }
-}
+    }
 
 
-        //Get product method
+    //Get product method
 //        make each product implement the product interface.
 
     @Transactional
     public Invoice processInvoiceReq(CustomerOrder customerOrder) {
-         int quantity = customerOrder.getQuantity();
+        int quantity = customerOrder.getQuantity();
         int itemId = customerOrder.getItemId();
         String itemType = customerOrder.getItemType();
         String state = customerOrder.getState();
         Invoice invoice = new Invoice();
-        Product product ;
+        Product product;
 
 
+        if (validateOrderQuantity(quantity, itemType, itemId)) {
+            switch (itemType) {
+                case "Consoles":
+                    product = consoleDao.getConsole(itemId);
+                    break;
 
-            if (validateOrderQuantity(quantity, itemType, itemId)) {
-                switch(itemType){
-                    case "Consoles":
-                        product =  consoleDao.getConsole(itemId);
-                        break;
-
-                    case"T-Shirts":
-                        product = tShirtDao.getTShirt(itemId);
-                        break;
-                    case "Games":
-                        product =  gameDao.getGame(itemId);
-                        break;
-                    default:
-                        throw new IllegalStateException("Unexpected value: " + itemType);
-                }
-
-                invoice.setUnitPrice(product.getPrice());
-                invoice.setSubTotal( invoice.getUnitPrice().multiply(new BigDecimal(quantity)));
-                if (stateSet.contains(state)) {
-                    invoice.setTax( salesTaxRateDao.getTaxRate(state).getRate().multiply(invoice.getSubTotal()).setScale(2, RoundingMode.DOWN));
-                } else {
-                    throw new IllegalArgumentException("STATE MUST BE IN TWO-CHARACTER ABBREVIATED FORMAT");
-
-                }
-                updateDatabaseQuantities(quantity, itemType, itemId);
-                invoice.setName(customerOrder.getName());
-                invoice.setStreet(customerOrder.getStreet());
-                invoice.setCity(customerOrder.getCity());
-                invoice.setItemId(itemId);
-                invoice.setItemType(itemType);
-                invoice.setState(customerOrder.getState());
-                invoice.setZipCode(customerOrder.getZipCode());
-                invoice.setProcessingFee(setProcessingFee(itemType, quantity));
-                invoice.setQuantity(customerOrder.getQuantity());
-                invoice.setTotal(invoice.getSubTotal().add(invoice.getProcessingFee().add(invoice.getTax())).setScale(2, RoundingMode.DOWN));
-
-                invoice = invoiceDao.addInvoice(invoice);
+                case "T-Shirts":
+                    product = tShirtDao.getTShirt(itemId);
+                    break;
+                case "Games":
+                    product = gameDao.getGame(itemId);
+                    break;
+                default:
+                    throw new IllegalStateException("Unexpected value: " + itemType);
             }
 
+            invoice.setUnitPrice(product.getPrice());
+            invoice.setSubTotal(invoice.getUnitPrice().multiply(new BigDecimal(quantity)));
+            if (stateSet.contains(state)) {
+                invoice.setTax(salesTaxRateDao.getTaxRate(state).getRate().multiply(invoice.getSubTotal()).setScale(2, RoundingMode.DOWN));
+            } else {
+                throw new IllegalArgumentException("STATE MUST BE IN TWO-CHARACTER ABBREVIATED FORMAT");
+
+            }
+            updateDatabaseQuantities(quantity, itemType, itemId);
+            invoice.setName(customerOrder.getName());
+            invoice.setStreet(customerOrder.getStreet());
+            invoice.setCity(customerOrder.getCity());
+            invoice.setItemId(itemId);
+            invoice.setItemType(itemType);
+            invoice.setState(customerOrder.getState());
+            invoice.setZipCode(customerOrder.getZipCode());
+            invoice.setProcessingFee(setProcessingFee(itemType, quantity));
+            invoice.setQuantity(customerOrder.getQuantity());
+            invoice.setTotal(invoice.getSubTotal().add(invoice.getProcessingFee().add(invoice.getTax())).setScale(2, RoundingMode.DOWN));
+
+            invoice = invoiceDao.addInvoice(invoice);
+        }
 
 
-
-            return invoice;
+        return invoice;
     }
 
+///I wanted to send these each but in the interest of sending a working product this method would
+    ///have been utilized in the next sprint. The controller methods provided give enough
+    //information for a front end dev to create a functional frontend.
 
 
-
-    public ViewModel buildViewModel(Invoice invoice){
-        switch (invoice.getItemType()){
+    public ViewModel buildViewModel(Invoice invoice) {
+        switch (invoice.getItemType()) {
             case "T-Shirts":
                 TShirtViewModel tShirtViewModel = new TShirtViewModel();
                 TShirt tShirt = tShirtDao.getTShirt(invoice.getItemId());
@@ -295,7 +298,6 @@ private boolean validateRating(Game game){
         }
     }
     //CRUD REQUEST METHODS FOR TSHIRT, CONSOLE, GAME
-
 
 
     //Game Methods
@@ -393,9 +395,17 @@ private boolean validateRating(Game game){
         tShirtDao.deleteTShirt(tShirtId);
     }
 
-    public Invoice getInvoice(int invoiceId){ return invoiceDao.getInvoice(invoiceId);}
-    public void deleteInvoice(int invoiceId){ invoiceDao.deleteInvoice(invoiceId);}
-    public List<Invoice> getAllInvoices(){ return invoiceDao.getAllInvoices();}
+    public Invoice getInvoice(int invoiceId) {
+        return invoiceDao.getInvoice(invoiceId);
+    }
+
+    public void deleteInvoice(int invoiceId) {
+        invoiceDao.deleteInvoice(invoiceId);
+    }
+
+    public List<Invoice> getAllInvoices() {
+        return invoiceDao.getAllInvoices();
+    }
 
 
 }

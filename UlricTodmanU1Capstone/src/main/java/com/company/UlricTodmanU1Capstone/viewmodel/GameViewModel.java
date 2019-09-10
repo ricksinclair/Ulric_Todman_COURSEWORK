@@ -1,11 +1,8 @@
 package com.company.UlricTodmanU1Capstone.viewmodel;
 
-import com.company.UlricTodmanU1Capstone.model.Game;
-
-import java.math.BigDecimal;
 import java.util.Objects;
 
-public class GameViewModel extends ViewModel{
+public class GameViewModel extends ViewModel {
 
     private String title;
     private String esrbRating;

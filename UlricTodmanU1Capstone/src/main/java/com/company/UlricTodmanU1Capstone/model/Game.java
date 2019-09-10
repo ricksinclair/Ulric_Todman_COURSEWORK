@@ -27,7 +27,7 @@ public class Game implements Product {
     @NotEmpty(message = "Studio must not be null and must have a length greater than zero")
     @Size(max = 50, message = "Studio must be 50 characters or less")
     private String studio;
-    @NotNull(message= "Quantity must not be empty and must be a non-zero value")
+    @NotNull(message = "Quantity must not be empty and must be a non-zero value")
     private int quantity;
 
 

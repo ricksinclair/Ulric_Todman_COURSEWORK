@@ -8,5 +8,4 @@ public interface SalesTaxRateDao {
     SalesTaxRate getTaxRate(String state);
 
 
-
 }

@@ -1,8 +1,5 @@
 package com.company.UlricTodmanU1Capstone.viewmodel;
 
-import com.company.UlricTodmanU1Capstone.model.Invoice;
-
-import java.math.BigDecimal;
 import java.util.Objects;
 
 public class ConsoleViewModel extends ViewModel {

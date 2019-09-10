@@ -19,7 +19,7 @@ public class InvoiceDaoJdbcTemplateImpl implements InvoiceDao {
     private final String INSERT_INVOICE_SQL =
             "INSERT INTO invoice (name, street, city, state, zipcode, item_type, item_id, unit_price, quantity, processing_fee, tax, subtotal, total) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
-    private final String  GET_INVOICE_SQL =
+    private final String GET_INVOICE_SQL =
             "SELECT * FROM invoice WHERE invoice_id = ?";
 
     private final String DELETE_INVOICE_SQL =
@@ -36,7 +36,7 @@ public class InvoiceDaoJdbcTemplateImpl implements InvoiceDao {
         this.jdbcTemplate = newJdbcTemplate;
     }
 
-    private Invoice mapRowToInvoice(ResultSet rs, int rowNum) throws SQLException{
+    private Invoice mapRowToInvoice(ResultSet rs, int rowNum) throws SQLException {
         Invoice invoice = new Invoice();
         invoice.setInvoiceId(rs.getInt("invoice_id"));
         invoice.setQuantity(rs.getInt("quantity"));
@@ -74,7 +74,7 @@ public class InvoiceDaoJdbcTemplateImpl implements InvoiceDao {
                 invoice.getTax(),
                 invoice.getSubTotal(),
                 invoice.getTotal()
-                );
+        );
 
         int id = jdbcTemplate.queryForObject("SELECT LAST_INSERT_ID()", Integer.class);
         invoice.setInvoiceId(id);
@@ -85,9 +85,9 @@ public class InvoiceDaoJdbcTemplateImpl implements InvoiceDao {
     public Invoice getInvoice(int invoiceId) {
 
 
-        try{
-        return jdbcTemplate.queryForObject(GET_INVOICE_SQL, this::mapRowToInvoice, invoiceId);
-    }catch(EmptyResultDataAccessException e){
+        try {
+            return jdbcTemplate.queryForObject(GET_INVOICE_SQL, this::mapRowToInvoice, invoiceId);
+        } catch (EmptyResultDataAccessException e) {
             return null;
         }
 
@@ -95,7 +95,7 @@ public class InvoiceDaoJdbcTemplateImpl implements InvoiceDao {
 
     @Override
     public void deleteInvoice(int invoiceId) {
-        jdbcTemplate.update(DELETE_INVOICE_SQL, invoiceId );
+        jdbcTemplate.update(DELETE_INVOICE_SQL, invoiceId);
     }
 
     @Override

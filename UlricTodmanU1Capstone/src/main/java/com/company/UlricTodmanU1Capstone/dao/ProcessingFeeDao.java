@@ -7,5 +7,4 @@ public interface ProcessingFeeDao {
     ProcessingFee getProcessingFee(String productType);
 
 
-
 }

@@ -1,9 +1,5 @@
 package com.company.UlricTodmanU1Capstone.viewmodel;
 
-import com.company.UlricTodmanU1Capstone.model.Invoice;
-import com.company.UlricTodmanU1Capstone.model.TShirt;
-
-import java.math.BigDecimal;
 import java.util.Objects;
 
 public class TShirtViewModel extends ViewModel {
@@ -11,7 +7,6 @@ public class TShirtViewModel extends ViewModel {
     private String size;
     private String description;
     private String color;
-
 
 
     public String getSize() {

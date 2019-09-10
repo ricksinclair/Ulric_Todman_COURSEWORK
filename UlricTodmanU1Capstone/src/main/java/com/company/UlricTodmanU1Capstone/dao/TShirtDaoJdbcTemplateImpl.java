@@ -12,7 +12,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 @Repository
-public class TShirtDaoJdbcTemplateImpl implements TShirtDao{
+public class TShirtDaoJdbcTemplateImpl implements TShirtDao {
 
     //Prepared Statements
     private final String INSERT_T_SHIRT_SQL =
@@ -36,11 +36,11 @@ public class TShirtDaoJdbcTemplateImpl implements TShirtDao{
     private JdbcTemplate jdbcTemplate;
 
     @Autowired
-    public TShirtDaoJdbcTemplateImpl(JdbcTemplate newJdbcTemplate){
+    public TShirtDaoJdbcTemplateImpl(JdbcTemplate newJdbcTemplate) {
         this.jdbcTemplate = newJdbcTemplate;
     }
 
-    private TShirt mapRowToTShirt(ResultSet rs, int rowNum) throws SQLException{
+    private TShirt mapRowToTShirt(ResultSet rs, int rowNum) throws SQLException {
         TShirt tShirt = new TShirt();
         tShirt.setTShirtId(rs.getInt("t_shirt_id"));
         tShirt.setDescription(rs.getString("description"));
@@ -61,7 +61,7 @@ public class TShirtDaoJdbcTemplateImpl implements TShirtDao{
                 tShirt.getDescription(),
                 tShirt.getPrice(),
                 tShirt.getQuantity()
-                );
+        );
         int id = jdbcTemplate.queryForObject("SELECT LAST_INSERT_ID()", Integer.class);
 
         tShirt.setTShirtId(id);
@@ -74,7 +74,7 @@ public class TShirtDaoJdbcTemplateImpl implements TShirtDao{
         try {
 
             return jdbcTemplate.queryForObject(GET_T_SHIRT_SQL, this::mapRowToTShirt, tShirtId);
-        }catch(EmptyResultDataAccessException e){
+        } catch (EmptyResultDataAccessException e) {
             return null;
         }
     }
@@ -89,7 +89,7 @@ public class TShirtDaoJdbcTemplateImpl implements TShirtDao{
                 tShirt.getPrice(),
                 tShirt.getQuantity(),
                 tShirt.getTShirtId()
-                );
+        );
 
 
     }

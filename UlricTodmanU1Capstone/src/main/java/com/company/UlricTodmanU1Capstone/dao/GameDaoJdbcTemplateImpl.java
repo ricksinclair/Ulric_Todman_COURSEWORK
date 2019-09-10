@@ -34,16 +34,14 @@ public class GameDaoJdbcTemplateImpl implements GameDao {
             "DELETE FROM game WHERE game_id = ?";
 
 
-
-
     private JdbcTemplate jdbcTemplate;
 
     @Autowired
-    public GameDaoJdbcTemplateImpl(JdbcTemplate newJdbcTemplate){
+    public GameDaoJdbcTemplateImpl(JdbcTemplate newJdbcTemplate) {
         this.jdbcTemplate = newJdbcTemplate;
     }
 
-    private Game  mapRowToGame(ResultSet rs, int rowNum) throws SQLException{
+    private Game mapRowToGame(ResultSet rs, int rowNum) throws SQLException {
         Game game = new Game();
         game.setGameId(rs.getInt("game_id"));
         game.setDescription(rs.getString("description"));
@@ -65,7 +63,7 @@ public class GameDaoJdbcTemplateImpl implements GameDao {
                 game.getPrice(),
                 game.getStudio(),
                 game.getQuantity()
-                );
+        );
         int id = jdbcTemplate.queryForObject("SELECT LAST_INSERT_ID()", Integer.class);
 
         game.setGameId(id);
@@ -77,7 +75,7 @@ public class GameDaoJdbcTemplateImpl implements GameDao {
     public Game getGame(int gameId) {
         try {
             return jdbcTemplate.queryForObject(GET_GAME_SQL, this::mapRowToGame, gameId);
-        }catch(EmptyResultDataAccessException e){
+        } catch (EmptyResultDataAccessException e) {
             return null;
         }
     }
@@ -98,7 +96,7 @@ public class GameDaoJdbcTemplateImpl implements GameDao {
                 game.getStudio(),
                 game.getQuantity(),
                 game.getGameId()
-                );
+        );
     }
 
     @Override
@@ -108,7 +106,7 @@ public class GameDaoJdbcTemplateImpl implements GameDao {
 
     @Override
     public List<Game> getGamesByStudio(String studio) {
-     return    jdbcTemplate.query(GET_GAMES_BY_STUDIO_SQL, this::mapRowToGame, "%"+ studio+"%");
+        return jdbcTemplate.query(GET_GAMES_BY_STUDIO_SQL, this::mapRowToGame, "%" + studio + "%");
     }
 
     @Override
@@ -118,6 +116,6 @@ public class GameDaoJdbcTemplateImpl implements GameDao {
 
     @Override
     public List<Game> getGamesByTitle(String title) {
-        return jdbcTemplate.query(GET_GAMES_BY_TITLE, this::mapRowToGame, "%"+ title+"%");
+        return jdbcTemplate.query(GET_GAMES_BY_TITLE, this::mapRowToGame, "%" + title + "%");
     }
 }
