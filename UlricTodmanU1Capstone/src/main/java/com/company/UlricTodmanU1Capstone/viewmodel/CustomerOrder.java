@@ -1,6 +1,7 @@
-package com.company.UlricTodmanU1Capstone.model;
+package com.company.UlricTodmanU1Capstone.viewmodel;
 
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.Objects;
 
@@ -24,9 +25,9 @@ public class CustomerOrder {
     @NotEmpty(message = "Item type must not be null and must have a length greater than zero")
     @Size(max = 20, message = "Item type must be 20 characters or less")
     private String itemType;
-    @NotEmpty(message = "Item id must not be null and must have a length greater than zero")
+    @NotNull(message = "Item id must not be null and must have a length greater than zero")
     private int itemId;
-    @NotEmpty(message = "Quantity must be included and greater than zero")
+    @NotNull(message = "Quantity must be included and greater than zero")
     private int quantity;
 
     public int getQuantity() {

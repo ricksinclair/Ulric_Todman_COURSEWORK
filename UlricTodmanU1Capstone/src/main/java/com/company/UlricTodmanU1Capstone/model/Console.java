@@ -23,7 +23,7 @@ public class Console implements Product {
     @NotEmpty(message = "Processor must not be null and must have a length greater than zero")
     @Size(max = 20, message = "Processor must be 20 characters or less")
     private String processor;
-    @NotEmpty(message = "Price must not be null and must be a non-zero value")
+    @NotNull(message = "Price must not be null and must be a non-zero value")
     private BigDecimal price;
     @NotNull(message = "Quantity must not be null")
     private int quantity;

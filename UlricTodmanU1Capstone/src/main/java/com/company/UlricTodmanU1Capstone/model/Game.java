@@ -3,6 +3,7 @@ package com.company.UlricTodmanU1Capstone.model;
 import com.company.UlricTodmanU1Capstone.model.interfaces.Product;
 
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.math.BigDecimal;
 import java.util.Objects;
@@ -18,12 +19,15 @@ public class Game implements Product {
     @NotEmpty(message = "Description must not be null and must have a length greater than zero")
     @Size(max = 255, message = "Description must be 255 characters or less")
     private String description;
-    @NotEmpty(message = "Must include price")
+    @NotNull(message = "Must include price")
+
+
     private BigDecimal price;
+
     @NotEmpty(message = "Studio must not be null and must have a length greater than zero")
     @Size(max = 50, message = "Studio must be 50 characters or less")
     private String studio;
-    @NotEmpty(message= "Quantity must not be empty and must be a non-zero value")
+    @NotNull(message= "Quantity must not be empty and must be a non-zero value")
     private int quantity;
 
 

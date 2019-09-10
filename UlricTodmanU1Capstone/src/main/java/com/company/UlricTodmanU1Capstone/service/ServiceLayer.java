@@ -3,16 +3,17 @@ package com.company.UlricTodmanU1Capstone.service;
 import com.company.UlricTodmanU1Capstone.dao.*;
 import com.company.UlricTodmanU1Capstone.model.*;
 import com.company.UlricTodmanU1Capstone.model.interfaces.Product;
-import com.company.UlricTodmanU1Capstone.viewmodel.ConsoleViewModel;
-import com.company.UlricTodmanU1Capstone.viewmodel.GameViewModel;
-import com.company.UlricTodmanU1Capstone.viewmodel.TShirtViewModel;
-import com.company.UlricTodmanU1Capstone.viewmodel.ViewModel;
+import com.company.UlricTodmanU1Capstone.viewmodel.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.*;
 
+@Component
 public class ServiceLayer {
     private ConsoleDao consoleDao;
     private GameDao gameDao;
@@ -108,7 +109,7 @@ public class ServiceLayer {
                     TShirt tShirt = tShirtDao.getTShirt(productId);
                     if (tShirt.getQuantity() <= 0 || tShirt.getQuantity() - quantity <= 0) {
                         throw new IllegalArgumentException("Not enough of this t-shirt in stock to satisfy order");
-                    } else {
+                     } else {
                         return true;
                     }
                 case "Games":
@@ -203,7 +204,7 @@ private boolean validateRating(Game game){
 
     @Transactional
     public Invoice processInvoiceReq(CustomerOrder customerOrder) {
-        int quantity = customerOrder.getQuantity();
+         int quantity = customerOrder.getQuantity();
         int itemId = customerOrder.getItemId();
         String itemType = customerOrder.getItemType();
         String state = customerOrder.getState();
@@ -231,7 +232,7 @@ private boolean validateRating(Game game){
                 invoice.setUnitPrice(product.getPrice());
                 invoice.setSubTotal( invoice.getUnitPrice().multiply(new BigDecimal(quantity)));
                 if (stateSet.contains(state)) {
-                    invoice.setTax( salesTaxRateDao.getTaxRate(state).getRate().multiply(invoice.getSubTotal()));
+                    invoice.setTax( salesTaxRateDao.getTaxRate(state).getRate().multiply(invoice.getSubTotal()).setScale(2, RoundingMode.DOWN));
                 } else {
                     throw new IllegalArgumentException("STATE MUST BE IN TWO-CHARACTER ABBREVIATED FORMAT");
 
@@ -240,24 +241,19 @@ private boolean validateRating(Game game){
                 invoice.setName(customerOrder.getName());
                 invoice.setStreet(customerOrder.getStreet());
                 invoice.setCity(customerOrder.getCity());
+                invoice.setItemId(itemId);
+                invoice.setItemType(itemType);
                 invoice.setState(customerOrder.getState());
                 invoice.setZipCode(customerOrder.getZipCode());
                 invoice.setProcessingFee(setProcessingFee(itemType, quantity));
                 invoice.setQuantity(customerOrder.getQuantity());
-                invoice.setTotal(invoice.getSubTotal().add(invoice.getProcessingFee().add(invoice.getTax())));
+                invoice.setTotal(invoice.getSubTotal().add(invoice.getProcessingFee().add(invoice.getTax())).setScale(2, RoundingMode.DOWN));
 
                 invoice = invoiceDao.addInvoice(invoice);
-
-
-
-
-
-
             }
 
 
 
-        invoice =  invoiceDao.addInvoice(invoice);
 
             return invoice;
     }
@@ -312,6 +308,7 @@ private boolean validateRating(Game game){
 
 
     }
+
     public Game getGame(int gameId) {
         return gameDao.getGame(gameId);
     }
@@ -395,6 +392,10 @@ private boolean validateRating(Game game){
     public void deleteTShirt(int tShirtId) {
         tShirtDao.deleteTShirt(tShirtId);
     }
+
+    public Invoice getInvoice(int invoiceId){ return invoiceDao.getInvoice(invoiceId);}
+    public void deleteInvoice(int invoiceId){ invoiceDao.deleteInvoice(invoiceId);}
+    public List<Invoice> getAllInvoices(){ return invoiceDao.getAllInvoices();}
 
 
 }

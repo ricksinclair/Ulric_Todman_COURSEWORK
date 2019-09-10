@@ -1,42 +1,23 @@
 package com.company.UlricTodmanU1Capstone.model;
 
+import com.company.UlricTodmanU1Capstone.viewmodel.CustomerOrder;
+
 import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.util.Objects;
 
 public class    Invoice extends CustomerOrder {
     private int invoiceId;
-//    @NotEmpty(message = "Name must not be null and must have a length greater than zero")
-//    @Size(max = 80, message = "Name must be 80 characters or less")
-//    private String name;
-//    @NotEmpty(message = "Street must not be null and must have a length greater than zero")
-//    @Size(max = 30, message = "Street must be 30 characters or less")
-//    private String street;
-//    @NotEmpty(message = "City must not be null and must have a length greater than zero")
-//    @Size(max = 30, message = "City must be 30 characters or less")
-//    private String city;
-//    @NotEmpty(message = "Street must not be null and must have a length greater than zero")
-//    @Size(min = 2, max = 2, message = "State has length of 2. Please enter 2-character state abbreviation.")
-//    private String state;
-//    @NotEmpty(message = "Zip code  must not be null and must have a length greater than zero")
-//    @Size(min = 5, max = 5, message = "Zip code  must be exactly 5 characters")
-//    private String zipCode;
-//    @NotEmpty(message = "Item type must not be null and must have a length greater than zero")
-//    @Size(max = 20, message = "Item type must be 20 characters or less")
-//    private String itemType;
-//    @NotEmpty(message = "Item id must not be null and must have a length greater than zero")
-//    private int itemId;
-    @NotEmpty(message = "must include unit price")
+    @NotNull(message = "must include unit price")
     private BigDecimal unitPrice;
-
-    @NotEmpty(message = "must include subtotal")
+    @NotNull(message = "must include subtotal")
     private BigDecimal subTotal;
-    @NotEmpty(message = "must include tax")
+    @NotNull(message = "must include tax")
     private BigDecimal tax;
-    @NotEmpty(message = "must include processingFee")
+    @NotNull(message = "must include processingFee")
     private BigDecimal processingFee;
-    @NotEmpty(message = "must include total")
+    @NotNull(message = "must include total")
     private BigDecimal total;
 
     public int getInvoiceId() {

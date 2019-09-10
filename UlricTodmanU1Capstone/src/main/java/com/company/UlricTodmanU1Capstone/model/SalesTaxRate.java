@@ -7,10 +7,7 @@ import java.util.Objects;
 
 public class SalesTaxRate {
 
-    @NotEmpty(message = "State must not be null and must have a length greater than zero")
-    @Size(min=2,max = 2, message = "State must be 2 character abbreviation")
     private String state;
-    @NotEmpty(message = "Rate must not be null and must have a value greater than zero")
     private BigDecimal rate;
 
 

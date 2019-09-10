@@ -19,7 +19,7 @@ public class TShirt implements Product {
     @NotEmpty(message = "Description must not be null and must have a length greater than zero")
     @Size(max = 255, message = "Description must be 255 characters or less")
     private String description;
-    @NotEmpty(message = "Price must not be null and must have a value greater than zero")
+    @NotNull(message = "Price must not be null and must have a value greater than zero")
     private BigDecimal price;
     @NotNull(message = "Quantity must not be null")
     private int quantity;
