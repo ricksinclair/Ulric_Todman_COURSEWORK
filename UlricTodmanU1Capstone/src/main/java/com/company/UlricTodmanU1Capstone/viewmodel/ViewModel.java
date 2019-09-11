@@ -4,7 +4,7 @@ import com.company.UlricTodmanU1Capstone.model.Invoice;
 
 import java.util.Objects;
 
-public abstract class ViewModel {
+public abstract class  ViewModel {
     private Invoice invoice;
 
     public Invoice getInvoice() {
