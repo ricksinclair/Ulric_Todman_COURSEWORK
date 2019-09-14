@@ -104,21 +104,21 @@ public class ServiceLayer {
 
                 case "Consoles":
                     Console console = consoleDao.getConsole(productId);
-                    if (console.getQuantity() <= 0 || console.getQuantity() - quantity <= 0) {
+                    if (console.getQuantity() <= 0 || console.getQuantity() - quantity < 0) {
                         throw new IllegalArgumentException("Not enough of this console in stock to satisfy order");
                     } else {
                         return true;
                     }
                 case "T-Shirts":
                     TShirt tShirt = tShirtDao.getTShirt(productId);
-                    if (tShirt.getQuantity() <= 0 || tShirt.getQuantity() - quantity <= 0) {
+                    if (tShirt.getQuantity() <= 0 || tShirt.getQuantity() - quantity < 0) {
                         throw new IllegalArgumentException("Not enough of this t-shirt in stock to satisfy order");
                     } else {
                         return true;
                     }
                 case "Games":
                     Game game = gameDao.getGame(productId);
-                    if (game.getQuantity() <= 0 || game.getQuantity() - quantity <= 0) {
+                    if (game.getQuantity() <= 0 || game.getQuantity() - quantity < 0) {
                         throw new IllegalArgumentException("Not enough of this game in stock to satisfy order");
                     } else {
 
