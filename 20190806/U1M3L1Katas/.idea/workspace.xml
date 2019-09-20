@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a4df6db0-db37-4559-abc7-613eb15caaee" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../csv/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/motorcycles.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/motorcycles.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/motorcycles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/new_moto_file.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/new_moto_file1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/newclassmatelist.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/src/main/java/com/company/Motorcycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/src/main/java/com/company/csv/AppManualReadArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/src/main/java/com/company/csv/AppManualReadObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/src/main/java/com/company/csv/AppOpenCSVReadArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/src/main/java/com/company/csv/AppOpenCSVReadObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/src/main/java/com/company/json/AppJacksonReadObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/src/main/java/com/company/json/AppJacksonWriteObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/src/main/java/com/company/xml/AppJacksonReadObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../csv/src/main/java/com/company/xml/AppJacksonWriteObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exceptions/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exceptions/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exceptions/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exceptions/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exceptions/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exceptions/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exceptions/src/main/java/com/company/exceptions/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exceptions/src/main/java/com/company/exceptions/App2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exceptions/src/main/java/com/company/exceptions/App3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exceptions/src/main/java/com/company/exceptions/App4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U1M3L2Katas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../U1M3L2Katas/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../u1m3l2Maps/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../u1m3l2Maps/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1P18uKOSJQhZ0wOWQV8saCxaH8D" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../U1M3L2Katas" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.All in U1M3L1Katas">
+    <configuration name="All in U1M3L1Katas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="U1M3L1Katas" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="U1M3L1Katas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.AppTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in U1M3L1Katas" />
+        <item itemvalue="JUnit.AppTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a4df6db0-db37-4559-abc7-613eb15caaee" name="Default Changelist" comment="" />
+      <created>1565030463251</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565030463251</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

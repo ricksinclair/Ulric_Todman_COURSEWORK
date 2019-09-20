@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f49b7440-86cb-4161-a216-5469d085ac4b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../20190913/moto-config-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190913/moto-config-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190913/test/src/main/java/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190913/test/src/main/java/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190917/Caching/rsvp-service/src/main/java/com/trilogyed/rsvp/controller/RsvpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190917/Caching/rsvp-service/src/main/java/com/trilogyed/rsvp/controller/RsvpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190917/Caching/rsvp-service/src/main/java/com/trilogyed/rsvp/dao/RsvpDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190917/Caching/rsvp-service/src/main/java/com/trilogyed/rsvp/dao/RsvpDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190917/Caching/rsvp-service/src/main/java/com/trilogyed/rsvp/dao/RsvpDaoJdbcTemplateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190917/Caching/rsvp-service/src/main/java/com/trilogyed/rsvp/dao/RsvpDaoJdbcTemplateImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190917/Caching/rsvp-service/src/main/java/com/trilogyed/rsvp/model/Rsvp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190917/Caching/rsvp-service/src/main/java/com/trilogyed/rsvp/model/Rsvp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190917/Caching/rsvp-service/src/test/java/com/trilogyed/rsvp/dao/RsvpDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190917/Caching/rsvp-service/src/test/java/com/trilogyed/rsvp/dao/RsvpDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190917/Caching/rsvp-service/src/test/java/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190917/Caching/rsvp-service/src/test/java/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190917/account-service/src/main/java/com/trilogyed/accountservice/controller/AccountController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190917/account-service/src/main/java/com/trilogyed/accountservice/model/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190917/account-service/src/main/java/com/trilogyed/accountservice/util/messages/EmailListEntry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190917/email-list-queue-consumer/src/main/java/com/trilogyed/emaillistqueueconsumer/MessageListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190917/email-list-queue-consumer/src/main/java/com/trilogyed/emaillistqueueconsumer/util/messages/EmailListEntry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/dao/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/dao/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/dao/InvoiceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/dao/InvoiceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/model/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/model/Invoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/service/ServiceLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/service/ServiceLayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/viewModel/CustomerViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/viewModel/CustomerViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/viewModel/InvoiceViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/viewModel/InvoiceViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rick/src/main/java/com/company/rick/controller/RickController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../rick/src/main/java/com/company/rick/controller/RickController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rick/src/test/java/com/company/rick/RickControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../rick/src/test/java/com/company/rick/RickControllerTest.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\Bootcamp\Ulric_Todman_COURSEWORK\glossary-project\eureka-server\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1R4GW3v8d0OBTKoYrzutkqlVmka" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f49b7440-86cb-4161-a216-5469d085ac4b" name="Default Changelist" comment="" />
+      <created>1568918982904</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568918982904</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

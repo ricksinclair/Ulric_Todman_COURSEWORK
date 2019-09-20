@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8478e078-9f25-44ae-8f48-6f8b19eb6d8c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../20190913/test/src/main/java/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/dao/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/dao/InvoiceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/model/Invoice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/service/ServiceLayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/viewModel/CustomerViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/viewModel/InvoiceViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rick/src/main/java/com/company/rick/controller/RickController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rick/src/test/java/com/company/rick/RickControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190913/moto-config-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190913/moto-config-server/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1QhZv6SmMg5e5EYtTXUcSDTVLoX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.VinLookupApplication">
+    <configuration name="VinLookupApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.trilogyed.vinlookup.VinLookupApplication" />
+      <module name="vin-lookup" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.trilogyed.vinlookup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in vin-lookup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vin-lookup" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.VinLookupApplication" />
+        <item itemvalue="JUnit.All in vin-lookup" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8478e078-9f25-44ae-8f48-6f8b19eb6d8c" name="Default Changelist" comment="" />
+      <created>1568225015782</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568225015782</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

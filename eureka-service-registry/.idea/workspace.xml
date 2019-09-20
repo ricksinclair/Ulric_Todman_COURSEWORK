@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="75e5de6e-226b-4f28-af8a-b481410d8cc9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../random-greeting-service/src/main/java/com/trilogyed/randomgreetingservice/controller/RandomGreetingServiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../random-greeting-service/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../random-greeting-service/src/test/java/com/trilogyed/randomgreetingservice/RandomGreetingServiceControllerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-cloud-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hello-cloud-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-cloud-service/src/main/java/com/trilogyed/hellocloudservice/HelloCloudServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hello-cloud-service/src/main/java/com/trilogyed/hellocloudservice/HelloCloudServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-cloud-service/src/main/java/com/trilogyed/hellocloudservice/controller/HelloCloudServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hello-cloud-service/src/main/java/com/trilogyed/hellocloudservice/controller/HelloCloudServiceController.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1Qh9oO2reVxWlsg6prhANlS1aRx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="EurekaServiceRegistryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.trilogyed.eurekaserviceregistry.EurekaServiceRegistryApplication" />
+      <module name="eureka-service-registry" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.trilogyed.eurekaserviceregistry.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.EurekaServiceRegistryApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="75e5de6e-226b-4f28-af8a-b481410d8cc9" name="Default Changelist" comment="" />
+      <created>1568212134668</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568212134668</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

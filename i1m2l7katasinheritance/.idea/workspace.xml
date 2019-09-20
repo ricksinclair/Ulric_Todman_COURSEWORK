@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="72030c98-b746-428b-9aa3-d7004907d37a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../20190802/U1M2L8PBD/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190802/U1M2L8PBD/.idea/U1M2L8PBD.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190802/U1M2L8PBD/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190802/U1M2L8PBD/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190806/U1M3L1Katas/U1M3L1Katas.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190806/U1M3L1Katas/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190806/U1M3L1Katas/src/main/java/com/company/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190806/U1M3L1Katas/src/test/java/com/company/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190806/U1M3L1Katas/src/test/java/com/company/ClassmatesListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190806/U1M3L1Katas/src/test/java/com/company/LinkedListAppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190806/U1M3L1Katas/src/test/java/com/company/SetIteratorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190806/U1M3L1Katas/testfiles/output1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190806/U1M3L1Katas/testfiles/output2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190806/U1M3L1Katas/testfiles/output3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190806/U1M3L2Katas/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190806/U1M3L2Katas/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190806/U1M3L2Katas/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190806/U1M3L2Katas/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190806/U1M3L2Katas/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190806/U1M3L2Katas/src/main/java/com/company/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190806/U1M3L2Katas/src/main/java/com/company/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190806/U1M3L2Katas/src/test/java/com/company/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190806/U1M3L2Katas/testfiles/keys/output1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190806/U1M3L2Katas/testfiles/keys/output2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190806/U1M3L2Katas/testfiles/keys/output3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190806/U1M3L2Katas/testfiles/keysAndValues/output1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190806/U1M3L2Katas/testfiles/keysAndValues/output2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190806/U1M3L2Katas/testfiles/keysAndValues/output3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190806/U1M3L2Katas/testfiles/values/output1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190806/U1M3L2Katas/testfiles/values/output2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190806/U1M3L2Katas/testfiles/values/output3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U1M3L1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U1M3L1/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U1M3L1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U1M3L1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U1M3L1/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U1M3L1/U1M3L1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U1M3L1/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U1M3L1/src/main/java/com/company/lists/CollectionsExamples.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../20190802/U1M2L7PBD/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../20190802/U1M2L7PBD/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\Bootcamp\Ulric_Todman_COURSEWORK\i1m2l7katasinheritance\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1OpSjen9D3EIXIwL4pbXtKmp6Gg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="full.screen.before.presentation.mode" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="AppTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.AppTest" />
+      <module name="i1m2l7katasinheritance" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AppTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="72030c98-b746-428b-9aa3-d7004907d37a" name="Default Changelist" comment="" />
+      <created>1564673181841</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1564673181841</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

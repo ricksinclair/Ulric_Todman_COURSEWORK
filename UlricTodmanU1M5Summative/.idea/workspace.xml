@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="75e80f62-2fae-4133-b127-b3658f88c8ae" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/UlricTodmanU1M5Summative/dao/BookDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/UlricTodmanU1M5Summative/dao/BookDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/UlricTodmanU1M5Summative/dao/PublisherDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/UlricTodmanU1M5Summative/dao/PublisherDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/UlricTodmanU1M5Summative/model/Publisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/UlricTodmanU1M5Summative/model/Publisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/UlricTodmanU1M5Summative/dao/AuthorDaoJdbcTemplateImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/UlricTodmanU1M5Summative/dao/AuthorDaoJdbcTemplateImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/UlricTodmanU1M5Summative/dao/BookDaoJdbcTemplateImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/UlricTodmanU1M5Summative/dao/BookDaoJdbcTemplateImplTest.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1PrJ1uCWb2abV3cq5yxrESv4nwg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.com.company.UlricTodmanU1M5Summative.dao in UlricTodmanU1M5Summative">
+    <configuration name="All in UlricTodmanU1M5Summative (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UlricTodmanU1M5Summative" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in UlricTodmanU1M5Summative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UlricTodmanU1M5Summative" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthorDaoJdbcTemplateImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UlricTodmanU1M5Summative" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.UlricTodmanU1M5Summative.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.UlricTodmanU1M5Summative.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.company.UlricTodmanU1M5Summative.dao.AuthorDaoJdbcTemplateImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookDaoJdbcTemplateImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UlricTodmanU1M5Summative" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.UlricTodmanU1M5Summative.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.UlricTodmanU1M5Summative.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.company.UlricTodmanU1M5Summative.dao.BookDaoJdbcTemplateImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.company.UlricTodmanU1M5Summative.dao in UlricTodmanU1M5Summative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UlricTodmanU1M5Summative" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.UlricTodmanU1M5Summative.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.UlricTodmanU1M5Summative.dao" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.com.company.UlricTodmanU1M5Summative.dao in UlricTodmanU1M5Summative" />
+        <item itemvalue="JUnit.All in UlricTodmanU1M5Summative (1)" />
+        <item itemvalue="JUnit.BookDaoJdbcTemplateImplTest" />
+        <item itemvalue="JUnit.All in UlricTodmanU1M5Summative" />
+        <item itemvalue="JUnit.AuthorDaoJdbcTemplateImplTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="75e80f62-2fae-4133-b127-b3658f88c8ae" name="Default Changelist" comment="" />
+      <created>1566626069758</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566626069758</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

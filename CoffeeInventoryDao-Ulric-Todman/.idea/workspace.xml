@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ac967100-32a3-43f9-875c-6a07f4ce3e0c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../CarLotDao-Ulric-Todman/src/main/java/com/company/CarLotDaoUlricTodman/dao/CarLotDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CarLotDao-Ulric-Todman/src/main/java/com/company/CarLotDaoUlricTodman/dao/CarLotDaoJdbcTemplateImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CarLotDao-Ulric-Todman/src/main/java/com/company/CarLotDaoUlricTodman/model/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CarLotDao-Ulric-Todman/src/test/java/com/company/CarLotDaoUlricTodman/CarLotDaoTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CarLotDao-Ulric-Todman/src/test/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/CoffeeInventoryDaoUlricTodman/dao/CoffeeInventoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/CoffeeInventoryDaoUlricTodman/dao/CoffeeInventoryDaoJdbcTemplateImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/CoffeeInventoryDaoUlricTodman/model/Coffee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/CoffeeInventoryDaoUlricTodman/model/Roaster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/company/CoffeeInventoryDaoUlricTodman/CoffeeInventoryDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../moto-inventory-jdbctemplate-dao/src/main/java/com/company/motoinventoryjdbctemplatedao/dao/MotoInventoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../moto-inventory-jdbctemplate-dao/src/main/java/com/company/motoinventoryjdbctemplatedao/dao/MotoInventoryDaoJdbcTemplateImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../moto-inventory-jdbctemplate-dao/src/main/java/com/company/motoinventoryjdbctemplatedao/model/Motorcycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../moto-inventory-jdbctemplate-dao/src/test/java/com/company/motoinventoryjdbctemplatedao/dao/MotoInventoryDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../moto-inventory-jdbctemplate-dao/src/test/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1PkKH6Oe39wHB8pzXUfofoCDDXI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Bootcamp\Ulric_Todman_COURSEWORK\CoffeeInventoryDao-Ulric-Todman\src\test" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="CoffeeInventoryDaoTest.addGetDeleteCoffee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CoffeeInventoryDao-Ulric-Todman" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.CoffeeInventoryDaoUlricTodman.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.CoffeeInventoryDaoUlricTodman" />
+      <option name="MAIN_CLASS_NAME" value="com.company.CoffeeInventoryDaoUlricTodman.CoffeeInventoryDaoTest" />
+      <option name="METHOD_NAME" value="addGetDeleteCoffee" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CoffeeInventoryDaoTest.addGetDeleteCoffee" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ac967100-32a3-43f9-875c-6a07f4ce3e0c" name="Default Changelist" comment="" />
+      <created>1566412563840</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566412563840</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

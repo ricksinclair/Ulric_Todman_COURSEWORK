@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="77faff5b-495a-4658-8e45-4553e2fdf20f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/.idea/libraries/Maven__com_github_stefanbirkner_system_rules_1_19_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/U1M1L2Katas.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RectPavingCompany/src/main/java/com/company/RectPavingCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RectPavingCompany/src/main/java/com/company/RectPavingCompany.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/src/main/java/com/company/AddFive.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/src/main/java/com/company/AddFive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/src/main/java/com/company/AddFiveAndDouble.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/src/main/java/com/company/AddFiveAndDouble.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/src/main/java/com/company/AddThirteen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/src/main/java/com/company/AddThirteen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/src/main/java/com/company/AverageThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/src/main/java/com/company/AverageThree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/src/main/java/com/company/DoubleAndAddFive.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/src/main/java/com/company/DoubleAndAddFive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/src/main/java/com/company/MultiplyThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/src/main/java/com/company/MultiplyThree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/src/main/java/com/company/SubtractTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/src/main/java/com/company/SubtractTwo.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../../../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\Bootcamp\COLNYC201903CJS1\00-units\01-unit\01-module\02-lesson\activities\01-rectangular-paving-company\starter-code\L3demo\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="440" />
+    <option name="y" value="275" />
+    <option name="width" value="980" />
+    <option name="height" value="1090" />
+  </component>
+  <component name="ProjectId" id="1OSp3tYfwWyB5cYiCksGeCxJ4AC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="L3Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.L3Demo" />
+      <module name="L3demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.L3Demo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="77faff5b-495a-4658-8e45-4553e2fdf20f" name="Default Changelist" comment="" />
+      <created>1563977322440</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563977322440</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
