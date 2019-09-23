@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cba20e0b-0039-4761-ad90-0f7ef86438a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../20190913/test/src/main/java/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../rick/src/main/java/com/company/rick/controller/RickController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190913/moto-config-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190913/moto-config-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glossary-project/definition-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../glossary-project/definition-service/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glossary-project/eureka-server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../glossary-project/eureka-server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glossary-project/glossary/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../glossary-project/glossary/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glossary-project/glossary/src/main/java/com/trilogyed/glossary/feign/FeignSimpleEncoderConfig.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

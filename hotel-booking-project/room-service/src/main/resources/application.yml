@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: room-service
+  datasource:
+    url: jdbc:h2:file:./roomDB
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create
+
+server:
+  port: 8234

@@ -2,29 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f49b7440-86cb-4161-a216-5469d085ac4b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../20190913/moto-config-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190913/moto-config-server/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190913/test/src/main/java/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190913/test/src/main/java/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190917/Caching/rsvp-service/src/main/java/com/trilogyed/rsvp/controller/RsvpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190917/Caching/rsvp-service/src/main/java/com/trilogyed/rsvp/controller/RsvpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190917/Caching/rsvp-service/src/main/java/com/trilogyed/rsvp/dao/RsvpDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190917/Caching/rsvp-service/src/main/java/com/trilogyed/rsvp/dao/RsvpDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190917/Caching/rsvp-service/src/main/java/com/trilogyed/rsvp/dao/RsvpDaoJdbcTemplateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190917/Caching/rsvp-service/src/main/java/com/trilogyed/rsvp/dao/RsvpDaoJdbcTemplateImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190917/Caching/rsvp-service/src/main/java/com/trilogyed/rsvp/model/Rsvp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190917/Caching/rsvp-service/src/main/java/com/trilogyed/rsvp/model/Rsvp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190917/Caching/rsvp-service/src/test/java/com/trilogyed/rsvp/dao/RsvpDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190917/Caching/rsvp-service/src/test/java/com/trilogyed/rsvp/dao/RsvpDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190917/Caching/rsvp-service/src/test/java/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190917/Caching/rsvp-service/src/test/java/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190917/account-service/src/main/java/com/trilogyed/accountservice/controller/AccountController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190917/account-service/src/main/java/com/trilogyed/accountservice/model/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190917/account-service/src/main/java/com/trilogyed/accountservice/util/messages/EmailListEntry.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190917/email-list-queue-consumer/src/main/java/com/trilogyed/emaillistqueueconsumer/MessageListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190917/email-list-queue-consumer/src/main/java/com/trilogyed/emaillistqueueconsumer/util/messages/EmailListEntry.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/dao/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/dao/CustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/dao/InvoiceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/dao/InvoiceRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/model/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/model/Invoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/service/ServiceLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/service/ServiceLayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/viewModel/CustomerViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/viewModel/CustomerViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/viewModel/InvoiceViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JpaReview/src/main/java/com/company/JpaReview/viewModel/InvoiceViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rick/src/main/java/com/company/rick/controller/RickController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../rick/src/main/java/com/company/rick/controller/RickController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rick/src/test/java/com/company/rick/RickControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../rick/src/test/java/com/company/rick/RickControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../definition-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../definition-service/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../glossary/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../glossary/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

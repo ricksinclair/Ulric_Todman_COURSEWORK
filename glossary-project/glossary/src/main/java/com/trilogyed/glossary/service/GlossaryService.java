@@ -42,9 +42,9 @@ public class GlossaryService {
     }
 
     public Definition addDefinition(Definition definition) {
-        String[] words = definition.getDefinition().split("\\s+");
+        String[] words = definition.getDefinition().toLowerCase().split("\\s+");
         for (String word : words) {
-            if (prohibitedWordSet.contains(word)) {
+            if (prohibitedWordSet.contains(word.toLowerCase())) {
                 throw new IllegalArgumentException("Prohibited word " + word + " found. Please watch your language and try again.");
 
             }
