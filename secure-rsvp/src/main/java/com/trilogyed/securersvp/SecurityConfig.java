@@ -2,17 +2,20 @@ package com.trilogyed.securersvp;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.authentication.logout.CookieClearingLogoutHandler;
+import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.sql.DataSource;
 
 @Configuration
-@EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     DataSource datasource;
@@ -28,11 +31,26 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .passwordEncoder(passwordEncoder);
     }
 
+    @Override
     public void configure(HttpSecurity httpSecurity) throws Exception{
         httpSecurity.httpBasic();
         httpSecurity.authorizeRequests()
                 .mvcMatchers("/privateEvent").hasAuthority("REGISTERED_USERS")
-                .anyRequest().permitAll();
+                .mvcMatchers("/registerPrivateEvent").hasAuthority("REGISTERED_USERS")
+                .mvcMatchers("/publishEvent").hasAuthority("ADMIN")
+                .mvcMatchers(HttpMethod.DELETE, "/privateEvent/*").hasAuthority("ADMIN")
+                .anyRequest().authenticated();
+
+        httpSecurity.logout()
+                .clearAuthentication(true)
+                .deleteCookies("JSESSIONID")
+                .deleteCookies("XSRF-TOKEN")
+                .invalidateHttpSession(true)
+                .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
+                .logoutSuccessUrl("/allDone").deleteCookies("JSESSIONID");
+
+
+        httpSecurity.csrf().disable();
     }
 
 }

@@ -231,30 +231,7 @@ public class TaskerServiceLayerTest {
             doReturn(taskListsTest).when(taskerDao).getTasksByCategory("test");
             doReturn(randomTaskAdded).when(taskerDao).createTask(randomTaskNotAdded);
             doReturn(taskList1).when(taskerDao).getTasksByCategory("random");
-
-
-
-
-
-//
-
-//
-
-//
-//            TaskViewModel tvm1 = new TaskViewModel();
-//            tvm1.setDescription(task1.getDescription());
-//            tvm1.setCategory(task1.getCategory());
-//            tvm1.setCreateDate(task1.getCreateDate());
-//            tvm1.setDueDate(task1.getDueDate());
-//
-//            TaskViewModel tvmProcessed1 = new TaskViewModel();
-//            tvmProcessed1.setId(taskProcessed1.getId());
-//            tvmProcessed1.setDescription(taskProcessed1.getDescription());
-//            tvmProcessed1.setDueDate(taskProcessed1.getDueDate());
-//            tvmProcessed1.setCreateDate(taskProcessed1.getCreateDate());
-//            tvmProcessed1.setCategory(taskProcessed1.getCategory());
-//            tvmProcessed1.setAdvertisement(adServerFeignClient.getRandomAd());
-
+            
 
         }
 
