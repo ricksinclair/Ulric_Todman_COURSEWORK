@@ -73,7 +73,27 @@ public class TaskerServiceLayerTest {
             assertNull(service.fetchTask(4));
         }
 
-        private void setUpTaskerDaoMock(){
+        @Test
+        public void updateTasks(){
+            TaskViewModel taskUpdated = new TaskViewModel();
+            taskUpdated.setId(3);
+            taskUpdated.setDescription("This is task that hasn't been updated");
+            taskUpdated.setCategory("test");
+            taskUpdated.setCreateDate(LocalDate.of(2019, 9, 23));
+            taskUpdated.setDueDate(LocalDate.of(2019, 9, 24));
+            taskUpdated.setAdvertisement(adServerFeignClient.getRandomAd());
+            service.updateTask(taskUpdated);
+            TaskViewModel fromService = service.fetchTask(taskUpdated.getId());
+            assertEquals(taskUpdated, fromService);
+
+        }
+
+
+
+        @Test
+
+
+        public void setUpTaskerDaoMock(){
             taskerDao = mock(TaskerDaoJdbcTemplateImpl.class);
             Task task = new Task();
             task.setDescription("This is a test task");
