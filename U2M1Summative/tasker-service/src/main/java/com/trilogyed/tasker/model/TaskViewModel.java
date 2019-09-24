@@ -4,6 +4,7 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class TaskViewModel {
     private int id;
@@ -65,5 +66,23 @@ public class TaskViewModel {
 
     public void setAdvertisement(String advertisement) {
         this.advertisement = advertisement;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        TaskViewModel that = (TaskViewModel) o;
+        return getId() == that.getId() &&
+                getDescription().equals(that.getDescription()) &&
+                getCreateDate().equals(that.getCreateDate()) &&
+                getDueDate().equals(that.getDueDate()) &&
+                getCategory().equals(that.getCategory()) &&
+                getAdvertisement().equals(that.getAdvertisement());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(), getDescription(), getCreateDate(), getDueDate(), getCategory(), getAdvertisement());
     }
 }
