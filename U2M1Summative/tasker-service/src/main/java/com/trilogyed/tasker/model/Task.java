@@ -8,15 +8,9 @@ import java.util.Objects;
 public class Task {
 
     private int id;
-    @NotNull(message = "Must include description")
-    @Size(min = 0, max = 255)
     private String description;
-    @NotNull(message = "Must include createDate")
     private LocalDate createDate;
-    @NotNull(message = "Must include dueDate")
     private LocalDate dueDate;
-    @NotNull(message = "Must include category")
-    @Size(min = 0, max = 50)
     private String category;
 
     public int getId() {

@@ -1,19 +1,20 @@
 package com.trilogyed.tasker.model;
 
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.time.LocalDate;
 
 public class TaskViewModel {
     private int id;
-    @NotNull(message = "Must include description")
+    @NotEmpty(message = "Must include description")
     @Size(min = 0, max = 255)
     private String description;
     @NotNull(message = "Must include createDate")
     private LocalDate createDate;
     @NotNull(message = "Must include dueDate")
     private LocalDate dueDate;
-    @NotNull(message = "Must include category")
+    @NotEmpty(message = "Must include category")
     @Size(min = 0, max = 50)
     private String category;
     private String advertisement;

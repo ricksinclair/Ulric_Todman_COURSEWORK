@@ -13,14 +13,16 @@ import java.util.List;
 @Component
 public class TaskerServiceLayer {
 
+    @Autowired
     TaskerDao dao;
 
     @Autowired
     private final AdServerFeignClient client;
 
 
-    TaskerServiceLayer(AdServerFeignClient client){
-        this.client= client;
+    TaskerServiceLayer(AdServerFeignClient client, TaskerDao dao){
+        this.client = client;
+        this.dao  = dao;
     }
 
     public TaskViewModel fetchTask(int id) {
@@ -77,7 +79,7 @@ public class TaskerServiceLayer {
     public TaskViewModel newTask(TaskViewModel taskViewModel) {
 
         Task task = new Task();
-        task.setDescription(task.getDescription());
+        task.setDescription(taskViewModel.getDescription());
         task.setCreateDate(taskViewModel.getCreateDate());
         task.setDueDate(taskViewModel.getDueDate());
         task.setCategory(taskViewModel.getCategory());

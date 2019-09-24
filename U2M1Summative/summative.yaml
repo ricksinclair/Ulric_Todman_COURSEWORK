@@ -1,0 +1,143 @@
+openapi: 3.0.0
+info:
+  title: Tasker Service
+  description: REST service that allows CRUD operations for a task-tracking service.
+  version: 0.0.1
+servers: 
+  - url: 'http://localhost:3232'
+    description: Local dev server
+paths:
+  /tasks:
+    post:
+      summary: Creates a new task with provided information
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TaskViewModel'
+      responses:
+        '201':
+          description: A Task object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TaskViewModel'
+        '400':
+          description: Invalid request syntax.
+        '422':
+          description: Incomplete task information. Some required fields are missing.
+          
+    get:
+      summary: Retreives list of all Tasks.
+      responses:
+        '200':
+          description: A list of Task objects.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TaskViewModel'
+  /tasks/{id}:
+    get:
+      summary: Retreives a task with a given Id.
+      parameters: 
+        - name: id
+          in: path
+          required: true
+          description: Id of the task to be retreived.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: Task object with matching Id.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TaskViewModel'
+        '422':
+          description: Task with given Id could not be found.
+          
+    delete:
+      summary: Deletes Task with given Id.
+      parameters: 
+        - name: id
+          in: path
+          required: true
+          description: Id of the Task to be deleted.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: Task successfully deleted.
+        '422':
+          description: Task with given Id could not be found.
+          
+    put:
+      summary: Updates a Task with given Id.
+      parameters: 
+        - name: id
+          in: path
+          required: true
+          description: Id of the task to update.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TaskViewModel'
+      responses:
+        '200':
+          description: Task successfully updated.
+        '422':
+          description: task ID on path must match the ID in the Task object. 
+          
+  /tasks/category/{category}:
+    get:
+      summary: Retreives tasks this given category
+      parameters: 
+        - name: category
+          in: path
+          required: true
+          description: category of tasks to be retreived.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: List of Task objects matching given category.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TaskViewModel'
+        '422':
+          description: Tasks with given category could not be found.
+components:
+  schemas:
+    TaskViewModel:
+      properties:
+        id:
+          type: integer
+        description:
+          type: string
+        createDate:
+          type: string
+          format: date
+        dueDate:
+          type: string
+          format: date
+        category:
+          type: string
+        advertisement:
+          type: string
+      required: 
+        - description
+        - createDate
+        - dueDate
+        - category

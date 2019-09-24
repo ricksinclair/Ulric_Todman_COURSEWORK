@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -24,7 +25,7 @@ public class TaskerDaoJdbcTemplateImpl implements TaskerDao {
     public static final String UPDATE_TASK =
             "update task set task_description = ?, create_date = ?, due_date = ?, category = ? where task_id = ?";
     public static final String DELETE_TASK =
-            "delete from task";
+            "delete from task where task_id = ?";
 
     @Autowired
     private JdbcTemplate jdbcTemplate;
@@ -34,6 +35,7 @@ public class TaskerDaoJdbcTemplateImpl implements TaskerDao {
     }
 
     @Override
+    @Transactional
     public Task createTask(Task task) {
         jdbcTemplate.update(INSERT_TASK, task.getDescription(), task.getCreateDate(), task.getDueDate(), task.getCategory());
         int id = jdbcTemplate.queryForObject("SELECT LAST_INSERT_ID()", Integer.class);
@@ -78,9 +80,10 @@ public class TaskerDaoJdbcTemplateImpl implements TaskerDao {
     private Task mapRowToTask(ResultSet rs, int rowNum) throws SQLException {
         Task task = new Task();
         task.setId(rs.getInt("task_id"));
-        task.setCategory(rs.getString("task_description"));
+        task.setCategory(rs.getString("category"));
         task.setCreateDate(rs.getDate("create_date").toLocalDate());
         task.setDueDate(rs.getDate("due_date").toLocalDate());
+        task.setDescription(rs.getString("task_description"));
         return task;
 
     }
