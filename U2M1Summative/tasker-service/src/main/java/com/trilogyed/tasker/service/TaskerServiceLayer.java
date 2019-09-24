@@ -5,8 +5,10 @@ import com.trilogyed.tasker.model.Task;
 import com.trilogyed.tasker.model.TaskViewModel;
 import com.trilogyed.tasker.util.feign.AdServerFeignClient;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Component;
 
+import javax.validation.constraints.Null;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,20 +27,23 @@ public class TaskerServiceLayer {
         this.dao  = dao;
     }
 
-    public TaskViewModel fetchTask(int id) {
+    public TaskViewModel fetchTask(int id) throws EmptyResultDataAccessException, NullPointerException{
+try {
+    Task task = dao.getTask(id);
+    TaskViewModel tvm = new TaskViewModel();
 
-        Task task = dao.getTask(id);
-        TaskViewModel tvm = new TaskViewModel();
+    tvm.setId(task.getId());
+    tvm.setDescription(task.getDescription());
+    tvm.setCreateDate(task.getCreateDate());
+    tvm.setDueDate(task.getDueDate());
+    tvm.setCategory(task.getCategory());
+    tvm.setAdvertisement(client.getRandomAd());
+    // TODO - get ad from Adserver and put in tvm
 
-        tvm.setId(task.getId());
-        tvm.setDescription(task.getDescription());
-        tvm.setCreateDate(task.getCreateDate());
-        tvm.setDueDate(task.getDueDate());
-        tvm.setCategory(task.getCategory());
-        tvm.setAdvertisement(client.getRandomAd());
-        // TODO - get ad from Adserver and put in tvm
-
-        return tvm;
+    return tvm;
+}catch (NullPointerException | EmptyResultDataAccessException e){
+    return  null;
+        }
     }
 
     public List<TaskViewModel> fetchAllTasks() {

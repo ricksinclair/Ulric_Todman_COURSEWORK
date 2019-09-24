@@ -14,6 +14,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import java.time.LocalDate;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 import static org.mockito.Mockito.*;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -36,7 +37,7 @@ public class TaskerServiceLayerTest {
 
 
         @Test
-        public void addGetDeleteTasks(){
+        public void addGetTasks() throws Exception {
             Task task = new Task();
             task.setDescription("This is a test task");
             task.setCategory("test");
@@ -60,8 +61,17 @@ public class TaskerServiceLayerTest {
 
             assertEquals(tvm, tvmProcessed);
 
+
+
         }
 
+
+        @Test
+        public void deleteTasks(){
+            service.deleteTask(4);
+
+            assertNull(service.fetchTask(4));
+        }
 
         private void setUpTaskerDaoMock(){
             taskerDao = mock(TaskerDaoJdbcTemplateImpl.class);
@@ -99,6 +109,14 @@ public class TaskerServiceLayerTest {
             taskUpdated.setCreateDate(LocalDate.of(2019, 9, 23));
             taskUpdated.setDueDate(LocalDate.of(2019, 9, 24));
 
+             Task taskDeleted = new Task();
+            taskDeleted.setId(4);
+            taskDeleted.setDescription("This will be deleted");
+            taskDeleted.setCategory("test");
+            taskDeleted.setCreateDate(LocalDate.of(2019, 9, 23));
+            taskDeleted.setDueDate(LocalDate.of(2019, 9, 24));
+
+
 
             doReturn(taskProcessed).when(taskerDao).createTask(task);
             doReturn(taskProcessed1).when(taskerDao).createTask(task1);
@@ -106,6 +124,8 @@ public class TaskerServiceLayerTest {
             doReturn(taskProcessed1).when(taskerDao).getTask(taskProcessed1.getId());
             doReturn(taskUpdated).when(taskerDao).getTask(taskUpdated.getId());
             doNothing().when(taskerDao).updateTask(taskUpdated);
+            doNothing().when(taskerDao).deleteTask(4);
+            doReturn(null).when(taskerDao).getTask(4);
 
 
 

@@ -26,7 +26,7 @@ public class TaskerController {
     }
 
     @RequestMapping(value = "/tasks/{id}", method = RequestMethod.GET)
-    public TaskViewModel getTasksById(@PathVariable int id){
+    public TaskViewModel getTasksById(@PathVariable int id) throws Exception{
         return service.fetchTask(id);
     }
 

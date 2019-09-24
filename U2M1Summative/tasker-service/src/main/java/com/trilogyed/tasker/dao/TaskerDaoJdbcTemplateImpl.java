@@ -45,11 +45,11 @@ public class TaskerDaoJdbcTemplateImpl implements TaskerDao {
     }
 
     @Override
-    public Task getTask(int id) {
+    public Task getTask(int id) throws NullPointerException, EmptyResultDataAccessException{
 
         try {
             return jdbcTemplate.queryForObject(SELECT_TASK_BY_ID, this::mapRowToTask, id);
-        } catch (EmptyResultDataAccessException e) {
+        } catch (EmptyResultDataAccessException | NullPointerException e) {
             return null;
         }
 
