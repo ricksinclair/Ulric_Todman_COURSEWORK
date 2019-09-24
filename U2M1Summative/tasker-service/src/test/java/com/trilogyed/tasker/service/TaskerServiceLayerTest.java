@@ -12,6 +12,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
@@ -91,6 +93,61 @@ public class TaskerServiceLayerTest {
 
 
         @Test
+        public void listTests(){
+            Task task = new Task();
+            task.setDescription("This is a test task");
+            task.setCategory("test");
+            task.setCreateDate(LocalDate.of(2019, 9, 23));
+            task.setDueDate(LocalDate.of(2019, 9, 24));
+            TaskViewModel taskViewModel = new TaskViewModel();
+            taskViewModel.setDescription(task.getDescription());
+            taskViewModel.setCategory(task.getCategory());
+            taskViewModel.setCreateDate(task.getCreateDate());
+            taskViewModel.setDueDate(task.getDueDate());
+            taskViewModel = service.newTask(taskViewModel);
+
+
+            Task task1 = new Task();
+            task1.setDescription("This is a test task");
+            task1.setCategory("test");
+            task1.setCreateDate(LocalDate.of(2019, 9, 23));
+            task1.setDueDate(LocalDate.of(2019, 9, 25));
+            TaskViewModel taskViewModel1 = new TaskViewModel();
+            taskViewModel1.setDescription(task1.getDescription());
+            taskViewModel1.setCreateDate(task1.getCreateDate());
+            taskViewModel1.setCategory(task1.getCategory());
+            taskViewModel1.setDueDate(task1.getDueDate());
+            taskViewModel1 = service.newTask(taskViewModel1);
+
+
+
+
+
+            Task randomTaskNotAdded = new Task();
+            randomTaskNotAdded.setDescription("This is task that hasn't been updated");
+            randomTaskNotAdded.setCategory("random");
+            randomTaskNotAdded.setCreateDate(LocalDate.of(2019, 9, 23));
+            randomTaskNotAdded.setDueDate(LocalDate.of(2019, 9, 24));
+            TaskViewModel randomTaskViewModel = new TaskViewModel();
+            randomTaskViewModel.setDescription(randomTaskNotAdded.getDescription());
+            randomTaskViewModel.setCategory(randomTaskNotAdded.getCategory());
+            randomTaskViewModel.setCreateDate(randomTaskNotAdded.getCreateDate());
+            randomTaskViewModel.setDueDate(randomTaskNotAdded.getDueDate());
+            randomTaskViewModel = service.newTask(randomTaskViewModel);
+
+            List<TaskViewModel> taskViewModels = service.fetchAllTasks();
+
+            assertEquals(3, taskViewModels.size());
+
+            List<TaskViewModel> testTasks = service.fetchTasksByCategory("test");
+            assertEquals(2, testTasks.size());
+
+            List<TaskViewModel> randomTasks = service.fetchTasksByCategory("random");
+            assertEquals(1, randomTasks.size());
+
+
+
+        }
 
 
         public void setUpTaskerDaoMock(){
@@ -136,6 +193,30 @@ public class TaskerServiceLayerTest {
             taskDeleted.setCreateDate(LocalDate.of(2019, 9, 23));
             taskDeleted.setDueDate(LocalDate.of(2019, 9, 24));
 
+            Task randomTaskNotAdded = new Task();
+            randomTaskNotAdded.setDescription("This is task that hasn't been updated");
+            randomTaskNotAdded.setCategory("random");
+            randomTaskNotAdded.setCreateDate(LocalDate.of(2019, 9, 23));
+            randomTaskNotAdded.setDueDate(LocalDate.of(2019, 9, 24));
+
+            Task randomTaskAdded = new Task();
+            randomTaskAdded.setId(5);
+            randomTaskNotAdded.setDescription("This is task that hasn't been updated");
+            randomTaskNotAdded.setCategory("random");
+            randomTaskNotAdded.setCreateDate(LocalDate.of(2019, 9, 23));
+            randomTaskNotAdded.setDueDate(LocalDate.of(2019, 9, 24));
+
+            List<Task> taskList = new ArrayList<Task>();
+            taskList.add(taskProcessed);
+            taskList.add(taskProcessed1);
+            taskList.add(randomTaskAdded);
+
+            List<Task> taskListsTest = new ArrayList<Task>();
+            taskListsTest.add(taskProcessed);
+            taskListsTest.add(taskProcessed1);
+
+            List<Task> taskList1 = new ArrayList<Task>();
+            taskList1.add(randomTaskAdded);
 
 
             doReturn(taskProcessed).when(taskerDao).createTask(task);
@@ -146,6 +227,11 @@ public class TaskerServiceLayerTest {
             doNothing().when(taskerDao).updateTask(taskUpdated);
             doNothing().when(taskerDao).deleteTask(4);
             doReturn(null).when(taskerDao).getTask(4);
+            doReturn(taskList).when(taskerDao).getAllTasks();
+            doReturn(taskListsTest).when(taskerDao).getTasksByCategory("test");
+            doReturn(randomTaskAdded).when(taskerDao).createTask(randomTaskNotAdded);
+            doReturn(taskList1).when(taskerDao).getTasksByCategory("random");
+
 
 
 
