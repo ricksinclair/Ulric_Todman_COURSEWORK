@@ -231,7 +231,7 @@ public class TaskerServiceLayerTest {
             doReturn(taskListsTest).when(taskerDao).getTasksByCategory("test");
             doReturn(randomTaskAdded).when(taskerDao).createTask(randomTaskNotAdded);
             doReturn(taskList1).when(taskerDao).getTasksByCategory("random");
-            
+
 
         }
 

@@ -6,11 +6,11 @@ import java.util.List;
 
 public interface TaskerDao {
 
-    public Task createTask(Task task);
-    public Task getTask(int id);
-    public List<Task> getAllTasks();
-    public List<Task> getTasksByCategory(String category);
-    public void updateTask(Task task);
-    public void deleteTask(int id);
+    Task createTask(Task task);
+    Task getTask(int id);
+    List<Task> getAllTasks();
+    List<Task> getTasksByCategory(String category);
+    void updateTask(Task task);
+    void deleteTask(int id);
 
 }

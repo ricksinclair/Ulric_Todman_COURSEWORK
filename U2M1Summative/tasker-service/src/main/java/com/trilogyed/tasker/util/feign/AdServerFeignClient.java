@@ -8,5 +8,5 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public interface AdServerFeignClient {
 
 @RequestMapping(value = "/ad", method = RequestMethod.GET)
-    public String getRandomAd();
+String getRandomAd();
 }

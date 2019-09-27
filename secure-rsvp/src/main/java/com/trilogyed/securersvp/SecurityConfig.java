@@ -8,10 +8,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.web.authentication.logout.CookieClearingLogoutHandler;
-import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.sql.DataSource;
 
@@ -21,7 +18,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     DataSource datasource;
 
     @Autowired
-    public void configAuthentication(AuthenticationManagerBuilder authBuilder) throws Exception{
+    public void configAuthentication(AuthenticationManagerBuilder authBuilder) throws Exception {
 
         PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
         authBuilder.jdbcAuthentication().
@@ -32,7 +29,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Override
-    public void configure(HttpSecurity httpSecurity) throws Exception{
+    public void configure(HttpSecurity httpSecurity) throws Exception {
         httpSecurity.httpBasic();
         httpSecurity.authorizeRequests()
                 .mvcMatchers("/privateEvent").hasAuthority("REGISTERED_USERS")
