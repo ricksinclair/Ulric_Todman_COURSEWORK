@@ -11,7 +11,7 @@ import java.util.Objects;
 public class Assignment implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int assignment_id;
     @NotNull
     @Size(max= 50)

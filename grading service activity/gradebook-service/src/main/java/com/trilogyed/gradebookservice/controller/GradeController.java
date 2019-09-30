@@ -31,7 +31,7 @@ public class GradeController {
 
     @RequestMapping(value = "/grades", method = RequestMethod.GET)
     @ResponseStatus(value = HttpStatus.OK)
-    public List<Grade> getallGrades(){
+    public List<Grade> getAllGrades(){
         return gradeRepository.findAll();
     }
 

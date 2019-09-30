@@ -35,7 +35,7 @@ public class StudentController {
 
     @RequestMapping(value = "/student", method = RequestMethod.PUT)
     @ResponseStatus(value = HttpStatus.NO_CONTENT)
-    public void updateStudent(@Valid @RequestBody Student student){
+    public void updateStudent(@Valid  @RequestBody Student student){
 
         Student studentUpdated = studentRepository.getOne(student.getStudentId());
         studentUpdated.setFirstName(student.getFirstName());

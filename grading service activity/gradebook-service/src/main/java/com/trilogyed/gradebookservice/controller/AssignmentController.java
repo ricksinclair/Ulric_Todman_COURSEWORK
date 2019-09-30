@@ -45,7 +45,7 @@ public class AssignmentController {
 }
 
 
-@RequestMapping(value = "/assingment/{assignmentId}", method = RequestMethod.DELETE)
+@RequestMapping(value = "/assignment/{assignmentId}", method = RequestMethod.DELETE)
     @ResponseStatus(value = HttpStatus.NO_CONTENT)
     public void deleteAssignment(@PathVariable int assignmentId){
     assignmentRepository.deleteById(assignmentId);

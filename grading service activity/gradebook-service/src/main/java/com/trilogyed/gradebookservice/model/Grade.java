@@ -12,7 +12,7 @@ import java.util.Objects;
 public class Grade implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @NotNull
     private int studentId;
