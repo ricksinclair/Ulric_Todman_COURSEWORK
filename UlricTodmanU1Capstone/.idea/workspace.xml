@@ -2,48 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7da3bda4-1130-43ed-a507-7732a29fcc13" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Hystrix Tutorials/rest-consumer/src/main/java/com/trilogyed/restconsumer/GreetingClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hystrix Tutorials/rest-consumer/src/main/java/com/trilogyed/restconsumer/GreetingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hystrix Tutorials/rest-consumer/src/main/java/com/trilogyed/restconsumer/GreetingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hystrix Tutorials/rest-consumer/src/main/resources/templates/greeting-view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hystrix Tutorials/rest-producer/src/main/java/com/trilogyed/restproducer/controller/GreetingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hystrix Tutorials/rest-producer/src/main/java/com/trilogyed/restproducer/controller/GreetingControllerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U2M2Summative/comment-service/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U2M2Summative/comment-service/src/test/java/com/trilogyed/comment/repository/CommentRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U2M2Summative/comment-service/src/test/resources/bootstrap.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U2M2Summative/post-service/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U2M2Summative/post-service/src/test/java/com/trilogyed/post/repository/PostRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U2M2Summative/post-service/src/test/resources/bootstrap.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/controller/ControllerExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/exception/NotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/model/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/model/Post.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/util/feign/CommentFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/util/feign/PostFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/viewmodel/PostViewModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/test/java/com/trilogyed/stwitter/service/ServiceLayerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U2M2Summative/comment-queue-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../U2M2Summative/comment-queue-consumer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U2M2Summative/comment-queue-consumer/src/main/java/com/trilogyed/commentqueueconsumer/CommentQueueConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U2M2Summative/comment-queue-consumer/src/main/java/com/trilogyed/commentqueueconsumer/CommentQueueConsumerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U2M2Summative/comment-queue-consumer/src/main/java/com/trilogyed/commentqueueconsumer/MessageListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U2M2Summative/comment-queue-consumer/src/main/java/com/trilogyed/commentqueueconsumer/MessageListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U2M2Summative/comment-queue-consumer/src/main/java/com/trilogyed/commentqueueconsumer/util/feign/CommentFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U2M2Summative/comment-queue-consumer/src/main/java/com/trilogyed/commentqueueconsumer/util/feign/CommentFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U2M2Summative/comment-queue-consumer/src/main/java/com/trilogyed/commentqueueconsumer/util/messages/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U2M2Summative/comment-queue-consumer/src/main/java/com/trilogyed/commentqueueconsumer/util/messages/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U2M2Summative/comment-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../U2M2Summative/comment-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U2M2Summative/comment-service/src/main/java/com/trilogyed/comment/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U2M2Summative/comment-service/src/main/java/com/trilogyed/comment/controller/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U2M2Summative/comment-service/src/main/java/com/trilogyed/comment/model/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U2M2Summative/comment-service/src/main/java/com/trilogyed/comment/model/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U2M2Summative/comment-service/src/main/java/com/trilogyed/comment/repository/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U2M2Summative/comment-service/src/main/java/com/trilogyed/comment/repository/CommentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U2M2Summative/comment-service/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U2M2Summative/post-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../U2M2Summative/post-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U2M2Summative/post-service/src/main/java/com/trilogyed/post/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U2M2Summative/post-service/src/main/java/com/trilogyed/post/controller/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U2M2Summative/post-service/src/main/java/com/trilogyed/post/model/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U2M2Summative/post-service/src/main/java/com/trilogyed/post/model/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U2M2Summative/post-service/src/main/java/com/trilogyed/post/repository/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U2M2Summative/post-service/src/main/java/com/trilogyed/post/repository/PostRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U2M2Summative/post-service/src/main/resources/application.properties" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/test/resources/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U2M2Summative/post-service/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../U2M2Summative/post-service/src/main/resources/bootstrap.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/StwitterServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/StwitterServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/controller/StwitterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/controller/StwitterController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/service/ServiceLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/service/ServiceLayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/util/feign/PostFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/util/feign/PostFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/test/java/com/trilogyed/stwitter/service/ServiceLayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/test/java/com/trilogyed/stwitter/service/ServiceLayerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../grading service activity/gradebook-service/src/main/java/com/trilogyed/gradebookservice/GradebookServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../grading service activity/gradebook-service/src/main/java/com/trilogyed/gradebookservice/GradebookServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../grading service activity/gradebook-service/src/main/java/com/trilogyed/gradebookservice/controller/GradeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../grading service activity/gradebook-service/src/main/java/com/trilogyed/gradebookservice/controller/GradeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pong_matcher_spring" beforeDir="false" afterPath="$PROJECT_DIR$/../pong_matcher_spring" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

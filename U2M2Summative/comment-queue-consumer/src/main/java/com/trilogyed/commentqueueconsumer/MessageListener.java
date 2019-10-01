@@ -16,11 +16,7 @@ public class MessageListener {
     @Autowired
     CommentFeignClient client;
 
-    @Bean
-    public Jackson2JsonMessageConverter jackson2JsonMessageConverter() {
-        ObjectMapper objectMapper = new ObjectMapper().findAndRegisterModules();
-        return new Jackson2JsonMessageConverter(objectMapper);
-    }
+
 
     @RabbitListener(queues = CommentQueueConsumerApplication.QUEUE_NAME)
     public void receiveMessage(Comment msg){

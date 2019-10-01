@@ -36,7 +36,7 @@ public class CommentRepositoryTest {
     public void addGetDeleteComment(){
         Comment testComment1 = new Comment();
         testComment1.setCommenterName("John Doe");
-        testComment1.setCreateDate(LocalDate.of(2019, 9, 30));
+        testComment1.setCommentDate(LocalDate.of(2019, 9, 30));
         testComment1.setPostId(1);
         testComment1.setComment("Does my opinion really matter?");
 
@@ -53,7 +53,7 @@ public class CommentRepositoryTest {
     public void commentLists(){
         Comment testComment1 = new Comment();
         testComment1.setCommenterName("John Doe");
-        testComment1.setCreateDate(LocalDate.of(2019, 9, 30));
+        testComment1.setCommentDate(LocalDate.of(2019, 9, 30));
         testComment1.setPostId(1);
         testComment1.setComment("Does my opinion really matter?");
 
@@ -61,7 +61,7 @@ public class CommentRepositoryTest {
 
           Comment testComment2 = new Comment();
         testComment2.setCommenterName("Jane Doe");
-        testComment2.setCreateDate(LocalDate.of(2019, 9, 30));
+        testComment2.setCommentDate(LocalDate.of(2019, 9, 30));
         testComment2.setPostId(1);
         testComment2.setComment("Does John's opinion really matter?");
 
@@ -69,7 +69,7 @@ public class CommentRepositoryTest {
 
         Comment testComment3 = new Comment();
         testComment3.setCommenterName("Jane Doe");
-        testComment3.setCreateDate(LocalDate.of(2019, 9, 30));
+        testComment3.setCommentDate(LocalDate.of(2019, 9, 30));
         testComment3.setPostId(2);
         testComment3.setComment("Where is the article?");
 

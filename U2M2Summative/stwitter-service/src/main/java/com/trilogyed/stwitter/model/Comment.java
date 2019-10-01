@@ -7,14 +7,14 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 
-public class Comment implements Serializable {
+public class Comment implements  Serializable{
 
 
     private int commentId;
     @NotNull(message = "must include post id")
     private int postId;
     @NotNull(message = "must include creation date")
-    private LocalDate createDate;
+    private LocalDate commentDate;
     @NotNull(message = "Must include commenter name")
     @Size(max = 50, message = "size must be less than or equal to 50 characters")
     private String commenterName;
@@ -26,12 +26,12 @@ public class Comment implements Serializable {
 
     }
 
-    public Comment(int commentId, int postId, LocalDate createDate, String commenterName, String comment) {
-        this.commentId = commentId;
-        this.postId = postId;
-        this.createDate = createDate;
-        this.commenterName = commenterName;
-        this.comment = comment;
+    public LocalDate getCommentDate() {
+        return commentDate;
+    }
+
+    public void setCommentDate(LocalDate commentDate) {
+        this.commentDate = commentDate;
     }
 
     public int getCommentId() {
@@ -48,14 +48,6 @@ public class Comment implements Serializable {
 
     public void setPostId(int postId) {
         this.postId = postId;
-    }
-
-    public LocalDate getCreateDate() {
-        return createDate;
-    }
-
-    public void setCreateDate(LocalDate createDate) {
-        this.createDate = createDate;
     }
 
     public String getCommenterName() {
@@ -81,25 +73,13 @@ public class Comment implements Serializable {
         Comment comment1 = (Comment) o;
         return getCommentId() == comment1.getCommentId() &&
                 getPostId() == comment1.getPostId() &&
-                getCreateDate().equals(comment1.getCreateDate()) &&
+                getCommentDate().equals(comment1.getCommentDate()) &&
                 getCommenterName().equals(comment1.getCommenterName()) &&
                 getComment().equals(comment1.getComment());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getCommentId(), getPostId(), getCreateDate(), getCommenterName(), getComment());
-    }
-
-
-    @Override
-    public String toString() {
-        return "Comment{" +
-                "commentId=" + commentId +
-                ", postId=" + postId +
-                ", createDate=" + createDate +
-                ", commenterName='" + commenterName + '\'' +
-                ", comment='" + comment + '\'' +
-                '}';
+        return Objects.hash(getCommentId(), getPostId(), getCommentDate(), getCommenterName(), getComment());
     }
 }

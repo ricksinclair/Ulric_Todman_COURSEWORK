@@ -20,22 +20,23 @@ public class ServiceLayer {
 
 
     @Autowired
-    CommentFeignClient commentFeignClient;
+    private  CommentFeignClient commentFeignClient;
 
     @Autowired
-    PostFeignClient postFeignClient;
+    private  PostFeignClient postFeignClient;
 
     @Autowired
+    private
     RabbitTemplate rabbitTemplate;
 
-    public ServiceLayer() {
+
+    public ServiceLayer(){
 
     }
 
-    public ServiceLayer(PostFeignClient postFeignClient, CommentFeignClient commentRepository, RabbitTemplate rabbitTemplate) {
+    public ServiceLayer(PostFeignClient postFeignClient, CommentFeignClient commentRepository) {
         this.commentFeignClient = commentRepository;
         this.postFeignClient = postFeignClient;
-        this.rabbitTemplate = rabbitTemplate;
 
     }
 
@@ -66,6 +67,16 @@ public class ServiceLayer {
         postFeignClient.deletePost(postId);
     }
 
+    public List<PostViewModel> getPostsByPoster(String posterName) {
+        List<Post> userPosts = postFeignClient.getPostsByPosterName(posterName);
+        List<PostViewModel> userPostViewModels = new ArrayList<>();
+
+        userPosts.forEach(post -> {
+            userPostViewModels.add(buildPostViewModel(post));
+        });
+
+        return userPostViewModels;
+    }
 
     /*
       //////////////////////////////////
@@ -98,16 +109,7 @@ public class ServiceLayer {
     }
 
 
-    public List<PostViewModel> getPostsByPoster(String posterName) {
-        List<Post> userPosts = postFeignClient.getPostsByPosterName(posterName);
-        List<PostViewModel> userPostViewModels = new ArrayList<>();
 
-        userPosts.forEach(post -> {
-            userPostViewModels.add(getPost(post.getPostId()));
-        });
-
-        return userPostViewModels;
-    }
 
 
     private PostViewModel buildPostViewModel(Post post) {

@@ -77,4 +77,14 @@ public class Post implements Serializable {
     public int hashCode() {
         return Objects.hash(getPostId(), getPostDate(), getPosterName(), getPost());
     }
+
+    @Override
+    public String toString() {
+        return "Post{" +
+                "postId=" + postId +
+                ", postDate=" + postDate +
+                ", posterName='" + posterName + '\'' +
+                ", post='" + post + '\'' +
+                '}';
+    }
 }

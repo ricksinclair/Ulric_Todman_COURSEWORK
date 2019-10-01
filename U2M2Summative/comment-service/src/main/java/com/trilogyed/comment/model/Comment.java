@@ -1,9 +1,6 @@
 package com.trilogyed.comment.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
@@ -18,8 +15,9 @@ public class Comment implements Serializable {
     private int commentId;
     @NotNull(message = "must include post id")
     private int postId;
-    @NotNull(message = "must include creation date")
-    private LocalDate createDate;
+    @NotNull(message = "must include comment date")
+    @Column(name="create_date")
+    private LocalDate commentDate;
     @NotNull(message = "Must include commenter name")
     @Size(max= 50, message = "size must be less than or equal to 50 characters")
     private String commenterName;
@@ -43,12 +41,12 @@ public class Comment implements Serializable {
         this.postId = postId;
     }
 
-    public LocalDate getCreateDate() {
-        return createDate;
+    public LocalDate getCommentDate() {
+        return commentDate;
     }
 
-    public void setCreateDate(LocalDate createDate) {
-        this.createDate = createDate;
+    public void setCommentDate(LocalDate commentDate) {
+        this.commentDate = commentDate;
     }
 
     public String getCommenterName() {
@@ -71,10 +69,10 @@ public class Comment implements Serializable {
 
     }
 
-    public Comment(int commentId, int postId, LocalDate createDate, String commenterName, String comment) {
+    public Comment(int commentId, int postId, LocalDate commentDate, String commenterName, String comment) {
         this.commentId = commentId;
         this.postId = postId;
-        this.createDate = createDate;
+        this.commentDate = commentDate;
         this.commenterName = commenterName;
         this.comment = comment;
     }
@@ -86,14 +84,14 @@ public class Comment implements Serializable {
         Comment comment1 = (Comment) o;
         return getCommentId() == comment1.getCommentId() &&
                 getPostId() == comment1.getPostId() &&
-                getCreateDate().equals(comment1.getCreateDate()) &&
+                getCommentDate().equals(comment1.getCommentDate()) &&
                 getCommenterName().equals(comment1.getCommenterName()) &&
                 getComment().equals(comment1.getComment());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getCommentId(), getPostId(), getCreateDate(), getCommenterName(), getComment());
+        return Objects.hash(getCommentId(), getPostId(), getCommentDate(), getCommenterName(), getComment());
     }
 
     @Override
@@ -101,7 +99,7 @@ public class Comment implements Serializable {
         return "Comment{" +
                 "commentId=" + commentId +
                 ", postId=" + postId +
-                ", createDate=" + createDate +
+                ", createDate=" + commentDate +
                 ", commenterName='" + commenterName + '\'' +
                 ", comment='" + comment + '\'' +
                 '}';
