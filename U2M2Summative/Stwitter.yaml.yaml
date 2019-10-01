@@ -1,0 +1,215 @@
+openapi: 3.0.0
+info:
+  title: Stwitter Service API
+  description: A system which allows users to use our twitter-like service
+  version: 0.0.1
+servers: 
+  - url: http://localhost:8889
+    description: Stwitter service server
+
+paths:
+  /post:
+    post:
+      summary: add post
+      description: Add a new post object by including all fields except postId.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Post'
+      responses:
+        '201':
+          description: Returns added post and its comments.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostViewModel'
+
+            
+    put:
+      summary: update post
+      description: update post by submitting a post object with all fields not null.
+      requestBody:
+          required: true 
+          content:
+              application/json:
+                schema:
+                     $ref: '#/components/schemas/Post'                    
+      responses:
+        '201':
+          description: post successfully updated  
+          
+          
+          
+  /post/{postId}:
+    get:
+      summary: get posts by postId
+      parameters:
+        - name: postId
+          in: path
+          required: true
+          schema:
+            type: integer
+      description: Post with given post id
+      responses:
+        '200':
+          description: get post by posterName
+          content:
+              application/json:
+                schema:
+                 $ref: '#/components/schemas/PostViewModel'              
+
+    delete:
+      summary: get posts by postId
+      parameters:
+        - name: postId
+          in: path
+          required: true
+          schema:
+            type: integer
+      description: Delete Post with given post id
+      responses:
+        '200':
+          description: delete post
+                   
+
+  
+  /post/poster/{posterName}:
+    get:
+      summary: get posts by posterName
+      parameters:
+        - name: posterName
+          in: path
+          required: true
+          schema:
+            type: string
+      description: a list of posts by posterName
+      responses:
+        '200':
+          description: get post by posterName
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                    $ref: '#/components/schemas/Post'                    
+
+          
+  /Comment/{commentId}:
+    get:
+      summary: Get note by noteId
+      parameters:
+        - name: commentId
+          in: path
+          required: true
+          schema:
+            type: integer
+      description: get comment by specifying commentId in the path variable.
+                   
+      responses:
+        '201':
+          description: game successfully updated
+              
+    delete:
+      summary: delete comment
+      parameters:
+        - name: commentId
+          in: path
+          required: true
+          schema:
+            type: integer
+      description: delete comment by commentId in path variable 
+                  
+      responses:
+        '202':
+          description: comment successfully deleted
+              
+
+  /comment:
+                     
+    post:
+      summary: add comment
+      description: Add a new comment object by including all fields except commentId.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Comment'
+      responses:
+        '201':
+          description: Comment created
+          
+          
+    put:      
+      summary: update comment
+      description: Update a comment by submitting a comment object with all fields not null
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Comment'
+      responses:
+        '201':
+          description: Comment updated
+
+
+    
+
+components:
+  schemas:
+    Comment:
+      properties:
+        commentId:
+          type: integer
+        postId:
+          type: integer
+        createDate:
+          type: string
+        commenterName: 
+          type: string
+        comment: 
+          type: string
+
+
+      required: 
+        - postId
+        - createDate
+        - commenterName
+        - comment
+
+
+    Post:
+      properties:
+        postId: 
+          type: integer
+        postDate:
+          type: string
+        posterName:
+          type: string
+        post:
+          type: string
+      
+      required: 
+        - postDate
+        - posterName
+        - post
+       
+    PostViewModel:
+      properties:
+        postId: 
+          type: integer
+        title:
+          type: string
+        author:
+          type: string
+        comments:
+          type: array
+          items:
+            $ref: '#/components/schemas/Comment'
+      
+
+        
+        
