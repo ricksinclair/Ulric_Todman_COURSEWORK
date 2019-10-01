@@ -1,7 +1,6 @@
 package com.trilogyed.gradebookservice.controller;
 
 
-import com.netflix.discovery.converters.Auto;
 import com.trilogyed.gradebookservice.model.Grade;
 import com.trilogyed.gradebookservice.repository.GradeRepository;
 import org.springframework.beans.factory.annotation.Autowired;

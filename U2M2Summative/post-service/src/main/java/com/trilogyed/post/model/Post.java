@@ -1,21 +1,36 @@
 package com.trilogyed.post.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Objects;
 
-public class Post {
+@Entity
+public class Post implements Serializable {
 
-    private int postID;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int postId;
+    @NotNull(message = "Must include post date")
     private LocalDate postDate;
+    @NotNull(message = "Must include poster name")
+    @Size(max=50, message = "Size must be less than 50")
     private String posterName;
+    @NotNull(message = "Must include a post")
+    @Size(max=255, message = "Maximum length is 255 characters")
     private String post;
 
-    public int getPostID() {
-        return postID;
+    public int getPostId() {
+        return postId;
     }
 
-    public void setPostID(int postID) {
-        this.postID = postID;
+    public void setPostId(int postID) {
+        this.postId = postID;
     }
 
     public LocalDate getPostDate() {
@@ -47,7 +62,7 @@ public class Post {
     }
 
     public Post(int postID, LocalDate postDate, String posterName, String post) {
-        this.postID = postID;
+        this.postId = postID;
         this.postDate = postDate;
         this.posterName = posterName;
         this.post = post;
@@ -58,7 +73,7 @@ public class Post {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Post post1 = (Post) o;
-        return getPostID() == post1.getPostID() &&
+        return getPostId() == post1.getPostId() &&
                 getPostDate().equals(post1.getPostDate()) &&
                 getPosterName().equals(post1.getPosterName()) &&
                 getPost().equals(post1.getPost());
@@ -66,6 +81,17 @@ public class Post {
 
     @Override
     public int hashCode() {
-        return Objects.hash(getPostID(), getPostDate(), getPosterName(), getPost());
+        return Objects.hash(getPostId(), getPostDate(), getPosterName(), getPost());
+    }
+
+
+    @Override
+    public String toString() {
+        return "Post{" +
+                "postId=" + postId +
+                ", postDate=" + postDate +
+                ", posterName='" + posterName + '\'' +
+                ", post='" + post + '\'' +
+                '}';
     }
 }

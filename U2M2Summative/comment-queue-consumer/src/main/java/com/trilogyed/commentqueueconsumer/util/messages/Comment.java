@@ -1,8 +1,9 @@
 package com.trilogyed.commentqueueconsumer.util.messages;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Comment {
+public class Comment implements Serializable {
 
     private int commentId;
     private int postId;

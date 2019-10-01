@@ -1,5 +1,6 @@
 package com.trilogyed.commentqueueconsumer;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
 import org.springframework.amqp.core.Queue;
@@ -31,12 +32,14 @@ public class CommentQueueConsumerApplication {
 		return BindingBuilder.bind(queue).to(exchange).with(ROUTING_KEY);
 	}
 
+
+
+
 	@Bean
 	public Jackson2JsonMessageConverter jackson2JsonMessageConverter() {
-		return new Jackson2JsonMessageConverter();
+		ObjectMapper objectMapper = new ObjectMapper().findAndRegisterModules();
+		return new Jackson2JsonMessageConverter(objectMapper);
 	}
-
-
 
 	public static void main(String[] args) {
 		SpringApplication.run(CommentQueueConsumerApplication.class, args);

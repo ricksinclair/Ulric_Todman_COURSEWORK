@@ -1,14 +1,30 @@
 package com.trilogyed.comment.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Objects;
 
-public class Comment {
+@Entity
+public class Comment implements Serializable {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int commentId;
+    @NotNull(message = "must include post id")
     private int postId;
+    @NotNull(message = "must include creation date")
     private LocalDate createDate;
+    @NotNull(message = "Must include commenter name")
+    @Size(max= 50, message = "size must be less than or equal to 50 characters")
     private String commenterName;
+    @NotNull(message = "must include comment")
+    @Size(max=255, message = "size must be less than or equal to 255 characters")
     private String comment;
 
     public int getCommentId() {
@@ -43,6 +59,14 @@ public class Comment {
         this.commenterName = commenterName;
     }
 
+    public String getComment() {
+        return comment;
+    }
+
+    public void setComment(String comment) {
+        this.comment = comment;
+    }
+
     public Comment(){
 
     }
@@ -64,11 +88,22 @@ public class Comment {
                 getPostId() == comment1.getPostId() &&
                 getCreateDate().equals(comment1.getCreateDate()) &&
                 getCommenterName().equals(comment1.getCommenterName()) &&
-                comment.equals(comment1.comment);
+                getComment().equals(comment1.getComment());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getCommentId(), getPostId(), getCreateDate(), getCommenterName(), comment);
+        return Objects.hash(getCommentId(), getPostId(), getCreateDate(), getCommenterName(), getComment());
+    }
+
+    @Override
+    public String toString() {
+        return "Comment{" +
+                "commentId=" + commentId +
+                ", postId=" + postId +
+                ", createDate=" + createDate +
+                ", commenterName='" + commenterName + '\'' +
+                ", comment='" + comment + '\'' +
+                '}';
     }
 }
