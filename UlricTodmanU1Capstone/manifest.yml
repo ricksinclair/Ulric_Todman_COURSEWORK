@@ -1,0 +1,8 @@
+applications:
+  - name: GAME-STORE-SERVICE
+    memory: 1024M
+    instances: 1
+    random-route: true
+    path: ./target/UlricTodmanU1Capstone-0.0.1-SNAPSHOT.jar
+    services:
+      - MYSQL-SERVICE

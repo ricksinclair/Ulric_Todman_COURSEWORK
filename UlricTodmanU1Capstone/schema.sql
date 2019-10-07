@@ -1,5 +1,33 @@
-create schema if not exists game_store;
-use game_store;
+CREATE SCHEMA IF NOT EXISTS game_store;
+USE game_store;
+
+
+CREATE TABLE IF NOT EXISTS users(
+username VARCHAR(50) NOT NULL PRIMARY KEY,
+password VARCHAR(100) NOT NULL,
+enabled BOOLEAN NOT NULL);
+
+CREATE TABLE IF NOT EXISTS authorities(
+username VARCHAR(50) NOT NULL,
+authority VARCHAR(50) NOT NULL,
+CONSTRAINT fk_authorities_users FOREIGN KEY(username) REFERENCES users(username));
+
+CREATE UNIQUE INDEX ix_auth_username ON authorities (username, authority);
+
+
+
+INSERT INTO users (username, password, enabled) VALUES 
+("admin", "$2a$10$OaBVdfZXedWrtsFx1NtieeTaZezoURjM8sLpQAt6xoKT6XpBMcmvO", true),
+("manager", "$2a$10$AX2oHBuRiYPfvz.fEiQN1ez2cd7qHQTa8YYWs.bbPn3pKyYUZSrpW", true),
+ ("staff", "$2a$10$e/iGR6EIpoEq2BoJFs24iu2kH9MDlF30rkrLBAKpCiEcRQoMWt4Su", true);
+
+INSERT INTO authorities (username, authority) values
+("admin", "ROLE_STAFF"),
+("admin", "ROLE_MANAGER"),
+("admin", "ROLE_ADMIN"),
+("manager", "ROLE_MANAGER"),
+("manager", "ROLE_STAFF"),
+("staff", "ROLE_STAFF");
 
 create table if not exists game (
     game_id int(11) not null auto_increment primary key,
@@ -60,13 +88,7 @@ create table if not exists invoice (
     processing_fee decimal (5,2) not null,
     total decimal(5,2) not null
 );
-
-
-use game_store_test;
-
-
-
-INSERT INTO sales_tax_rate (state, rate) VALUES
+INSERT into sales_tax_rate (state, rate) VALUES
 ("AL", .05),
 ("AK", .06),
 ("AZ", .04),
@@ -97,10 +119,9 @@ INSERT INTO sales_tax_rate (state, rate) VALUES
 ("NV", .04),
 ("NH", .06),
 ("NJ", .05),
-("NM", .05),
 ("NY", .06),
 ("NC", .05),
-("ND", .05),
+("ND", .05), 
 ("OH", .04),
 ("OK", .04),
 ("OR", .07),
@@ -113,13 +134,13 @@ INSERT INTO sales_tax_rate (state, rate) VALUES
 ("UT", .04),
 ("VT", .07),
 ("VA", .06),
-("WA", .05),
+("WA", .05), 
 ("WV", .05),
 ("WI", .03),
 ("WY", .04);
 
-use game_store_test;
-INSERT INTO processing_fee (product_type, fee) VALUES
+
+INSERT into processing_fee (product_type, fee) VALUES
 ("Consoles", 14.99),
 ("T-Shirts", 1.98),
 ("Games", 1.49);

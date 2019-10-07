@@ -135,7 +135,7 @@ public class ServiceLayer {
 
 
     @Transactional
-    private void updateDatabaseQuantities(int quantity, String productType, int productId) {
+    void updateDatabaseQuantities(int quantity, String productType, int productId) {
 
         int currentQuantity;
         int newQuantity;

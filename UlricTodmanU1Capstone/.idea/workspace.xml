@@ -2,18 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7da3bda4-1130-43ed-a507-7732a29fcc13" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/test/resources/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U2M2Summative/post-service/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../U2M2Summative/post-service/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/StwitterServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/StwitterServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/controller/StwitterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/controller/StwitterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/service/ServiceLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/service/ServiceLayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/util/feign/PostFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/util/feign/PostFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/test/java/com/trilogyed/stwitter/service/ServiceLayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U2M2Summative/stwitter-service/src/test/java/com/trilogyed/stwitter/service/ServiceLayerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2M3Summative/authentication/src/main/java/com/trilogyed/authentication/util/password/PasswordGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifest.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/UlricTodmanU1Capstone/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/UlricTodmanU1Capstone/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pong_matcher_spring" beforeDir="false" afterPath="$PROJECT_DIR$/../pong_matcher_spring" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UlricTodmanU1Capstone.iml" beforeDir="false" afterPath="$PROJECT_DIR$/UlricTodmanU1Capstone.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/UlricTodmanU1Capstone/service/ServiceLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/UlricTodmanU1Capstone/service/ServiceLayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/UlricTodmanU1Capstone/service/ServiceLayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/UlricTodmanU1Capstone/service/ServiceLayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/company/UlricTodmanU1Capstone/dao/ConsoleDaoJdbcTemplateImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/company/UlricTodmanU1Capstone/dao/ConsoleDaoJdbcTemplateImplTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,9 +45,22 @@
   <component name="ProjectId" id="1QKg9Fl9u8bCBzFOEqclRj9hoBj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../COLNYC201903CJS1/00-units/01-unit/06-module-service-mocks-group/02-lesson-mocks/activities/in-class/rec-coll-jdbctemplate-dao" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.company.UlricTodmanU1Capstone.util.password" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Bootcamp\Ulric_Todman_COURSEWORK\UlricTodmanU1Capstone\src\test" />
     </key>
@@ -61,7 +77,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.com.company.UlricTodmanU1Capstone in UlricTodmanU1Capstone">
+  <component name="RunManager" selected="Application.PasswordUtility">
+    <configuration name="PasswordUtility" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.UlricTodmanU1Capstone.util.password.PasswordUtility" />
+      <module name="UlricTodmanU1Capstone" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.UlricTodmanU1Capstone.util.password.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UlricTodmanU1CapstoneApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.UlricTodmanU1Capstone.UlricTodmanU1CapstoneApplication" />
       <module name="UlricTodmanU1Capstone" />
@@ -71,6 +100,14 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in UlricTodmanU1Capstone" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UlricTodmanU1Capstone" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -90,38 +127,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceLayerTest.addGetDeleteInvoice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="UlricTodmanU1Capstone" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.UlricTodmanU1Capstone.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company.UlricTodmanU1Capstone.service" />
-      <option name="MAIN_CLASS_NAME" value="com.company.UlricTodmanU1Capstone.service.ServiceLayerTest" />
-      <option name="METHOD_NAME" value="addGetDeleteInvoice" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ServiceLayerTest.getTShirtLists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="UlricTodmanU1Capstone" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.UlricTodmanU1Capstone.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company.UlricTodmanU1Capstone.service" />
-      <option name="MAIN_CLASS_NAME" value="com.company.UlricTodmanU1Capstone.service.ServiceLayerTest" />
-      <option name="METHOD_NAME" value="getTShirtLists" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="com.company.UlricTodmanU1Capstone in UlricTodmanU1Capstone" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UlricTodmanU1Capstone" />
       <extension name="coverage">
@@ -136,13 +141,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UlricTodmanU1CapstoneApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="UlricTodmanU1Capstone" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.company.UlricTodmanU1Capstone.UlricTodmanU1CapstoneApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PasswordUtility" />
+        <item itemvalue="JUnit.All in UlricTodmanU1Capstone" />
         <item itemvalue="JUnit.com.company.UlricTodmanU1Capstone in UlricTodmanU1Capstone" />
         <item itemvalue="JUnit.ServiceLayerTest" />
         <item itemvalue="Application.UlricTodmanU1CapstoneApplication" />
-        <item itemvalue="JUnit.ServiceLayerTest.addGetDeleteInvoice" />
-        <item itemvalue="JUnit.ServiceLayerTest.getTShirtLists" />
       </list>
     </recent_temporary>
   </component>
@@ -156,8 +168,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1567524548140</updated>
+      <workItem from="1570311799095" duration="2548000" />
+      <workItem from="1570363495312" duration="970000" />
+      <workItem from="1570386601402" duration="7926000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
