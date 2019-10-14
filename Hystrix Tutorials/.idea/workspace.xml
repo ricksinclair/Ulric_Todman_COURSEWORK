@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8df552a4-77e3-4ce2-a74b-4aa31bcc21fd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../JpaReview/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JpaReview/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JpaReview/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JpaReview/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JpaReview/JpaReview.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../JpaReview/JpaReview.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U2M2Summative/Stwitter.yaml.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U2M3Summative/authentication/src/main/java/com/trilogyed/authentication/util/password/PasswordGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U2M3Summative/authentication/src/main/java/com/trilogyed/authentication/util/password/PasswordGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UlricTodmanU1Capstone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UlricTodmanU1Capstone/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eureka-service-registry/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eureka-service-registry/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eureka-service-registry/eureka-service-registry.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../eureka-service-registry/eureka-service-registry.iml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1SCo4hAe47Ibe0ssJOP0Ep3hjHK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8df552a4-77e3-4ce2-a74b-4aa31bcc21fd" name="Default Changelist" comment="" />
+      <created>1571076748777</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571076748777</updated>
+      <workItem from="1571076750019" duration="168000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
